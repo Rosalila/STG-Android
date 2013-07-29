@@ -1,0 +1,10 @@
+jni/src/bin/
+jni/src/chars/
+jni/src/menu/
+jni/src/misc/
+jni/src/Rosalila/
+jni/src/obj/
+jni/src/stages/
+jni/src/config.xml
+jni/src/log
+jni/SDL
