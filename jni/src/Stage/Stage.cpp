@@ -137,19 +137,6 @@ void Stage::loadFromXML(std::string name)
 {
     this->name=name;
 
-    writeLogLine("Loading stage from XML.");
-
-    char *archivo=new char[255];
-    strcpy(archivo,"stages/");
-    strcat(archivo,name.c_str());
-    strcat(archivo,"/main.xml");
-    TiXmlDocument doc_t( archivo );
-    doc_t.LoadFile();
-    TiXmlDocument *doc;
-    doc=&doc_t;
-
-    TiXmlNode *stage_file=doc->FirstChild("StageFile");
-
     //Load settings
     char *music=new char[255];
     strcpy(music,"stages/");
@@ -161,42 +148,19 @@ void Stage::loadFromXML(std::string name)
     this->dialogue_y=0;
     this->dialogue_padding_x=0;
     this->dialogue_padding_y=0;
-//    if(stage_file->FirstChild("DialoguePosition")!=NULL)
-//    {
-//        TiXmlNode *dialogue_pos_node=stage_file->FirstChild("DialoguePosition");
-//        this->dialogue_x=atoi(dialogue_pos_node->ToElement()->Attribute("x"));
-//        this->dialogue_y=atoi(dialogue_pos_node->ToElement()->Attribute("y"));
-//        this->dialogue_padding_x=atoi(dialogue_pos_node->ToElement()->Attribute("padding_x"));
-//        this->dialogue_padding_y=atoi(dialogue_pos_node->ToElement()->Attribute("padding_y"));
-//    }
 
-    TiXmlNode *nodo_bounds=stage_file->FirstChild("Bounds");
+
     this->bound_x1=0;
     this->bound_y1=0;
     this->bound_x2=painter->screen_width;
     this->bound_y2=painter->screen_height;
 
-    if(nodo_bounds->ToElement()->Attribute("x1")!=NULL)
-        this->bound_x1=atoi(nodo_bounds->ToElement()->Attribute("x1"));
-
-    if(nodo_bounds->ToElement()->Attribute("y1")!=NULL)
-        this->bound_y1=atoi(nodo_bounds->ToElement()->Attribute("y1"));
-
-    if(nodo_bounds->ToElement()->Attribute("x2")!=NULL)
-        this->bound_x2=atoi(nodo_bounds->ToElement()->Attribute("x2"));
-
-    if(nodo_bounds->ToElement()->Attribute("y2")!=NULL)
-        this->bound_y2=atoi(nodo_bounds->ToElement()->Attribute("y2"));
-
-
-    TiXmlNode *nodo_misc=stage_file->FirstChild("Misc");
 
     this->velocity=0;
-    if(nodo_misc->ToElement()->Attribute("velocity")!=NULL)
-        this->velocity=atoi(nodo_misc->ToElement()->Attribute("velocity"));
 
     writeLogLine("Loading stage's BackLayers.");
 
+/*
     //Load back layer
     for(TiXmlNode *nodo_back=stage_file->FirstChild("BackLayer");
             nodo_back!=NULL;
@@ -324,6 +288,7 @@ void Stage::loadFromXML(std::string name)
     writeLogLine("Stage loaded succesfully from XML.");
 
     loadDialogues(name);
+*/
 }
 
 Stage::~Stage()

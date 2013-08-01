@@ -9,16 +9,29 @@ Menu::Menu(RosalilaGraphics* painter,Receiver* receiver,Sound* sonido,char* arch
     this->char_select=NULL;
     this->selectables_container=NULL;
 
+    std::vector<std::string> chars,stages;
     loading_screen=painter->getTexture("misc/loading_screen.png");
 
-    TiXmlDocument doc_t((char*)"config.xml");
+/*
+
+
+    TiXmlDocument doc_t((char*)"/Pictures/config.xml");
     doc_t.LoadFile();
     TiXmlDocument *doc;
     doc=&doc_t;
 
-    TiXmlNode *config_file=doc->FirstChild("ConfigFile");
+//	if(doc==NULL)
+//__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "NULLA");
 
+//	if(doc->FirstChild("ConfigFile")==NULL)
+//__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "NULLB");
+
+    TiXmlNode *config_file=doc->FirstChild("ConfigFile");
     std::vector<std::string> chars,stages;
+	TiXmlNode* node_chars;
+	node_chars=config_file->FirstChild("Chars");
+	if(node_chars==NULL)
+		__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "F");
     for(TiXmlNode* node_chars=config_file->FirstChild("Chars");
             node_chars!=NULL;
             node_chars=node_chars->NextSibling("Chars"))
@@ -27,7 +40,7 @@ Menu::Menu(RosalilaGraphics* painter,Receiver* receiver,Sound* sonido,char* arch
                 node_chars2!=NULL;
                 node_chars2=node_chars2->NextSibling("char"))
         {
-            chars.push_back(std::string(node_chars2->ToElement()->Attribute("name")));
+            charschars.push_back(std::string(node_chars2->ToElement()->Attribute("name")));
         }
     }
 
@@ -42,18 +55,24 @@ Menu::Menu(RosalilaGraphics* painter,Receiver* receiver,Sound* sonido,char* arch
             stages.push_back(std::string(node_chars2->ToElement()->Attribute("name")));
         }
     }
+*/
 
-    cargarDesdeXml(archivo,chars,stages);
+    //cargarDesdeXml(archivo,chars,stages);
 }
 
 void Menu::iniciarJuego(std::string character_name,std::string stage_name)
 {
     this->printLoadingScreen();
     writeLogLine("Initializing game.");
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "antes de stage");
     Stage*stage=new Stage(painter,sonido,receiver);
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "despues de stage");
     stage->loadFromXML(stage_name);
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "despues de stage xml");
     Player*player=new Player(sonido,painter,receiver,character_name);
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "despues del personaje");
     Enemy*enemy=new Enemy(sonido,painter,receiver,stage_name,player);
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "despues del enemigo");
     STG*stg=new STG(sonido,painter,receiver,player,enemy,stage);
     delete stg;
     this->playMusic();
@@ -72,6 +91,7 @@ void Menu::loopMenu()
     bool tecla_arriba_p1=true;
     bool tecla_arriba_p2=true;
     //inicio
+    SDL_Event event;
 	for (;;)
 	{
 
@@ -105,9 +125,11 @@ void Menu::loopMenu()
 
         if(selectables_container!=NULL)
         {
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "A1111112");
             tecla_arriba=false;
             if(receiver->IsKeyPressed(SDLK_ESCAPE) || receiver->IsKeyPressed(SDLK_x) || receiver->IsJoyPressed(5,0))
             {
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "A222222");
                 sonido->playSound(std::string("Menu.back"));
                 exit_signal=true;
                 break;
@@ -115,6 +137,7 @@ void Menu::loopMenu()
             else if(receiver->IsKeyPressed(SDLK_DOWN)
                     || receiver->IsJoyPressed(-2,0))
             {
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "A333333");
                 sonido->playSound(std::string("Menu.move"));
                 ((MenuContenedor*)selectables_container)->avanzar();
 
@@ -137,6 +160,7 @@ void Menu::loopMenu()
             else if(receiver->IsKeyPressed(SDLK_UP)
                     || receiver->IsJoyPressed(-8,0))
             {
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "A4444444");
                 sonido->playSound(std::string("Menu.move"));
                 ((MenuContenedor*)selectables_container)->retroceder();
 
@@ -193,8 +217,12 @@ void Menu::loopMenu()
                         ml->retroceder();
                     }
                 }
-            }else if(receiver->IsKeyPressed(SDLK_RETURN) || receiver->IsKeyPressed(SDLK_z) || receiver->IsJoyPressed(0,0))
+            }else if(receiver->IsKeyPressed(SDLK_RETURN) || receiver->IsKeyPressed(SDLK_z) || receiver->IsJoyPressed(0,0) || receiver->isOuyaPressed('u') || receiver->isOuyaDown('u'))
             {
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "READY to crashh");
+iniciarJuego("Iguro","FeministKillBot_normal");
+
+/*
                 if(((MenuContenedor*)selectables_container)->getElementoSeleccionado()->getTipo()=="Lista")
                 {
                     if(!char_select->listoPA())
@@ -320,6 +348,7 @@ void Menu::loopMenu()
                         llenarRosalilaInputssBotones();
                     }
                 }
+*/
             }else
             {
                 tecla_arriba=true;
@@ -362,6 +391,23 @@ void Menu::cargarDesdeXml(char* archivo,vector<std::string> chars,vector<std::st
     sonido->addSound("Menu.move_char","menu/audio/move_char.ogg");
     sonido->addSound("Menu.back","menu/audio/back.ogg");
 
+
+
+            Image* image=painter->getTexture("menu/startscreen.png");
+
+//            elementos.push_back((Elemento*)new MenuImagen(painter,x,y,displacement_x,displacement_y,stop_displacement_x_at,stop_displacement_y_at,fade_in_initial,fade_in_speed,
+//                                                          width,height,image,""
+//                                                          ));
+
+            elementos.push_back((Elemento*)new MenuImagen(painter,0,0,0,0,0,0,-1,0,
+                                                          1920,1080,image,""
+                                                          ));
+
+//1920
+//1080
+
+
+/*
     TiXmlNode* elemento=doc->FirstChild("svg");
     TiXmlNode* g_node=elemento->FirstChild("g");
 
@@ -796,6 +842,7 @@ void Menu::cargarDesdeXml(char* archivo,vector<std::string> chars,vector<std::st
 
     selectables_container=new MenuContenedor(painter,elementos_contenedor);
     elementos.push_back((Elemento*)selectables_container);
+*/
 }
 
 std::string Menu::getStage()

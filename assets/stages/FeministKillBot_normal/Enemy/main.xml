@@ -1,0 +1,20 @@
+<MainFile>
+	<LifeBar color_r="128" rect_offset_x="70" rect_offset_y="36" rect_width="373" rect_height="32" y="698"/>
+	<Attributes velocity="0" animation_velocity="4" hp="6500" initial_x="950" initial_y="500"/>
+	<Hitbox x="-50" y="-150" width="100" height="300" angle="0"/>
+	<Sprites orientation="idle">
+		<Sprite path="idle/1.png"/>
+		<Sprite path="idle/2.png"/>
+		<Sprite path="idle/3.png"/>
+	</Sprites>
+	<Sprites orientation="destroyed">
+		<Sprite path="destroyed/1.png"/>
+		<Sprite path="destroyed/2.png"/>
+		<Sprite path="destroyed/3.png"/>
+		<Sprite path="destroyed/4.png"/>
+		<Sprite path="destroyed/5.png"/>
+		<Sprite path="destroyed/6.png"/>
+		<Sprite path="destroyed/7.png"/>
+		<Sprite path="destroyed/8.png"/>
+	</Sprites>
+</MainFile>

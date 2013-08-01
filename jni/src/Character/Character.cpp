@@ -32,54 +32,27 @@ void Character::loadFromXML()
 {
     loadMainXML();
 
-    loadBulletsXML();
+    //loadBulletsXML();
 
-    loadPatternsXML();
+    //loadPatternsXML();
 }
 
 void Character::loadMainXML()
 {
-    //Loading file
-    std::string main_path=directory+"main.xml";
-    TiXmlDocument doc_t(main_path.c_str());
-    doc_t.LoadFile();
-    TiXmlDocument *doc;
-    doc=&doc_t;
-    TiXmlNode *main_file=doc->FirstChild("MainFile");
 
     //Loading attributes
-    TiXmlElement *attributes=main_file->FirstChild("Attributes")->ToElement();
     this->velocity=5;
-    if(attributes->Attribute("velocity")!=NULL)
-    {
-        this->velocity=atoi(attributes->Attribute("velocity"));
-    }
 
     this->animation_velocity=5;
-    if(attributes->Attribute("animation_velocity")!=NULL)
-    {
-        this->animation_velocity=atoi(attributes->Attribute("animation_velocity"));
-    }
 
     this->max_hp=100;
     this->hp=100;
-    if(attributes->Attribute("hp")!=NULL)
-    {
-        this->max_hp=atoi(attributes->Attribute("hp"));
-    }
+
     this->hp=this->max_hp;
 
     this->x=100;
-    if(attributes->Attribute("initial_x")!=NULL)
-    {
-        this->x=atoi(attributes->Attribute("initial_x"));
-    }
 
     this->y=500;
-    if(attributes->Attribute("initial_y")!=NULL)
-    {
-        this->y=atoi(attributes->Attribute("initial_y"));
-    }
 
     this->life_bar_x=0;
     this->life_bar_y=0;
@@ -92,39 +65,26 @@ void Character::loadMainXML()
     this->color.blue=0;
     this->color.alpha=255;
 
-    if(main_file->FirstChild("LifeBar")!=NULL)
-    {
-        TiXmlElement *life_bar=main_file->FirstChild("LifeBar")->ToElement();
-        if(life_bar->Attribute("x")!=NULL)
-            this->life_bar_x=atoi(life_bar->Attribute("x"));
-        if(life_bar->Attribute("y")!=NULL)
-            this->life_bar_y=atoi(life_bar->Attribute("y"));
-        if(life_bar->Attribute("color_r")!=NULL)
-            this->color.red=atoi(life_bar->Attribute("color_r"));
-        if(life_bar->Attribute("color_g")!=NULL)
-            this->color.green=atoi(life_bar->Attribute("color_g"));
-        if(life_bar->Attribute("color_b")!=NULL)
-            this->color.blue=atoi(life_bar->Attribute("color_b"));
-        if(life_bar->Attribute("color_a")!=NULL)
-            this->color.alpha=atoi(life_bar->Attribute("color_a"));
-        if(life_bar->Attribute("rect_offset_x")!=NULL)
-            this->life_bar_rect_offset_x=atoi(life_bar->Attribute("rect_offset_x"));
-        if(life_bar->Attribute("rect_offset_y")!=NULL)
-            this->life_bar_rect_offset_y=atoi(life_bar->Attribute("rect_offset_y"));
-        if(life_bar->Attribute("rect_height")!=NULL)
-            this->life_bar_rect_height=atoi(life_bar->Attribute("rect_height"));
-        if(life_bar->Attribute("rect_width")!=NULL)
-            this->life_bar_rect_width=atoi(life_bar->Attribute("rect_width"));
-    }
 
-    TiXmlElement *hitbox_node=main_file->FirstChild("Hitbox")->ToElement();
-    int hitbox_x=atoi(hitbox_node->Attribute("x"));
-    int hitbox_y=atoi(hitbox_node->Attribute("y"));
-    int hitbox_width=atoi(hitbox_node->Attribute("width"));
-    int hitbox_height=atoi(hitbox_node->Attribute("height"));
-    int hitbox_angle=atoi(hitbox_node->Attribute("angle"));
+
+ 
+    int hitbox_x=10;
+    int hitbox_y=10;
+    int hitbox_width=100;
+    int hitbox_height=10;
+    int hitbox_angle=0;
     this->hitbox.setValues(hitbox_x,hitbox_y,hitbox_width,hitbox_height,hitbox_angle);
 
+
+
+
+        std::vector<Image*>sprites_vector;
+		sprites_vector.push_back(painter->getTexture("1.png"));
+		sprites_vector.push_back(painter->getTexture("2.png"));
+
+		sprites["idle"]=sprites_vector;
+
+/*
     //Loading sprites
     for(TiXmlNode* sprites_node=main_file->FirstChild("Sprites");
             sprites_node!=NULL;
@@ -145,6 +105,7 @@ void Character::loadMainXML()
         }
         sprites[sprites_orientation]=sprites_vector;
     }
+*/
 }
 
 void Character::loadBulletsXML()
@@ -495,8 +456,9 @@ void Character::animationControl()
         }
         animation_iteration=0;
     }
-    if(getIterateSlowdownFlag())
-        animation_iteration++;
+animation_iteration++;
+    //if(getIterateSlowdownFlag())
+    //    animation_iteration++;
 }
 
 void Character::spellControl(int stage_velocity)
@@ -524,8 +486,10 @@ void Character::spellControl(int stage_velocity)
 
 void Character::parrentRender()
 {
+/*
     if(!visible)
         return;
+*/
     painter->draw2DImage
     (   sprites[orientation][current_sprite],
         sprites[orientation][current_sprite]->getWidth(),sprites[orientation][current_sprite]->getHeight(),
@@ -537,6 +501,7 @@ void Character::parrentRender()
         Color(255,255,255,255),
         true);
 
+/*
     if(receiver->IsKeyDownn(SDLK_h))
     {
         painter->drawRectangle(this->getHitbox().getX(),
@@ -547,6 +512,7 @@ void Character::parrentRender()
 
     for (std::list<Pattern*>::iterator pattern = active_patterns->begin(); pattern != active_patterns->end(); pattern++)
         ((Pattern*)*pattern)->render();
+*/
 }
 
 void Character::render()

@@ -1,0 +1,88 @@
+<BulletsFile>
+	<Bullet name="Eye Lazor" damage="20">
+		<Sprite path="Eye Lazor/1.png"/>
+		<Sprite path="Eye Lazor/2.png"/>
+		<Sprite path="Eye Lazor/3.png"/>
+		<Hitbox x="-50" y="-3" width="100" height="6" angle="0"/>
+		<OnHit>
+			<Sprite path="hit1.png"/>
+			<Sprite path="hit2.png"/>
+			<Sprite path="hit3.png"/>
+			<Sprite path="hit4.png"/>
+			<Sprite path="hit5.png"/>
+		</OnHit>
+	</Bullet>
+
+	<Bullet name="Feminist Laser startup" damage="0">
+		<Sprite path="Feminist Laser/startup/1.png"/>
+		<Sprite path="Feminist Laser/startup/2.png"/>
+		<Sprite path="Feminist Laser/startup/3.png"/>
+		<Sprite path="Feminist Laser/startup/4.png"/>
+		<Sprite path="Feminist Laser/startup/5.png"/>
+		<Sprite path="Feminist Laser/startup/6.png"/>
+		<Sprite path="Feminist Laser/startup/7.png"/>
+		<Sprite path="Feminist Laser/startup/8.png"/>
+		<Sprite path="Feminist Laser/startup/9.png"/>
+		<Sprite path="Feminist Laser/startup/10.png"/>
+		<Sprite path="Feminist Laser/startup/11.png"/>
+		<Hitbox x="1" y="1" width="-1" height="-1" angle="0"/>
+		<OnHit>
+			<Sprite path="hit1.png"/>
+			<Sprite path="hit2.png"/>
+			<Sprite path="hit3.png"/>
+			<Sprite path="hit4.png"/>
+			<Sprite path="hit5.png"/>
+		</OnHit>
+	</Bullet>
+
+	<Bullet name="Feminist Laser cooldown" damage="0">
+		<Sprite path="Feminist Laser/startup/11.png"/>
+		<Sprite path="Feminist Laser/startup/10.png"/>
+		<Sprite path="Feminist Laser/startup/9.png"/>
+		<Sprite path="Feminist Laser/startup/8.png"/>
+		<Sprite path="Feminist Laser/startup/7.png"/>
+		<Sprite path="Feminist Laser/startup/6.png"/>
+		<Sprite path="Feminist Laser/startup/5.png"/>
+		<Sprite path="Feminist Laser/startup/4.png"/>
+		<Sprite path="Feminist Laser/startup/3.png"/>
+		<Sprite path="Feminist Laser/startup/2.png"/>
+		<Sprite path="Feminist Laser/startup/1.png"/>
+		<Hitbox x="-10" y="-10" width="20" height="20" angle="0"/>
+		<OnHit>
+			<Sprite path="hit1.png"/>
+			<Sprite path="hit2.png"/>
+			<Sprite path="hit3.png"/>
+			<Sprite path="hit4.png"/>
+			<Sprite path="hit5.png"/>
+		</OnHit>
+	</Bullet>
+
+	<Bullet name="Feminist Laser active" damage="60">
+		<Sprite path="Feminist Laser/active/1.png"/>
+		<Sprite path="Feminist Laser/active/2.png"/>
+		<Sprite path="Feminist Laser/active/3.png"/>
+		<Sprite path="Feminist Laser/active/4.png"/>
+		<Hitbox x="-600" y="-120" width="1200" height="240" angle="0"/>
+		<OnHit>
+			<Sprite path="hit1.png"/>
+			<Sprite path="hit2.png"/>
+			<Sprite path="hit3.png"/>
+			<Sprite path="hit4.png"/>
+			<Sprite path="hit5.png"/>
+		</OnHit>
+	</Bullet>
+
+	<Bullet name="Rocket" damage="20">
+		<Sprite path="Rocket/1.png"/>
+		<Sprite path="Rocket/2.png"/>
+		<Hitbox x="-10" y="-10" width="20" height="20" angle="0"/>
+		<OnHit>
+			<Sprite path="hit1.png"/>
+			<Sprite path="hit2.png"/>
+			<Sprite path="hit3.png"/>
+			<Sprite path="hit4.png"/>
+			<Sprite path="hit5.png"/>
+		</OnHit>
+	</Bullet>
+
+</BulletsFile>

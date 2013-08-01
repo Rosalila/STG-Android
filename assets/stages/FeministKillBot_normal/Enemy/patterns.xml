@@ -1,0 +1,301 @@
+<PatternsFile>
+	<Type name="InitialD">
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-15" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="8" max_velocity="30" acceleration="0" a_frequency="10" angle="-10" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-5" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="8" max_velocity="30" acceleration="0" a_frequency="10" angle="0" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="5" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="8" max_velocity="30" acceleration="0" a_frequency="10" angle="10" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="15" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+
+
+
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-15" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="8" max_velocity="30" acceleration="0" a_frequency="10" angle="-10" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-5" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="8" max_velocity="30" acceleration="0" a_frequency="10" angle="0" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="5" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="8" max_velocity="30" acceleration="0" a_frequency="10" angle="10" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="15" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="60" duration="600">
+			<Modifier at="20" angle="0" aim_player="yes"/>
+		</Pattern>
+	</Type>
+
+	<Type name="Crazy eyes">
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="0" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="10" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="20" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="30" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="40" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="50" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="60" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="70" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="80" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="100" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="110" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="120" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="130" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="140" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="150" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="160" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="170" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="180" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="190" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="200" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="210" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="220" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="230" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="240" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="250" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="260" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="270" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="280" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="290" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="300" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="310" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="320" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="330" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="4" max_velocity="30" acceleration="0" a_frequency="10" angle="340" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Eye Lazor" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="350" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-45" offset_y="145" startup="0" cooldown="80" duration="600"/>
+	</Type>
+
+	<Type name="Happy meal">
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="20" angle="180"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="25" angle="180"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="30" angle="180"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="35" angle="180"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="15" angle="180"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="20" angle="180"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="25" angle="180"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="30" angle="180"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="35" angle="180"/>
+		</Pattern>
+
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="0" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="5" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="10" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="15" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="20" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="25" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="30" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="35" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="5" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="10" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="15" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="20" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="25" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="30" angle="0"/>
+		</Pattern>
+		<Pattern bullet="Rocket" velocity="10" max_velocity="30" acceleration="0" a_frequency="10" angle="-90" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="20" duration="600">
+			<Modifier at="35" angle="0"/>
+		</Pattern>
+
+
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="8" animation_velocity="5" offset_x="-55" offset_y="157" startup="0" cooldown="10" duration="9999">
+			<Modifier at="20" angle="135"/>
+		</Pattern>
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="8" animation_velocity="5" offset_x="-55" offset_y="157" startup="0" cooldown="10" duration="9999">
+			<Modifier at="20" angle="135"/>
+			<Modifier at="60" angle="225"/>
+		</Pattern>
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="8" animation_velocity="5" offset_x="-55" offset_y="157" startup="0" cooldown="10" duration="9999">
+			<Modifier at="20" angle="135"/>
+			<Modifier at="60" angle="225"/>
+			<Modifier at="100" angle="135"/>
+		</Pattern>
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="8" animation_velocity="5" offset_x="-55" offset_y="157" startup="0" cooldown="10" duration="9999">
+			<Modifier at="20" angle="135"/>
+			<Modifier at="60" angle="225"/>
+			<Modifier at="100" angle="135"/>
+			<Modifier at="140" angle="225"/>
+		</Pattern>
+
+
+
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="8" animation_velocity="5" offset_x="-55" offset_y="157" startup="0" cooldown="10" duration="9999">
+			<Modifier at="20" angle="225"/>
+		</Pattern>
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="8" animation_velocity="5" offset_x="-55" offset_y="157" startup="0" cooldown="10" duration="9999">
+			<Modifier at="20" angle="225"/>
+			<Modifier at="60" angle="135"/>
+		</Pattern>
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="8" animation_velocity="5" offset_x="-55" offset_y="157" startup="0" cooldown="10" duration="9999">
+			<Modifier at="20" angle="225"/>
+			<Modifier at="60" angle="135"/>
+			<Modifier at="100" angle="225"/>
+		</Pattern>
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="8" animation_velocity="5" offset_x="-55" offset_y="157" startup="0" cooldown="10" duration="9999">
+			<Modifier at="20" angle="225"/>
+			<Modifier at="60" angle="135"/>
+			<Modifier at="100" angle="225"/>
+			<Modifier at="140" angle="135"/>
+		</Pattern>
+
+	</Type>
+
+	<Type name="Rockets">
+		<Pattern bullet="Rocket" velocity="3" max_velocity="30" acceleration="0" a_frequency="10" angle="0" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="0" offset_y="0" startup="0" cooldown="60" duration="600"/>
+		<Pattern bullet="Rocket" velocity="3" max_velocity="30" acceleration="0" a_frequency="10" angle="0" angle_change="0" aim_player="yes" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="0" offset_y="0" startup="0" cooldown="60" duration="600"/>
+
+		<Pattern bullet="Rocket" velocity="-1" max_velocity="30" acceleration="1" a_frequency="10" angle="180" angle_change="0" stop_ac_at="120" ac_frequency="60" animation_velocity="5" offset_x="-70" offset_y="184" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Rocket" velocity="-1" max_velocity="20" acceleration="1" a_frequency="10" angle="180" angle_change="0" stop_ac_at="120" ac_frequency="60" animation_velocity="5" offset_x="-50" offset_y="184" startup="10" cooldown="80" duration="600"/>
+		<Pattern bullet="Rocket" velocity="-1" max_velocity="10" acceleration="1" a_frequency="10" angle="180" angle_change="0" stop_ac_at="120" ac_frequency="60" animation_velocity="5" offset_x="-30" offset_y="184" startup="20" cooldown="80" duration="600"/>
+
+		<Pattern bullet="Rocket" velocity="-1" max_velocity="30" acceleration="1" a_frequency="10" angle="180" angle_change="0" stop_ac_at="120" ac_frequency="60" animation_velocity="5" offset_x="70" offset_y="184" startup="0" cooldown="80" duration="600"/>
+		<Pattern bullet="Rocket" velocity="-1" max_velocity="20" acceleration="1" a_frequency="10" angle="180" angle_change="0" stop_ac_at="120" ac_frequency="60" animation_velocity="5" offset_x="50" offset_y="184" startup="10" cooldown="80" duration="600"/>
+		<Pattern bullet="Rocket" velocity="-1" max_velocity="10" acceleration="1" a_frequency="10" angle="180" angle_change="0" stop_ac_at="120" ac_frequency="60" animation_velocity="5" offset_x="30" offset_y="184" startup="20" cooldown="80" duration="600"/>
+	</Type>
+
+	<Type name="Feminist Laser">
+		<Pattern bullet="Feminist Laser startup" velocity="0" max_velocity="30" acceleration="0" a_frequency="10" angle="180" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-933" offset_y="110" startup="0" cooldown="200" duration="60"/>
+		<Pattern bullet="Feminist Laser active" velocity="0" max_velocity="30" acceleration="0" a_frequency="10" angle="180" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-933" offset_y="110" startup="55" cooldown="200" duration="100"/>
+		<Pattern bullet="Feminist Laser cooldown" velocity="0" max_velocity="30" acceleration="0" a_frequency="10" angle="180" angle_change="0" stop_ac_at="99999" ac_frequency="0" animation_velocity="5" offset_x="-933" offset_y="110" startup="150" cooldown="200" duration="55"/>
+	</Type>
+
+	<Type name="KowaiiDesu">
+
+
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="15" animation_velocity="5" offset_x="20" offset_y="155" startup="0" cooldown="5" duration="9999">
+			<Modifier at="20" angle="-30" aim_player="yes"/>
+			<Modifier at="30" angle="30" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="15" animation_velocity="5" offset_x="20" offset_y="155" startup="0" cooldown="5" duration="9999">
+			<Modifier at="20" angle="30" aim_player="yes"/>
+			<Modifier at="30" angle="-30" aim_player="yes"/>
+		</Pattern>
+
+
+
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="15" animation_velocity="5" offset_x="20" offset_y="155" startup="0" cooldown="5" duration="9999">
+			<Modifier at="20" angle="-70" aim_player="yes"/>
+			<Modifier at="30" angle="70" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="15" animation_velocity="5" offset_x="20" offset_y="155" startup="0" cooldown="5" duration="9999">
+			<Modifier at="20" angle="70" aim_player="yes"/>
+			<Modifier at="30" angle="-70" aim_player="yes"/>
+		</Pattern>
+
+
+
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="15" animation_velocity="5" offset_x="20" offset_y="155" startup="0" cooldown="5" duration="9999">
+			<Modifier at="20" angle="-110" aim_player="yes"/>
+			<Modifier at="30" angle="110" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="15" animation_velocity="5" offset_x="20" offset_y="155" startup="0" cooldown="5" duration="9999">
+			<Modifier at="20" angle="110" aim_player="yes"/>
+			<Modifier at="30" angle="-110" aim_player="yes"/>
+		</Pattern>
+
+
+
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="15" animation_velocity="5" offset_x="20" offset_y="155" startup="0" cooldown="5" duration="9999">
+			<Modifier at="20" angle="-150" aim_player="yes"/>
+			<Modifier at="30" angle="150" aim_player="yes"/>
+		</Pattern>
+		<Pattern bullet="Eye Lazor" velocity="0" angle="180" acceleration="1" a_frequency="2" max_velocity="15" animation_velocity="5" offset_x="20" offset_y="155" startup="0" cooldown="5" duration="9999">
+			<Modifier at="20" angle="150" aim_player="yes"/>
+			<Modifier at="30" angle="-150" aim_player="yes"/>
+		</Pattern>
+
+
+
+
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="-50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="10" acceleration="1" a_frequency="10" angle="0" angle_change="-4" random_angle="360" stop_ac_at="99999" ac_frequency="3" animation_velocity="5" offset_x="50" offset_y="184" startup="0" cooldown="80" duration="9999"/>
+
+		<Pattern bullet="Rocket" velocity="2" max_velocity="5" acceleration="1" a_frequency="10" aim_player="yes" stop_ac_at="99999" animation_velocity="5" offset_x="50" offset_y="184" startup="10" cooldown="80" duration="9999"/>
+		<Pattern bullet="Rocket" velocity="2" max_velocity="5" acceleration="1" a_frequency="10" aim_player="yes" stop_ac_at="99999" animation_velocity="5" offset_x="50" offset_y="184" startup="20" cooldown="80" duration="9999"/>
+	</Type>
+</PatternsFile>

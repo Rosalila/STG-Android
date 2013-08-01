@@ -1,10 +1,10 @@
-/home/turupawn/Projects/Eclipse/Fighter_android_port/obj/local/armeabi/objs/SDL2/src/timer/unix/SDL_systimer.o: \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/timer/unix/SDL_systimer.c \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_platform.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/begin_code.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/close_code.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config_android.h \
+/home/turupawn/Projects/Eclipse/stg_android_port/obj/local/armeabi/objs/SDL2/src/timer/unix/SDL_systimer.o: \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/timer/unix/SDL_systimer.c \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_platform.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config_android.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/stdio.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -48,9 +48,9 @@
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/errno.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm-generic/errno.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm-generic/errno-base.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_timer.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_stdinc.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_timer.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/stdlib.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/alloca.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/strings.h \
@@ -58,18 +58,18 @@
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/inttypes.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/ctype.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/math.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_error.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_error.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/time.h
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_platform.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_platform.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/begin_code.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/close_code.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config_android.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config_android.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/stdio.h:
 
@@ -157,11 +157,11 @@
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm-generic/errno-base.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_timer.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_timer.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_stdinc.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/stdlib.h:
 
@@ -177,6 +177,6 @@
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/math.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_error.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_error.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/time.h:

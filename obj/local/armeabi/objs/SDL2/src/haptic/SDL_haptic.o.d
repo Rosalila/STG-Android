@@ -1,14 +1,14 @@
-/home/turupawn/Projects/Eclipse/Fighter_android_port/obj/local/armeabi/objs/SDL2/src/haptic/SDL_haptic.o: \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/haptic/SDL_haptic.c \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_platform.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/begin_code.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/close_code.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config_android.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/haptic/SDL_syshaptic.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_haptic.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_stdinc.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h \
+/home/turupawn/Projects/Eclipse/stg_android_port/obj/local/armeabi/objs/SDL2/src/haptic/SDL_haptic.o: \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/haptic/SDL_haptic.c \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_platform.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config_android.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/haptic/SDL_syshaptic.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_haptic.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/types.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/stdint.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/_types.h \
@@ -41,29 +41,29 @@
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/machine/limits.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/syslimits.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/page.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_error.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_joystick.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/haptic/SDL_haptic_c.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/haptic/../joystick/SDL_joystick_c.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_joystick.h
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_error.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_joystick.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/haptic/SDL_haptic_c.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/haptic/../joystick/SDL_joystick_c.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_joystick.h
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_platform.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_platform.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/begin_code.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/close_code.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config_android.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config_android.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/haptic/SDL_syshaptic.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/haptic/SDL_syshaptic.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_haptic.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_haptic.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_stdinc.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/types.h:
 
@@ -129,12 +129,12 @@
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/page.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_error.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_error.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_joystick.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_joystick.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/haptic/SDL_haptic_c.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/haptic/SDL_haptic_c.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/haptic/../joystick/SDL_joystick_c.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/haptic/../joystick/SDL_joystick_c.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_joystick.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_joystick.h:

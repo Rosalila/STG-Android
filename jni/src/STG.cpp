@@ -13,18 +13,10 @@ STG::STG(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,Player*playe
     iteration=0;
 
     //XML Initializations
-    char *archivo=new char[255];
-    strcpy(archivo,"config.xml");
-    TiXmlDocument doc_t( archivo );
-    doc_t.LoadFile();
-    TiXmlDocument *doc;
-    doc=&doc_t;
 
-    TiXmlNode *config_file=doc->FirstChild("ConfigFile");
+    username="testa";
 
-    TiXmlNode *user_node=config_file->FirstChild("User");
-    username=user_node->ToElement()->Attribute("name");
-
+/*
     TiXmlNode *you_loose_node=config_file->FirstChild("YouLoose");
 
     int you_loose_x=atoi(you_loose_node->ToElement()->Attribute("x"));
@@ -55,7 +47,7 @@ STG::STG(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,Player*playe
         std::string path=sprites_node->ToElement()->Attribute("path");
         you_win.addImage(painter->getTexture(path));
     }
-
+*/
     stage->playMusic();
 
     mainLoop();
@@ -67,13 +59,38 @@ void STG::mainLoop()
     bool end_key_up_joystick=false;
     for (;;)
     {
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "1111111111111111");
         if(receiver->IsKeyDownn(SDLK_ESCAPE))
         {
             break;
         }
 
         render();
-        logic();
+        //logic();
+
+if(receiver->isOuyaDown(6))
+	player->setX(player->getX()+6);
+if(receiver->isOuyaDown(4))
+	player->setX(player->getX()-6);
+if(receiver->isOuyaDown(2))
+	player->setY(player->getY()+6);
+if(receiver->isOuyaDown(8))
+	player->setY(player->getY()-6);
+player->logic(0);
+
+/*
+if(receiver->isOuyaDown(6))
+	player->setX(player->getX()+1);
+if(receiver->isOuyaDown(4))
+	player->setX(player->getX()-1);
+if(receiver->isOuyaDown(8))
+	player->setY(player->getY()+1);
+if(receiver->isOuyaDown(2))
+	player->setY(player->getY()-1);
+if(receiver->isOuyaDown('o'))
+	player->setY(player->getY()-1);
+*/
+
         if(player->getHP()==0
            || enemy->getHP()==0)
         {
@@ -152,13 +169,14 @@ void STG::logic()
 
 void STG::render()
 {
-    stage->dibujarBack();
+//    stage->dibujarBack();
     player->render();
-    enemy->render();
+//    enemy->render();
 
-    stage->render();
-    stage->dibujarFront();
+//    stage->render();
+//    stage->dibujarFront();
 
+/*
     for (std::list<Pattern*>::iterator pattern = enemy->getActivePatterns()->begin(); pattern != enemy->getActivePatterns()->end(); pattern++)
     {
         Pattern*p=(Pattern*)*pattern;
@@ -201,7 +219,7 @@ void STG::render()
         you_loose.render();
 
     painter->drawText("Time: "+toString(iteration),0,65);
-
+*/
 
     painter->updateScreen();
 }

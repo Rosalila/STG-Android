@@ -1,5 +1,7 @@
 package org.libsdl.app;
 
+import java.io.File;
+
 import javax.microedition.khronos.egl.EGL10;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.egl.EGLContext;
@@ -8,6 +10,7 @@ import javax.microedition.khronos.egl.EGLSurface;
 
 import android.app.*;
 import android.content.*;
+import android.content.res.AssetManager;
 import android.view.*;
 import android.view.inputmethod.BaseInputConnection;
 import android.view.inputmethod.EditorInfo;
@@ -25,6 +28,16 @@ import android.hardware.*;
     SDL Activity
 */
 public class SDLActivity extends Activity {
+	
+	public AssetManager mAssetMgr;
+
+	@Override
+	public File getCacheDir() {
+		// TODO Auto-generated method stub
+		Log.v("SDLLLLLL", "onCreate()OOOOOOOOOOOOOOO");
+		return super.getCacheDir();
+	}
+	
     private static final String TAG = "SDL";
 
     // Keep track of the paused state
@@ -49,21 +62,24 @@ public class SDLActivity extends Activity {
     protected static EGLDisplay  mEGLDisplay;
     protected static EGLConfig   mEGLConfig;
     protected static int mGLMajor, mGLMinor;
+    
+    int int_test=75;
 
     // Load the .so
     static {
         System.loadLibrary("SDL2");
-        //System.loadLibrary("SDL2_image");
+        System.loadLibrary("SDL2_image");
         //System.loadLibrary("SDL2_mixer");
         //System.loadLibrary("SDL2_net");
         //System.loadLibrary("SDL2_ttf");
         System.loadLibrary("main");
+        //System.loadLibrary("main_android");
     }
 
     // Setup
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //Log.v("SDL", "onCreate()");
+        Log.v("SDL", "onCreate()");
         super.onCreate(savedInstanceState);
         
         // So we can call stuff from static callbacks
@@ -71,12 +87,15 @@ public class SDLActivity extends Activity {
 
         // Set up the surface
         mEGLSurface = EGL10.EGL_NO_SURFACE;
-        mSurface = new SDLSurface(getApplication());
+        mSurface = new SDLSurface(getApplication(),this);
 
         mLayout = new AbsoluteLayout(this);
         mLayout.addView(mSurface);
 
         setContentView(mLayout);
+        
+        //mio
+        mAssetMgr = getAssets();
     }
 
     // Events
@@ -511,9 +530,27 @@ public class SDLActivity extends Activity {
     Simple nativeInit() runnable
 */
 class SDLMain implements Runnable {
+	
+	SDLActivity sdl_activity;
+	
+	public int int_test=8;
+	
+	public native int cFunction();
+	
+	public native int classParam(SDLMain object);
+	
+	int x()
+	{
+		return 17;
+	}
+	
     @Override
     public void run() {
         // Runs SDL_main()
+    	int_test=8;
+    	classParam(this);
+    	int a=cFunction();
+    	
         SDLActivity.nativeInit();
 
         //Log.v("SDL", "SDL thread terminated");
@@ -535,10 +572,15 @@ class SDLSurface extends SurfaceView implements SurfaceHolder.Callback,
 
     // Keep track of the surface size to normalize touch events
     protected static float mWidth, mHeight;
+    
+    SDLActivity sdl_activity;
 
     // Startup    
-    public SDLSurface(Context context) {
+    public SDLSurface(Context context, SDLActivity sdl_activity) {
         super(context);
+        
+        this.sdl_activity=sdl_activity;
+        
         getHolder().addCallback(this); 
     
         setFocusable(true);
@@ -644,8 +686,11 @@ class SDLSurface extends SurfaceView implements SurfaceHolder.Callback,
         if (SDLActivity.mSDLThread == null) {
             // This is the entry point to the C app.
             // Start up the C app thread and enable sensor input for the first time
-
-            SDLActivity.mSDLThread = new Thread(new SDLMain(), "SDLThread");
+        	
+        	SDLMain sdl_main = new SDLMain();
+        	sdl_main.sdl_activity=sdl_activity;
+        	
+            SDLActivity.mSDLThread = new Thread(sdl_main, "SDLThread");
             enableSensor(Sensor.TYPE_ACCELEROMETER, true);
             SDLActivity.mSDLThread.start();
         } else {

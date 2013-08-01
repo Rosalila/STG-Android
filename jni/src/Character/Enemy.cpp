@@ -33,7 +33,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 
     loadFromXML();
 
-    loadModifiersFromXML();
+    //loadModifiersFromXML();
     life_bar=painter->getTexture(directory+"life_bar.png");
 }
 

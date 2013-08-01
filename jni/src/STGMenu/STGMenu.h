@@ -8,6 +8,11 @@
 #include "RosalilaSound/RosalilaSound.h"
 #include "../STG.h"
 
+#include <android/asset_manager.h>
+
+#include <android/log.h>
+#define APPNAME "MyApp"
+
 class Menu
 {
 private:
@@ -15,8 +20,8 @@ private:
     Sound* sonido;
     RosalilaGraphics* painter;
     Receiver* receiver;
-    std::vector<Elemento*> elementos;
-    MenuContenedor*selectables_container;
+    
+
     TiXmlDocument abrirXml(char* archivo);
     void dibujarMenu();
     int pos_stage,pos_ia_lvl;
@@ -25,6 +30,8 @@ private:
 
     void iniciarJuego(std::string character_name,std::string stage_name);
 public:
+std::vector<Elemento*> elementos;
+MenuContenedor*selectables_container;
     std::string music_path;
     RosalilaInputs *inputa,*inputb;
     Stage* stage;

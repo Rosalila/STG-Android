@@ -1,0 +1,48 @@
+<ModifiersFile>
+	<!-- <Modifier at="1" iterator="1100" /> -->
+	<Modifier at="0" velocity="1" angle_change="5"/>
+
+	<Modifier at="100" pattern_type="InitialD"/>
+	<Modifier at="1000" pattern_type=""/>
+
+	<Modifier at="1100" pattern_type="Crazy eyes" />
+	<Modifier at="2950" pattern_type="" velocity="0" angle_change="0"/>
+
+	<Modifier at="3100" pattern_type="Happy meal" velocity="0"/>
+
+	<Modifier at="3300" velocity="2" angle="180" repeat="4" repeat_frequency="100"/>
+	<Modifier at="3350" angle="0" repeat="4" repeat_frequency="100"/>
+
+	<Modifier at="3800" repeat="4" repeat_frequency="150" angle="180"/>
+	<Modifier at="3850" repeat="4" repeat_frequency="150" angle="-60"/>
+	<Modifier at="3900" repeat="4" repeat_frequency="150" angle="60"/>
+
+	<Modifier at="4550" pattern_type="" velocity="5" angle="-90"/>
+
+	<Modifier at="4600" pattern_type="Rockets" velocity="5" angle="90"/>
+	<Modifier at="4700" angle="-90"/>
+	<Modifier at="4800" angle="90"/>
+
+	<Modifier at="4900" pattern_type="Feminist Laser" velocity="0"/>
+	<Modifier at="5100" pattern_type=""/>
+
+	<Modifier at="5200" pattern_type="Rockets" velocity="5" angle="-90"/>
+	<Modifier at="5300" angle="90"/>
+	<Modifier at="5400" angle="-90"/>
+	<Modifier at="5500" angle="90"/>
+	<Modifier at="5600" angle="-90"/>
+	<Modifier at="5700" angle="90"/>
+
+	<Modifier at="5800" pattern_type="Feminist Laser" velocity="0"/>
+	<Modifier at="6000" pattern_type=""/>
+
+	<Modifier at="6100" pattern_type="Rockets" velocity="5" angle="-90"/>
+	<Modifier at="6200" angle="90"/>
+	<Modifier at="6300" angle="-90"/>
+	<Modifier at="6400" angle="90"/>
+	<Modifier at="6500" angle="-90"/>
+	<Modifier at="6600" pattern_type="" angle="90"/>
+
+	<Modifier at="6700" velocity="0" pattern_type="KowaiiDesu"/>
+<!-- -->
+</ModifiersFile>

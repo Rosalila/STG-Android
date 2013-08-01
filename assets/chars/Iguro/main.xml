@@ -1,0 +1,54 @@
+<MainFile>
+	<LifeBar color_g="128" rect_offset_x="70" rect_offset_y="36" rect_width="373" rect_height="32"/>
+	<SlowBar rect_offset_x="0" rect_offset_y="0" rect_width="373" rect_height="10" x="70" y="55" color_b="128" color_g="64" cooldown_color_r="50" cooldown_color_g="50" cooldown_color_b="50" cooldown_color_a="255"/>
+	<Attributes slow="500" velocity="6" animation_velocity="4" hp="500" initial_x="100" initial_y="500"/>
+	<Hitbox x="30" y="-30" width="20" height="20" angle="0"/>
+	<Sprites orientation="idle">
+		<Sprite path="nuevas/1iddle.png"/>
+		<Sprite path="nuevas/2iddle.png"/>
+	</Sprites>
+	<Sprites orientation="up">
+		<Sprite path="nuevas/1up.png"/>
+		<Sprite path="nuevas/2up.png"/>
+	</Sprites>
+	<Sprites orientation="down">
+		<Sprite path="nuevas/1down.png"/>
+		<Sprite path="nuevas/2down.png"/>
+	</Sprites>
+	<Sprites orientation="left">
+		<Sprite path="nuevas/1back.png"/>
+		<Sprite path="nuevas/2back.png"/>
+	</Sprites>
+	<Sprites orientation="right">
+		<Sprite path="nuevas/1forward.png"/>
+		<Sprite path="nuevas/2forward.png"/>
+	</Sprites>
+	<Sprites orientation="destroyed">
+		<Sprite path="death/1.png"/>
+		<Sprite path="death/2.png"/>
+		<Sprite path="death/3.png"/>
+		<Sprite path="death/4.png"/>
+		<Sprite path="death/5.png"/>
+		<Sprite path="death/6.png"/>
+	</Sprites>
+<!--	<Sprites orientation="idle">
+		<Sprite path="nave_idle01.png"/>
+		<Sprite path="nave_idle02.png"/>
+	</Sprites>
+	<Sprites orientation="up">
+		<Sprite path="nave_up01.png"/>
+		<Sprite path="nave_up02.png"/>
+	</Sprites>
+	<Sprites orientation="down">
+		<Sprite path="nave_down01.png"/>
+		<Sprite path="nave_down02.png"/>
+	</Sprites>
+	<Sprites orientation="left">
+		<Sprite path="nave_back01.png"/>
+		<Sprite path="nave_back02.png"/>
+	</Sprites>
+	<Sprites orientation="right">
+		<Sprite path="nave_forward01.png"/>
+		<Sprite path="nave_forward02.png"/>
+	</Sprites> -->
+</MainFile>

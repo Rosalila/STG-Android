@@ -5,8 +5,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := main
 
 SDL_PATH := ../SDL
+SDL_IMAGE_PATH := ../SDL2_image
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/$(SDL_PATH)/include
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/$(SDL_IMAGE_PATH)
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/Rosalila
 
 # Add your application source files here...
@@ -60,11 +62,19 @@ LOCAL_SRC_FILES += $(LOCAL_PATH)/Rosalila/RosalilaAI/Transicion.cpp
 
 #LOCAL_SRC_FILES := $(wildcard $(LOCAL_PATH)/*/*.cpp)
 
-LOCAL_SHARED_LIBRARIES := SDL2
+LOCAL_SHARED_LIBRARIES := SDL2 SDL2_image
 
-LOCAL_LDLIBS := -lGLESv1_CM -llog
+LOCAL_STATIC_LIBRARIES := android_native_app_glue 
+
+LOCAL_CXXFLAGS := -DFREEGLUT_GLES2
+
+LOCAL_LDLIBS := -landroid -llog -lEGL -lGLESv1_CM -lOpenSLES -lGLESv2
+#-lGLESv1_CM
+#-lGLESv2
+
 #-lglut
 #-lGL
 #-lGLU
 
 include $(BUILD_SHARED_LIBRARY)
+$(call import-module,android/native_app_glue)

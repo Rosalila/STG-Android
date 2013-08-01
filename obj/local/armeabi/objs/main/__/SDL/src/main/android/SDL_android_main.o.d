@@ -1,10 +1,10 @@
-/home/turupawn/Projects/Eclipse/Fighter_android_port/obj/local/armeabi/objs/main/__/SDL/src/main/android/SDL_android_main.o: \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/src/../SDL/src/main/android/SDL_android_main.c \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_platform.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/begin_code.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/close_code.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config_android.h \
+/home/turupawn/Projects/Eclipse/stg_android_port/obj/local/armeabi/objs/main/__/SDL/src/main/android/SDL_android_main.o: \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/../SDL/src/main/android/SDL_android_main.c \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_platform.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config_android.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdarg.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cprolog.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/config/features.h \
@@ -19,9 +19,9 @@
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/config/_native_headers.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_epilog.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_main.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_stdinc.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_main.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/types.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stddef.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/stdint.h \
@@ -64,15 +64,15 @@
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/page.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/jni.h
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_platform.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_platform.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/begin_code.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/close_code.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config_android.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config_android.h:
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdarg.h:
 
@@ -102,11 +102,11 @@
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_main.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_main.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_stdinc.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/types.h:
 

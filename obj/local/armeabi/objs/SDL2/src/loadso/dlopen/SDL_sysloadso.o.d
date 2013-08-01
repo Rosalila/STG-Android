@@ -1,10 +1,10 @@
-/home/turupawn/Projects/Eclipse/Fighter_android_port/obj/local/armeabi/objs/SDL2/src/loadso/dlopen/SDL_sysloadso.o: \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/loadso/dlopen/SDL_sysloadso.c \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_platform.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/begin_code.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/close_code.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config_android.h \
+/home/turupawn/Projects/Eclipse/stg_android_port/obj/local/armeabi/objs/SDL2/src/loadso/dlopen/SDL_sysloadso.o: \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/loadso/dlopen/SDL_sysloadso.c \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_platform.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config_android.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/stdio.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -22,9 +22,9 @@
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/machine/kernel.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/sysmacros.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/dlfcn.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_loadso.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_stdinc.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_loadso.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/stdlib.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/string.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/malloc.h \
@@ -41,17 +41,17 @@
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/machine/limits.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/syslimits.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/page.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_error.h
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_error.h
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_platform.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_platform.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/begin_code.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/close_code.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config_android.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config_android.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/stdio.h:
 
@@ -87,11 +87,11 @@
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/dlfcn.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_loadso.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_loadso.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_stdinc.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/stdlib.h:
 
@@ -125,4 +125,4 @@
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/page.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_error.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_error.h:

@@ -1,0 +1,170 @@
+<StageFile>
+	<Bounds x1="0" y1="0" x2="1366" y2="768"/>
+	<Misc velocity="10"/>
+
+	<BackLayer frame_duration="40" depth_effect_x="0" depth_effect_y="0" align_x="0" align_y="0" separation_x="0">
+		<frame image_path="fondo.png" width="1366" height="768"/>
+	</BackLayer>
+
+	<BackLayer frame_duration="40" depth_effect_x="120" depth_effect_y="0" align_x="300" align_y="350" separation_x="2000">
+		<frame image_path="planetaguerra.png" width="155" height="167"/>
+	</BackLayer>
+
+
+	<BackLayer frame_duration="5" depth_effect_x="120" depth_effect_y="0" align_x="300" align_y="350" separation_x="2000">
+		<frame image_path="ex1.png" width="32" height="32"/>
+		<frame image_path="ex2.png" width="32" height="32"/>
+		<frame image_path="ex3.png" width="32" height="32"/>
+		<frame image_path="ex4.png" width="32" height="32"/>
+		<frame image_path="ex5.png" width="32" height="32"/>
+		<frame image_path="ex6.png" width="32" height="32"/>
+		<frame image_path="ex7.png" width="32" height="32"/>
+	</BackLayer>
+	
+	<BackLayer frame_duration="3" depth_effect_x="120" depth_effect_y="0" align_x="350" align_y="375" separation_x="2000">
+		<frame image_path="ex1.png" width="32" height="32"/>
+		<frame image_path="ex2.png" width="32" height="32"/>
+		<frame image_path="ex3.png" width="32" height="32"/>
+		<frame image_path="ex4.png" width="32" height="32"/>
+		<frame image_path="ex5.png" width="32" height="32"/>
+		<frame image_path="ex6.png" width="32" height="32"/>
+		<frame image_path="ex7.png" width="32" height="32"/>
+	</BackLayer>
+	
+	<BackLayer frame_duration="4" depth_effect_x="120" depth_effect_y="0" align_x="400" align_y="445" separation_x="2000">
+		<frame image_path="ex1.png" width="32" height="32"/>
+		<frame image_path="ex2.png" width="32" height="32"/>
+		<frame image_path="ex3.png" width="32" height="32"/>
+		<frame image_path="ex4.png" width="32" height="32"/>
+		<frame image_path="ex5.png" width="32" height="32"/>
+		<frame image_path="ex6.png" width="32" height="32"/>
+		<frame image_path="ex7.png" width="32" height="32"/>
+	</BackLayer>
+
+	<BackLayer frame_duration="9" depth_effect_x="120" depth_effect_y="0" align_x="450" align_y="415" separation_x="2000">
+		<frame image_path="ex1.png" width="32" height="32"/>
+		<frame image_path="ex2.png" width="32" height="32"/>
+		<frame image_path="ex3.png" width="32" height="32"/>
+		<frame image_path="ex4.png" width="32" height="32"/>
+		<frame image_path="ex5.png" width="32" height="32"/>
+		<frame image_path="ex6.png" width="32" height="32"/>
+		<frame image_path="ex7.png" width="32" height="32"/>
+	</BackLayer>
+	
+	
+	<BackLayer frame_duration="7" depth_effect_x="120" depth_effect_y="0" align_x="350" align_y="405" separation_x="2000">
+		<frame image_path="ex1.png" width="32" height="32"/>
+		<frame image_path="ex2.png" width="32" height="32"/>
+		<frame image_path="ex3.png" width="32" height="32"/>
+		<frame image_path="ex4.png" width="32" height="32"/>
+		<frame image_path="ex5.png" width="32" height="32"/>
+		<frame image_path="ex6.png" width="32" height="32"/>
+		<frame image_path="ex7.png" width="32" height="32"/>
+	</BackLayer>
+
+	<BackLayer frame_duration="4" depth_effect_x="120" depth_effect_y="0" align_x="320" align_y="410" separation_x="2000">
+		<frame image_path="ex1.png" width="32" height="32"/>
+		<frame image_path="ex2.png" width="32" height="32"/>
+		<frame image_path="ex3.png" width="32" height="32"/>
+		<frame image_path="ex4.png" width="32" height="32"/>
+		<frame image_path="ex5.png" width="32" height="32"/>
+		<frame image_path="ex6.png" width="32" height="32"/>
+		<frame image_path="ex7.png" width="32" height="32"/>
+	</BackLayer>
+
+
+
+
+	<BackLayer frame_duration="8" depth_effect_x="120" depth_effect_y="0" align_x="463" align_y="423" separation_x="2000">
+		<frame image_path="ex1.png" width="32" height="32"/>
+		<frame image_path="ex2.png" width="32" height="32"/>
+		<frame image_path="ex3.png" width="32" height="32"/>
+		<frame image_path="ex4.png" width="32" height="32"/>
+		<frame image_path="ex5.png" width="32" height="32"/>
+		<frame image_path="ex6.png" width="32" height="32"/>
+		<frame image_path="ex7.png" width="32" height="32"/>
+	</BackLayer>
+	
+	<BackLayer frame_duration="5" depth_effect_x="120" depth_effect_y="0" align_x="435" align_y="395" separation_x="2000">
+		<frame image_path="ex1.png" width="32" height="32"/>
+		<frame image_path="ex2.png" width="32" height="32"/>
+		<frame image_path="ex3.png" width="32" height="32"/>
+		<frame image_path="ex4.png" width="32" height="32"/>
+		<frame image_path="ex5.png" width="32" height="32"/>
+		<frame image_path="ex6.png" width="32" height="32"/>
+		<frame image_path="ex7.png" width="32" height="32"/>
+	</BackLayer>
+	
+	
+		<BackLayer frame_duration="7" depth_effect_x="120" depth_effect_y="0" align_x="427" align_y="393" separation_x="2000">
+		<frame image_path="ex1.png" width="32" height="32"/>
+		<frame image_path="ex2.png" width="32" height="32"/>
+		<frame image_path="ex3.png" width="32" height="32"/>
+		<frame image_path="ex4.png" width="32" height="32"/>
+		<frame image_path="ex5.png" width="32" height="32"/>
+		<frame image_path="ex6.png" width="32" height="32"/>
+		<frame image_path="ex7.png" width="32" height="32"/>
+	</BackLayer>
+	
+	
+		<BackLayer frame_duration="9" depth_effect_x="120" depth_effect_y="0" align_x="421" align_y="405" separation_x="2000">
+		<frame image_path="ex1.png" width="32" height="32"/>
+		<frame image_path="ex2.png" width="32" height="32"/>
+		<frame image_path="ex3.png" width="32" height="32"/>
+		<frame image_path="ex4.png" width="32" height="32"/>
+		<frame image_path="ex5.png" width="32" height="32"/>
+		<frame image_path="ex6.png" width="32" height="32"/>
+		<frame image_path="ex7.png" width="32" height="32"/>
+	</BackLayer>
+	
+	
+		<BackLayer frame_duration="4" depth_effect_x="120" depth_effect_y="0" align_x="413" align_y="403" separation_x="2000">
+		<frame image_path="ex1.png" width="32" height="32"/>
+		<frame image_path="ex2.png" width="32" height="32"/>
+		<frame image_path="ex3.png" width="32" height="32"/>
+		<frame image_path="ex4.png" width="32" height="32"/>
+		<frame image_path="ex5.png" width="32" height="32"/>
+		<frame image_path="ex6.png" width="32" height="32"/>
+		<frame image_path="ex7.png" width="32" height="32"/>
+	</BackLayer>
+
+
+
+	<BackLayer frame_duration="5" depth_effect_x="3" depth_effect_y="0" align_x="300" align_y="440" separation_x="0">
+		<frame image_path="restosbrillantes.png" width="3000" height="75"/>
+	</BackLayer>
+	
+
+
+	<BackLayer frame_duration="20" depth_effect_x="80" depth_effect_y="0" align_x="900" align_y="350" separation_x="2000">
+<!--		<frame image_path="1city.png" width="460" height="484"/> -->
+			<frame image_path="2city.png" width="483" height="484"/>
+			<frame image_path="3city.png" width="483" height="484"/>
+			<frame image_path="4city.png" width="483" height="484"/>
+	</BackLayer>
+
+
+
+	<BackLayer frame_duration="2" depth_effect_x="10" depth_effect_y="0" align_x="100" align_y="575" separation_x="0">
+		<frame image_path="restosnegros.png" width="1024" height="128"/>
+	</BackLayer>
+
+
+	<BackLayer frame_duration="2" depth_effect_x="25" depth_effect_y="0" align_x="300" align_y="450" separation_x="0">
+		<frame image_path="restosnegros.png" width="1024" height="128"/>
+	</BackLayer>
+
+
+	<BackLayer frame_duration="2" depth_effect_x="30" depth_effect_y="0" align_x="600" align_y="300" separation_x="0">
+		<frame image_path="restosnegros.png" width="1024" height="128"/>
+	</BackLayer>
+
+
+
+	<BackLayer frame_duration="100" depth_effect_x="1" depth_effect_y="0" align_x="0" align_y="0" separation_x="0">
+		<frame image_path="plataforma.png" width="1024" height="44"/>
+	</BackLayer>
+
+
+
+</StageFile>

@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<Input player="1" type="keyboard">
+    <button input="U" map="a" />
+    <button input="I" map="b" />
+    <button input="O" map="c" />
+    <button input="J" map="d" />
+    <button input="K" map="e" />
+    <button input="L" map="f" />
+    <button input="S" map="2" />
+    <button input="A" map="4" />
+    <button input="D" map="6" />
+    <button input="W" map="8" />
+</Input>
+<!--
+<Input player="1" type="joystick" joystick_number="0">
+    <button input="0" map="a" />
+    <button input="3" map="b" />
+    <button input="1" map="c" />
+    <button input="2" map="d" />
+    <button input="5" map="e" />
+    <button input="7" map="f" />
+    <button input="down" map="2" />
+    <button input="left" map="4" />
+    <button input="right" map="6" />
+    <button input="up" map="8" />
+</Input>
+-->
+<?xml version="1.0" ?>
+<Input player="2" type="keyboard">
+    <button input="J" map="a" />
+    <button input="K" map="b" />
+    <button input="L" map="c" />
+    <button input="B" map="6" />
+    <button input="C" map="4" />
+    <button input="V" map="2" />
+    <button input="F" map="8" />
+</Input>
+<Input player="2" type="joystick" joystick_number="1">
+    <button input="0" map="a" />
+    <button input="3" map="b" />
+    <button input="1" map="c" />
+    <button input="2" map="d" />
+    <button input="5" map="e" />
+    <button input="4" map="f" />
+    <button input="down" map="2" />
+    <button input="left" map="4" />
+    <button input="right" map="6" />
+    <button input="up" map="8" />
+</Input>

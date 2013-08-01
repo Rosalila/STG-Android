@@ -32,40 +32,18 @@ void Player::loadPlayerFromXML()
 {
     loadFromXML();
 
-    //Loading file
-    std::string main_path=directory+"main.xml";
-    TiXmlDocument doc_t(main_path.c_str());
-    doc_t.LoadFile();
-    TiXmlDocument *doc;
-    doc=&doc_t;
-    TiXmlNode *main_file=doc->FirstChild("MainFile");
 
     this->current_slow=0;
     this->max_slow=-1;
-    TiXmlElement *attributes=main_file->FirstChild("Attributes")->ToElement();
-    if(attributes->Attribute("slow")!=NULL)
-    {
-        this->current_slow=atoi(attributes->Attribute("slow"));
-        this->max_slow=atoi(attributes->Attribute("slow"));
-    }
 
     this->slow_decrement=3;
-    if(attributes->Attribute("slow_decrement")!=NULL)
-    {
-        this->slow_decrement=atoi(attributes->Attribute("slow_decrement"));
-    }
+
 
     this->slow_increment=1;
-    if(attributes->Attribute("slow_increment")!=NULL)
-    {
-        this->slow_increment=atoi(attributes->Attribute("slow_increment"));
-    }
+
 
     this->slow_cooldown_increment=2;
-    if(attributes->Attribute("slow_cooldown_increment")!=NULL)
-    {
-        this->slow_cooldown_increment=atoi(attributes->Attribute("slow_cooldown_increment"));
-    }
+
 
     this->slow_bar_x=0;
     this->slow_bar_y=0;
@@ -82,41 +60,6 @@ void Player::loadPlayerFromXML()
     this->slow_bar_cooldown_color.blue=0;
     this->slow_bar_cooldown_color.alpha=128;
 
-    if(main_file->FirstChild("SlowBar")!=NULL)
-    {
-        TiXmlElement *slow_bar=main_file->FirstChild("SlowBar")->ToElement();
-        if(slow_bar->Attribute("x")!=NULL)
-            this->slow_bar_x=atoi(slow_bar->Attribute("x"));
-        if(slow_bar->Attribute("y")!=NULL)
-
-            this->slow_bar_y=atoi(slow_bar->Attribute("y"));
-        if(slow_bar->Attribute("color_r")!=NULL)
-            this->slow_bar_color.red=atoi(slow_bar->Attribute("color_r"));
-        if(slow_bar->Attribute("color_g")!=NULL)
-            this->slow_bar_color.green=atoi(slow_bar->Attribute("color_g"));
-        if(slow_bar->Attribute("color_b")!=NULL)
-            this->slow_bar_color.blue=atoi(slow_bar->Attribute("color_b"));
-        if(slow_bar->Attribute("color_a")!=NULL)
-            this->slow_bar_color.alpha=atoi(slow_bar->Attribute("color_a"));
-
-        if(slow_bar->Attribute("cooldown_color_r")!=NULL)
-            this->slow_bar_cooldown_color.red=atoi(slow_bar->Attribute("cooldown_color_r"));
-        if(slow_bar->Attribute("cooldown_color_g")!=NULL)
-            this->slow_bar_cooldown_color.green=atoi(slow_bar->Attribute("cooldown_color_g"));
-        if(slow_bar->Attribute("cooldown_color_b")!=NULL)
-            this->slow_bar_cooldown_color.blue=atoi(slow_bar->Attribute("cooldown_color_b"));
-        if(slow_bar->Attribute("cooldown_color_a")!=NULL)
-            this->slow_bar_cooldown_color.alpha=atoi(slow_bar->Attribute("cooldown_color_a"));
-
-        if(slow_bar->Attribute("rect_offset_x")!=NULL)
-            this->slow_bar_rect_offset_x=atoi(slow_bar->Attribute("rect_offset_x"));
-        if(slow_bar->Attribute("rect_offset_y")!=NULL)
-            this->slow_bar_rect_offset_y=atoi(slow_bar->Attribute("rect_offset_y"));
-        if(slow_bar->Attribute("rect_height")!=NULL)
-            this->slow_bar_rect_height=atoi(slow_bar->Attribute("rect_height"));
-        if(slow_bar->Attribute("rect_width")!=NULL)
-            this->slow_bar_rect_width=atoi(slow_bar->Attribute("rect_width"));
-    }
 }
 
 void Player::inputControl()
@@ -191,6 +134,7 @@ void Player::inputControl()
 void Player::logic(int stage_velocity)
 {
     animationControl();
+/*
     if(this->hp!=0)
     {
         inputControl();
@@ -236,20 +180,22 @@ void Player::logic(int stage_velocity)
     }
 
     spellControl(stage_velocity);
-
+*/
     iteration++;
 }
 
 void Player::render()
 {
+/*
     //HP
     painter->drawRectangle(life_bar_x+life_bar_rect_offset_x,life_bar_y+life_bar_rect_offset_y,(life_bar_rect_width*hp)/max_hp,life_bar_rect_height,0,this->color.getRed(),this->color.getGreen(),this->color.getBlue(),this->color.getAlpha(),false);
     if(!slow_in_cooldown)
         painter->drawRectangle(slow_bar_x+slow_bar_rect_offset_x,slow_bar_y+slow_bar_rect_offset_y,(slow_bar_rect_width*current_slow)/max_slow,slow_bar_rect_height,0,this->slow_bar_color.getRed(),this->slow_bar_color.getGreen(),this->slow_bar_color.getBlue(),this->slow_bar_color.getAlpha(),false);
     else
         painter->drawRectangle(slow_bar_x+slow_bar_rect_offset_x,slow_bar_y+slow_bar_rect_offset_y,(slow_bar_rect_width*current_slow)/max_slow,slow_bar_rect_height,0,this->slow_bar_cooldown_color.getRed(),this->slow_bar_cooldown_color.getGreen(),this->slow_bar_cooldown_color.getBlue(),this->slow_bar_cooldown_color.getAlpha(),false);
+*/
     parrentRender();
-
+/*
     painter->draw2DImage
     (   life_bar,
         life_bar->getWidth(),life_bar->getHeight(),
@@ -275,4 +221,5 @@ void Player::render()
 //            painter->addExplosion(this->x,this->y);
 //    }
     painter->draw3D();
+*/
 }

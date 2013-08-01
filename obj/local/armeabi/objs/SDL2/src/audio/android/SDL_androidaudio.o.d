@@ -1,13 +1,13 @@
-/home/turupawn/Projects/Eclipse/Fighter_android_port/obj/local/armeabi/objs/SDL2/src/audio/android/SDL_androidaudio.o: \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/audio/android/SDL_androidaudio.c \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_platform.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/begin_code.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/close_code.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config_android.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_audio.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_stdinc.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h \
+/home/turupawn/Projects/Eclipse/stg_android_port/obj/local/armeabi/objs/SDL2/src/audio/android/SDL_androidaudio.o: \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/audio/android/SDL_androidaudio.c \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_platform.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config_android.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/types.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/stdint.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/_types.h \
@@ -40,42 +40,42 @@
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/machine/limits.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/syslimits.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/page.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_error.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_endian.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_error.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/endian.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/endian.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/machine/endian.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_mutex.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_thread.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_atomic.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_rwops.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/audio/android/../SDL_audio_c.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/audio/android/SDL_androidaudio.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/audio/android/../SDL_sysaudio.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_mutex.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_thread.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/audio/android/../../core/android/SDL_android.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_rect.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_pixels.h \
- /home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_rwops.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_mutex.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_thread.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_atomic.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/audio/android/../SDL_audio_c.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/audio/android/SDL_androidaudio.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/audio/android/../SDL_sysaudio.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_mutex.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_thread.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/audio/android/../../core/android/SDL_android.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rect.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_pixels.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/jni.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/log.h
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_platform.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_platform.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/begin_code.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/close_code.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config_android.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config_android.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_audio.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_stdinc.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_config.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/types.h:
 
@@ -141,9 +141,9 @@
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/page.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_error.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_error.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_endian.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/endian.h:
 
@@ -151,31 +151,31 @@
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/machine/endian.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_mutex.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_mutex.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_thread.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_thread.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_atomic.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_atomic.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_rwops.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/audio/android/../SDL_audio_c.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/audio/android/../SDL_audio_c.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/audio/android/SDL_androidaudio.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/audio/android/SDL_androidaudio.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/audio/android/../SDL_sysaudio.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/audio/android/../SDL_sysaudio.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_mutex.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_mutex.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_thread.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_thread.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/src/audio/android/../../core/android/SDL_android.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/src/audio/android/../../core/android/SDL_android.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_rect.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rect.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_pixels.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_pixels.h:
 
-/home/turupawn/Projects/Eclipse/Fighter_android_port/jni/SDL/include/SDL_rwops.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/jni.h:
 
