@@ -267,6 +267,11 @@
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/pathconf.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaSound/RosalilaSound.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_mixer/SDL_mixer.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/STGMenu.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/Stage.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/Character.h \
@@ -301,7 +306,6 @@
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Animation.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGUtility/STGUtility.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/android_rwops.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/asset_manager_jni.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/errno.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/../include/errno.h \
@@ -848,6 +852,16 @@
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaSound/RosalilaSound.h:
 
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_mixer/SDL_mixer.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h:
+
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/STGMenu.h:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/Stage.h:
@@ -915,8 +929,6 @@
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGUtility/STGUtility.h:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/android_rwops.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/asset_manager_jni.h:
 

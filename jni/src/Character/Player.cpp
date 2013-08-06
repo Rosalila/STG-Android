@@ -65,28 +65,32 @@ void Player::loadPlayerFromXML()
 void Player::inputControl()
 {
     if(receiver->IsKeyDownn(SDLK_DOWN)
-       || receiver->IsJoyDown(-2,0))
+       || receiver->IsJoyDown(-2,0)
+	   || receiver->isOuyaDown(2))
     {
         if(orientation!="down" && this->sonido->soundExists(name+".down"))
             this->sonido->playSound(name+".down");
         orientation="down";
     }
     else if(receiver->IsKeyDownn(SDLK_UP)
-       || receiver->IsJoyDown(-8,0))
+       || receiver->IsJoyDown(-8,0)
+	   || receiver->isOuyaDown(8))
     {
         if(orientation!="up" && this->sonido->soundExists(name+".up"))
             this->sonido->playSound(name+".up");
         orientation="up";
     }
     else if(receiver->IsKeyDownn(SDLK_LEFT)
-       || receiver->IsJoyDown(-4,0))
+       || receiver->IsJoyDown(-4,0)
+	   || receiver->isOuyaDown(4))
     {
         if(orientation!="left" && this->sonido->soundExists(name+".left"))
             this->sonido->playSound(name+".left");
         orientation="left";
     }
     else if(receiver->IsKeyDownn(SDLK_RIGHT)
-       || receiver->IsJoyDown(-6,0))
+       || receiver->IsJoyDown(-6,0)
+	   || receiver->isOuyaDown(6))
     {
         if(orientation!="right" && this->sonido->soundExists(name+".right"))
             this->sonido->playSound(name+".right");
@@ -100,28 +104,33 @@ void Player::inputControl()
     }
 
     if(receiver->IsKeyDownn(SDLK_DOWN)
-       || receiver->IsJoyDown(-2,0))
+       || receiver->IsJoyDown(-2,0)
+	   || receiver->isOuyaDown(2))
     {
         this->y+=velocity/getSlowdown();
     }
     if(receiver->IsKeyDownn(SDLK_UP)
-       || receiver->IsJoyDown(-8,0))
+       || receiver->IsJoyDown(-8,0)
+	   || receiver->isOuyaDown(8))
     {
         this->y-=velocity/getSlowdown();
     }
     if(receiver->IsKeyDownn(SDLK_LEFT)
-       || receiver->IsJoyDown(-4,0))
+       || receiver->IsJoyDown(-4,0)
+	   || receiver->isOuyaDown(4))
     {
         this->x-=velocity/getSlowdown();
     }
     if(receiver->IsKeyDownn(SDLK_RIGHT)
-       || receiver->IsJoyDown(-6,0))
+       || receiver->IsJoyDown(-6,0)
+	   || receiver->isOuyaDown(6))
     {
        this->x+=velocity/getSlowdown();
     }
 
     if(receiver->IsKeyDownn(SDLK_z)
-       || receiver->IsJoyDown(0,0))
+       || receiver->IsJoyDown(0,0)
+	   || receiver->isOuyaDown('o'))
     {
         this->shooting=true;
     }
@@ -134,7 +143,7 @@ void Player::inputControl()
 void Player::logic(int stage_velocity)
 {
     animationControl();
-/*
+
     if(this->hp!=0)
     {
         inputControl();
@@ -145,6 +154,9 @@ void Player::logic(int stage_velocity)
         orientation="destroyed";
         this->hitbox.setValues(0,0,0,0,0);
     }
+
+
+
     //Enable or disable slow
     if(isSlowPressed() && !slow_in_cooldown)
     {
@@ -180,7 +192,9 @@ void Player::logic(int stage_velocity)
     }
 
     spellControl(stage_velocity);
-*/
+
+	this->setX(this->getX()+stage_velocity);
+
     iteration++;
 }
 

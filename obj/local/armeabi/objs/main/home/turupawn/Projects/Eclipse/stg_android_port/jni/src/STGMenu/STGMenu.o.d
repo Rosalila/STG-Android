@@ -250,6 +250,11 @@
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_io.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_io.c \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaSound/RosalilaSound.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_mixer/SDL_mixer.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/Character.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Bullet.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Hitbox.h \
@@ -781,6 +786,16 @@
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_io.c:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaSound/RosalilaSound.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_mixer/SDL_mixer.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/Character.h:
 

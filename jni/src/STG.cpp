@@ -59,24 +59,14 @@ void STG::mainLoop()
     bool end_key_up_joystick=false;
     for (;;)
     {
-__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "1111111111111111");
+//__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "1111111111111111");
         if(receiver->IsKeyDownn(SDLK_ESCAPE))
         {
             break;
         }
 
         render();
-        //logic();
-
-if(receiver->isOuyaDown(6))
-	player->setX(player->getX()+6);
-if(receiver->isOuyaDown(4))
-	player->setX(player->getX()-6);
-if(receiver->isOuyaDown(2))
-	player->setY(player->getY()+6);
-if(receiver->isOuyaDown(8))
-	player->setY(player->getY()-6);
-player->logic(0);
+        logic();
 
 /*
 if(receiver->isOuyaDown(6))
@@ -154,9 +144,7 @@ void STG::logic()
         stage_displacement/=3;
     painter->camera_x+=stage_displacement;
     player->logic(stage_displacement);
-    player->setX(player->getX()+stage_displacement);
     enemy->logic(stage_displacement,stage->getName(),iteration,username);
-    //enemy->setX(enemy->getX()+stage_displacement);
     stage->logic();
 
     deletePatterns();
@@ -169,14 +157,14 @@ void STG::logic()
 
 void STG::render()
 {
-//    stage->dibujarBack();
+    stage->dibujarBack();
     player->render();
-//    enemy->render();
+    enemy->render();
 
 //    stage->render();
 //    stage->dibujarFront();
 
-/*
+
     for (std::list<Pattern*>::iterator pattern = enemy->getActivePatterns()->begin(); pattern != enemy->getActivePatterns()->end(); pattern++)
     {
         Pattern*p=(Pattern*)*pattern;
@@ -219,7 +207,7 @@ void STG::render()
         you_loose.render();
 
     painter->drawText("Time: "+toString(iteration),0,65);
-*/
+/**/
 
     painter->updateScreen();
 }

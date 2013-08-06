@@ -32,9 +32,9 @@ void Character::loadFromXML()
 {
     loadMainXML();
 
-    //loadBulletsXML();
+    loadBulletsXML();
 
-    //loadPatternsXML();
+    loadPatternsXML();
 }
 
 void Character::loadMainXML()
@@ -42,16 +42,15 @@ void Character::loadMainXML()
 
     //Loading attributes
     this->velocity=5;
-
     this->animation_velocity=5;
 
     this->max_hp=100;
-    this->hp=100;
+    this->hp=this->max_hp;
 
+    this->max_hp=6500;
     this->hp=this->max_hp;
 
     this->x=100;
-
     this->y=500;
 
     this->life_bar_x=0;
@@ -67,374 +66,160 @@ void Character::loadMainXML()
 
 
 
- 
-    int hitbox_x=10;
-    int hitbox_y=10;
-    int hitbox_width=100;
-    int hitbox_height=10;
-    int hitbox_angle=0;
-    this->hitbox.setValues(hitbox_x,hitbox_y,hitbox_width,hitbox_height,hitbox_angle);
+	if(directory=="chars/Iguro/")
+	{
+	    this->velocity=5;
 
+		this->max_hp=100;
+		this->hp=this->max_hp;
 
+		int hitbox_x=10;
+		int hitbox_y=10;
+		int hitbox_width=100;
+		int hitbox_height=10;
+		int hitbox_angle=0;
+		this->hitbox.setValues(hitbox_x,hitbox_y,hitbox_width,hitbox_height,hitbox_angle);
 
 
         std::vector<Image*>sprites_vector;
-		sprites_vector.push_back(painter->getTexture("1.png"));
-		sprites_vector.push_back(painter->getTexture("2.png"));
+		sprites_vector.push_back(painter->getTexture("chars/Iguro/sprites/nuevas/1iddle.png"));
+		sprites_vector.push_back(painter->getTexture("chars/Iguro/sprites/nuevas/2iddle.png"));
+
+        std::vector<Image*>vector_down;
+		vector_down.push_back(painter->getTexture("chars/Iguro/sprites/nuevas/1down.png"));
+		vector_down.push_back(painter->getTexture("chars/Iguro/sprites/nuevas/2down.png"));
+
+        std::vector<Image*>vector_up;
+		vector_up.push_back(painter->getTexture("chars/Iguro/sprites/nuevas/1up.png"));
+		vector_up.push_back(painter->getTexture("chars/Iguro/sprites/nuevas/2up.png"));
+
+        std::vector<Image*>vector_forward;
+		vector_forward.push_back(painter->getTexture("chars/Iguro/sprites/nuevas/1forward.png"));
+		vector_forward.push_back(painter->getTexture("chars/Iguro/sprites/nuevas/2forward.png"));
+
+        std::vector<Image*>vector_back;
+		vector_back.push_back(painter->getTexture("chars/Iguro/sprites/nuevas/1back.png"));
+		vector_back.push_back(painter->getTexture("chars/Iguro/sprites/nuevas/2back.png"));
 
 		sprites["idle"]=sprites_vector;
 
-/*
-    //Loading sprites
-    for(TiXmlNode* sprites_node=main_file->FirstChild("Sprites");
-            sprites_node!=NULL;
-            sprites_node=sprites_node->NextSibling("Sprites"))
-    {
+		sprites["up"]=vector_up;
+		sprites["down"]=vector_down;
+		sprites["left"]=vector_back;
+		sprites["right"]=vector_forward;
+	}else
+	{
+	    this->velocity=0;
+
+		this->x=950;
+		this->y=500;
+
+		this->max_hp=6500;
+		this->hp=this->max_hp;
+
+		int hitbox_x=-100;
+		int hitbox_y=-100;
+		int hitbox_width=200;
+		int hitbox_height=200;
+		int hitbox_angle=0;
+		this->hitbox.setValues(hitbox_x,hitbox_y,hitbox_width,hitbox_height,hitbox_angle);
+
         std::vector<Image*>sprites_vector;
-        std::string sprites_orientation=sprites_node->ToElement()->Attribute("orientation");
-        if(sprites_node->ToElement()->Attribute("sound")!=NULL)
-        {
-            std::string sprites_sound=sprites_node->ToElement()->Attribute("sound");
-            this->sonido->addSound(name+"."+sprites_orientation,directory+"sounds/"+sprites_sound);
-        }
-        for(TiXmlNode* sprite_node=sprites_node->FirstChild("Sprite");
-                sprite_node!=NULL;
-                sprite_node=sprite_node->NextSibling("Sprite"))
-        {
-            sprites_vector.push_back(painter->getTexture(directory+"sprites/"+sprite_node->ToElement()->Attribute("path")));
-        }
-        sprites[sprites_orientation]=sprites_vector;
-    }
-*/
+		sprites_vector.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/idle/1.png"));
+		sprites_vector.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/idle/2.png"));
+		sprites_vector.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/idle/3.png"));
+
+		sprites["idle"]=sprites_vector;
+	}
+}
+
+void Character::addBullet(Sound* sonido,RosalilaGraphics* painter,Receiver*receiver, std::string name,int sprites_amount,
+int hitbox_x,int hitbox_y,int hitbox_w,int hitbox_h,int hitbox_angle,
+int damage)
+{
+
+    vector<Image*>sprites_temp;
+	for(int i=1;i<=sprites_amount;i++)
+	    sprites_temp.push_back(painter->getTexture(directory+"sprites/"+name+"/"+toString(i)+".png"));
+
+    vector<Image*>sprites_onhit_temp;
+    sprites_onhit_temp.push_back(painter->getTexture(directory+"sprites/hit1.png"));
+    sprites_onhit_temp.push_back(painter->getTexture(directory+"sprites/hit2.png"));
+    sprites_onhit_temp.push_back(painter->getTexture(directory+"sprites/hit3.png"));
+    sprites_onhit_temp.push_back(painter->getTexture(directory+"sprites/hit4.png"));
+    sprites_onhit_temp.push_back(painter->getTexture(directory+"sprites/hit5.png"));
+
+    vector<Hitbox*>hitboxes_temp;
+	hitboxes_temp.push_back(new Hitbox(hitbox_x,hitbox_y,hitbox_w,hitbox_h,hitbox_angle));
+	bullets[name]=new Bullet(sonido,painter,receiver,name,sprites_temp,sprites_onhit_temp,hitboxes_temp,damage);
+
 }
 
 void Character::loadBulletsXML()
 {
-    //Loading bullets
-    std::string bullets_path=directory+"bullets.xml";
-    TiXmlDocument doc_bullets_t(bullets_path.c_str());
-    doc_bullets_t.LoadFile();
-    TiXmlDocument *doc_bullets;
-    doc_bullets=&doc_bullets_t;
-    TiXmlNode *bullet_file=doc_bullets->FirstChild("BulletsFile");
+	if(directory=="chars/Iguro/")
+	{
+		addBullet(sonido,painter,receiver,"lazor",3,-120,-10,240,20,0,2);
 
-    //Loading bullets
-    for(TiXmlNode* bullet_node=bullet_file->FirstChild("Bullet");
-            bullet_node!=NULL;
-            bullet_node=bullet_node->NextSibling("Bullet"))
-    {
-        std::string node_name=bullet_node->ToElement()->Attribute("name");
-        if(bullet_node->ToElement()->Attribute("sound")!=NULL)
-        {
-            std::string sound=directory+"sounds/"+bullet_node->ToElement()->Attribute("sound");
-            sonido->addSound("bullet."+node_name,sound);
-        }
-        if(bullet_node->ToElement()->Attribute("sound_hit")!=NULL)
-        {
-            std::string sound_hit=directory+"sounds/"+bullet_node->ToElement()->Attribute("sound_hit");
-            sonido->addSound("bullet_hit."+node_name,sound_hit);
-        }
+		addBullet(sonido,painter,receiver,"machinegun",3,-10,-10,20,20,0,2);
 
-        int damage=0;
-        if(bullet_node->ToElement()->Attribute("damage")!=NULL)
-        {
-            damage=atoi(bullet_node->ToElement()->Attribute("damage"));
-        }
+		sonido->addSound("bullet.lazor",directory+string("sounds/lazor.ogg"));
+	}else
+	{
+		addBullet(sonido,painter,receiver,"Eye Lazor",3,-50,-3,100,6,0,20);
+		addBullet(sonido,painter,receiver,"Feminist Laser startup",
+											11,-1,-1,-1,-1,0,0);
+		addBullet(sonido,painter,receiver,"Feminist Laser cooldown",
+											11,-1,-1,-1,-1,0,0);
+		addBullet(sonido,painter,receiver,"Feminist Laser active",
+											4,-600,-120,1200,240,0,60);
+		addBullet(sonido,painter,receiver,"Rocket",
+											2,-10,-10,20,20,0,20);
+	}
+}
 
-        vector<Image*>sprites_temp;
-        for(TiXmlNode* sprite_node=bullet_node->FirstChild("Sprite");
-                sprite_node!=NULL;
-                sprite_node=sprite_node->NextSibling("Sprite"))
-        {
-            sprites_temp.push_back(painter->getTexture(directory+"sprites/"+sprite_node->ToElement()->Attribute("path")));
-        }
+void Character::addPattern(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::string name,int velocity,int max_velocity,int acceleration,int a_frequency,float angle,int angle_change,int stop_ac_at,int ac_frequency,int animation_velocity,std::string bullet,int offset_x,int offset_y,int startup,int cooldown,int duration,int random_angle,bool aim_player,float bullet_rotation, float br_change, bool independent_br, std::map<int, vector<Modifier*>* >*modifiers)
+{
 
-        vector<Hitbox*>hitboxes_temp;
-        for(TiXmlNode* hitbox_node=bullet_node->FirstChild("Hitbox");
-                hitbox_node!=NULL;
-                hitbox_node=hitbox_node->NextSibling("Hitbox"))
-        {
-            int x=0;
-            if(hitbox_node->ToElement()->Attribute("x")!=NULL)
-            {
-                x=atoi(hitbox_node->ToElement()->Attribute("x"));
-            }
-            int y=0;
-            if(hitbox_node->ToElement()->Attribute("y")!=NULL)
-            {
-                y=atoi(hitbox_node->ToElement()->Attribute("y"));
-            }
+	//Create new if not exists
+	std::map<std::string, std::vector<Pattern*> >::const_iterator it = type.find(name);
+	if(it==type.end())
+	{
+		std::vector<Pattern*> patterns;
+		type[name]=patterns;
+	}
 
-            int width=atoi(hitbox_node->ToElement()->Attribute("width"));
-            int height=atoi(hitbox_node->ToElement()->Attribute("height"));
+	//Push new pattern
+	type[name].push_back(new Pattern(sonido,painter,receiver,velocity,max_velocity,acceleration,a_frequency,angle,angle_change,
+stop_ac_at,ac_frequency,animation_velocity,bullets[bullet],offset_x,offset_y,startup,cooldown,duration,random_angle,aim_player,
+bullet_rotation,br_change,independent_br,modifiers,&bullets));
 
-            int angle=0;
-            if(hitbox_node->ToElement()->Attribute("angle")!=NULL)
-            {
-                angle=atoi(hitbox_node->ToElement()->Attribute("angle"));
-            }
-
-            hitboxes_temp.push_back(new Hitbox(x,y,width,height,angle));
-        }
-
-        TiXmlNode* onhit_node=bullet_node->FirstChild("OnHit");
-        vector<Image*>sprites_onhit_temp;
-        if(onhit_node!=NULL)
-        {
-            for(TiXmlNode* sprite_node=onhit_node->FirstChild("Sprite");
-                    sprite_node!=NULL;
-                    sprite_node=sprite_node->NextSibling("Sprite"))
-            {
-                sprites_onhit_temp.push_back(painter->getTexture(directory+"sprites/"+sprite_node->ToElement()->Attribute("path")));
-            }
-        }
-
-        bullets[node_name]=new Bullet(sonido,painter,receiver,node_name,sprites_temp,sprites_onhit_temp,hitboxes_temp,damage);
-    }
 }
 
 void Character::loadPatternsXML()
 {
-//Loading file
-    std::string pattern_path=directory+"patterns.xml";
-    TiXmlDocument doc_pattern_t(pattern_path.c_str());
-    doc_pattern_t.LoadFile();
-    TiXmlDocument *doc_pattern;
-    doc_pattern=&doc_pattern_t;
-    TiXmlNode *patterns_file=doc_pattern->FirstChild("PatternsFile");
+	if(directory=="chars/Iguro/")
+	{
+		std::map<int, vector<Modifier*>* >*pattern_modifiers=new std::map<int, vector<Modifier*>* >();
 
-    //Loading patterns
-    for(TiXmlNode* pattern_type=patterns_file->FirstChild("Type");
-            pattern_type!=NULL;
-            pattern_type=pattern_type->NextSibling("Type"))
-    {
-        std::string type_name=pattern_type->ToElement()->Attribute("name");
-        std::vector<Pattern*> patterns;
-        for(TiXmlNode* pattern_node=pattern_type->FirstChild("Pattern");
-                pattern_node!=NULL;
-                pattern_node=pattern_node->NextSibling("Pattern"))
-        {
-            std::string bullet_name=pattern_node->ToElement()->Attribute("bullet");
-            Bullet*bullet=bullets[bullet_name];
+		addPattern(sonido,painter,receiver,"1",0,99999,10,1,0,0,99999,0,2,
+		"lazor",120,-17,4,22,99999,0,false,0,0,false,pattern_modifiers);
 
-            int velocity=0;
-            if(pattern_node->ToElement()->Attribute("velocity")!=NULL)
-                velocity=atoi(pattern_node->ToElement()->Attribute("velocity"));
+		addPattern(sonido,painter,receiver,"1",20,80,1,2,0,0,99999,0,2,
+		"machinegun",80,25,25,4,99999,0,false,0,0,false,pattern_modifiers);
 
-            int max_velocity=9999999;
-            if(pattern_node->ToElement()->Attribute("max_velocity")!=NULL)
-                max_velocity=atoi(pattern_node->ToElement()->Attribute("max_velocity"));
+		addPattern(sonido,painter,receiver,"1",10,50,2,2,0,0,99999,0,2,
+		"machinegun",80,18,25,4,99999,0,false,0,0,false,pattern_modifiers);
+	}else
+	{
+		std::map<int, vector<Modifier*>* >*pattern_modifiers=new std::map<int, vector<Modifier*>* >();
 
-            int acceleration=0;
-            if(pattern_node->ToElement()->Attribute("acceleration")!=NULL)
-                acceleration=atoi(pattern_node->ToElement()->Attribute("acceleration"));
+		addPattern(sonido,painter,receiver,"Crazy eyes",4,30,0,10,0,0,99999,0,2,
+		"Eye Lazor",80,18,25,4,99999,0,false,0,0,false,pattern_modifiers);
 
-            int a_frequency=0;
-            if(pattern_node->ToElement()->Attribute("a_frequency")!=NULL)
-                a_frequency=atoi(pattern_node->ToElement()->Attribute("a_frequency"));
-
-            int angle=0;
-            if(pattern_node->ToElement()->Attribute("angle")!=NULL)
-                angle=atoi(pattern_node->ToElement()->Attribute("angle"));
-
-            int angle_change=0;
-            if(pattern_node->ToElement()->Attribute("angle_change")!=NULL)
-                angle_change=atoi(pattern_node->ToElement()->Attribute("angle_change"));
-
-            int stop_ac_at=-1;
-            if(pattern_node->ToElement()->Attribute("stop_ac_at")!=NULL)
-                stop_ac_at=atoi(pattern_node->ToElement()->Attribute("stop_ac_at"));
-
-            int ac_frequency=0;
-            if(pattern_node->ToElement()->Attribute("ac_frequency")!=NULL)
-                ac_frequency=atoi(pattern_node->ToElement()->Attribute("ac_frequency"));
-
-            int offset_x=0;
-            if(pattern_node->ToElement()->Attribute("offset_x")!=NULL)
-                offset_x=atoi(pattern_node->ToElement()->Attribute("offset_x"));
-
-            int offset_y=0;
-            if(pattern_node->ToElement()->Attribute("offset_y")!=NULL)
-                offset_y=atoi(pattern_node->ToElement()->Attribute("offset_y"));
-
-            int startup=0;
-            if(pattern_node->ToElement()->Attribute("startup")!=NULL)
-                startup=atoi(pattern_node->ToElement()->Attribute("startup"));
-
-            int cooldown=0;
-            if(pattern_node->ToElement()->Attribute("cooldown")!=NULL)
-                cooldown=atoi(pattern_node->ToElement()->Attribute("cooldown"));
-
-            int animation_velocity=0;
-            if(pattern_node->ToElement()->Attribute("animation_velocity")!=NULL)
-                animation_velocity=atoi(pattern_node->ToElement()->Attribute("animation_velocity"));
-
-            int duration=-1;
-            if(pattern_node->ToElement()->Attribute("duration"))
-                duration=atoi(pattern_node->ToElement()->Attribute("duration"));
-
-            int random_angle=0;
-            if(pattern_node->ToElement()->Attribute("random_angle"))
-                random_angle=atoi(pattern_node->ToElement()->Attribute("random_angle"));
-
-            bool aim_player=false;
-            if(pattern_node->ToElement()->Attribute("aim_player"))
-                aim_player=strcmp(pattern_node->ToElement()->Attribute("aim_player"),"yes")==0;
-
-            int bullet_rotation=0;
-            if(pattern_node->ToElement()->Attribute("bullet_rotation"))
-                bullet_rotation=atoi(pattern_node->ToElement()->Attribute("bullet_rotation"));
-
-            int br_change=0;
-            if(pattern_node->ToElement()->Attribute("br_change"))
-                br_change=atoi(pattern_node->ToElement()->Attribute("br_change"));
-
-            bool independent_br=false;
-            if(pattern_node->ToElement()->Attribute("independent_br"))
-                independent_br=strcmp(pattern_node->ToElement()->Attribute("independent_br"),"yes")==0;
-
-            //Modifiers
-            std::map<int, vector<Modifier*>* >*pattern_modifiers=new std::map<int, vector<Modifier*>* >();
-
-            if(pattern_node->FirstChild("Modifier")!=NULL)
-            {
-                for(TiXmlNode* pattern_modifier_node=pattern_node->FirstChild("Modifier");
-                        pattern_modifier_node!=NULL;
-                        pattern_modifier_node=pattern_modifier_node->NextSibling("Modifier"))
-                {
-                    vector<Modifier*>* temp_modifiers=new vector<Modifier*>();
-
-                    int at=atoi(pattern_modifier_node->ToElement()->Attribute("at"));
-
-                    if(pattern_modifier_node->ToElement()->Attribute("bullet")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("bullet");
-                        temp_modifiers->push_back(new Modifier("bullet",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("velocity")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("velocity");
-                        temp_modifiers->push_back(new Modifier("velocity",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("max_velocity")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("max_velocity");
-                        temp_modifiers->push_back(new Modifier("max_velocity",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("acceleration")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("acceleration");
-                        temp_modifiers->push_back(new Modifier("acceleration",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("a_frequency")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("a_frequency");
-                        temp_modifiers->push_back(new Modifier("a_frequency",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("angle")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("angle");
-                        temp_modifiers->push_back(new Modifier("angle",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("angle_change")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("angle_change");
-                        temp_modifiers->push_back(new Modifier("angle_change",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("stop_ac_at")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("stop_ac_at");
-                        temp_modifiers->push_back(new Modifier("stop_ac_at",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("ac_frequency")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("ac_frequency");
-                        temp_modifiers->push_back(new Modifier("ac_frequency",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("animation_velocity")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("animation_velocity");
-                        temp_modifiers->push_back(new Modifier("animation_velocity",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("offset_x")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("offset_x");
-                        temp_modifiers->push_back(new Modifier("offset_x",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("offset_y")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("offset_y");
-                        temp_modifiers->push_back(new Modifier("offset_y",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("startup")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("startup");
-                        temp_modifiers->push_back(new Modifier("startup",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("cooldown")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("cooldown");
-                        temp_modifiers->push_back(new Modifier("cooldown",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("duration")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("duration");
-                        temp_modifiers->push_back(new Modifier("duration",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("random_angle")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("random_angle");
-                        temp_modifiers->push_back(new Modifier("random_angle",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("aim_player")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("aim_player");
-                        temp_modifiers->push_back(new Modifier("aim_player",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("bullet_rotation")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("bullet_rotation");
-                        temp_modifiers->push_back(new Modifier("bullet_rotation",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("br_change")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("br_change");
-                        temp_modifiers->push_back(new Modifier("br_change",value));
-                    }
-
-                    if(pattern_modifier_node->ToElement()->Attribute("independent_br")!=NULL)
-                    {
-                        std::string value=pattern_modifier_node->ToElement()->Attribute("independent_br");
-                        temp_modifiers->push_back(new Modifier("independent_br",value));
-                    }
-
-                    (*pattern_modifiers)[at]=temp_modifiers;
-                }
-            }
-
-            //Pattern ready, now push
-            patterns.push_back(new Pattern(sonido,painter,receiver,velocity,max_velocity,acceleration,a_frequency,angle,angle_change,stop_ac_at,ac_frequency,animation_velocity,bullet,offset_x,offset_y,startup,cooldown,duration,random_angle,aim_player,bullet_rotation,br_change,independent_br,pattern_modifiers,&bullets));
-        }
-        type[type_name]=patterns;
-    }
+		//addPattern(sonido,painter,receiver,"InitialD",4,30,0,10,0,0,99999,0,2,
+		//"Feminist Laser startup",80,18,25,4,99999,0,false,0,0,false,pattern_modifiers);
+	}
 }
 
 void Character::logic(int stage_velocity)
@@ -509,10 +294,10 @@ void Character::parrentRender()
                                hitbox.getWidth(),hitbox.getHeight(),
                                hitbox.getAngle(),100,0,0,100,true);
     }
-
+*/
     for (std::list<Pattern*>::iterator pattern = active_patterns->begin(); pattern != active_patterns->end(); pattern++)
         ((Pattern*)*pattern)->render();
-*/
+
 }
 
 void Character::render()

@@ -200,6 +200,14 @@
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_system.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_timer.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_mixer/SDL_mixer.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaUtility/RosalilaUtility.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/fstream \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_fstream.h \
@@ -209,7 +217,8 @@
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/map \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_map.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.c
+ /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.c \
+ /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/log.h
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaSound/RosalilaSound.h:
 
@@ -611,6 +620,22 @@
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h:
 
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_mixer/SDL_mixer.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h:
+
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaUtility/RosalilaUtility.h:
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/fstream:
@@ -630,3 +655,5 @@
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.h:
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.c:
+
+/home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/log.h:

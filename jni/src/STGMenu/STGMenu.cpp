@@ -57,7 +57,7 @@ Menu::Menu(RosalilaGraphics* painter,Receiver* receiver,Sound* sonido,char* arch
     }
 */
 
-    //cargarDesdeXml(archivo,chars,stages);
+    cargarDesdeXml(archivo,chars,stages);
 }
 
 void Menu::iniciarJuego(std::string character_name,std::string stage_name)
@@ -125,11 +125,9 @@ void Menu::loopMenu()
 
         if(selectables_container!=NULL)
         {
-__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "A1111112");
             tecla_arriba=false;
             if(receiver->IsKeyPressed(SDLK_ESCAPE) || receiver->IsKeyPressed(SDLK_x) || receiver->IsJoyPressed(5,0))
             {
-__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "A222222");
                 sonido->playSound(std::string("Menu.back"));
                 exit_signal=true;
                 break;
@@ -137,7 +135,6 @@ __android_log_print(ANDROID_LOG_DEBUG, APPNAME, "A222222");
             else if(receiver->IsKeyPressed(SDLK_DOWN)
                     || receiver->IsJoyPressed(-2,0))
             {
-__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "A333333");
                 sonido->playSound(std::string("Menu.move"));
                 ((MenuContenedor*)selectables_container)->avanzar();
 
@@ -160,7 +157,6 @@ __android_log_print(ANDROID_LOG_DEBUG, APPNAME, "A333333");
             else if(receiver->IsKeyPressed(SDLK_UP)
                     || receiver->IsJoyPressed(-8,0))
             {
-__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "A4444444");
                 sonido->playSound(std::string("Menu.move"));
                 ((MenuContenedor*)selectables_container)->retroceder();
 
@@ -379,11 +375,12 @@ void Menu::cargarDesdeXml(char* archivo,vector<std::string> chars,vector<std::st
     music_path="menu/audio/music.ogg";
 
     //cargarConfig();
-
+/*
     TiXmlDocument doc_t( archivo );
     doc_t.LoadFile();
     TiXmlDocument *doc;
     doc=&doc_t;
+*/
 
     sonido->addSound("Menu.select","menu/audio/select.ogg");
     sonido->addSound("Menu.select_char","menu/audio/select_char.ogg");
@@ -392,7 +389,7 @@ void Menu::cargarDesdeXml(char* archivo,vector<std::string> chars,vector<std::st
     sonido->addSound("Menu.back","menu/audio/back.ogg");
 
 
-
+/*
             Image* image=painter->getTexture("menu/startscreen.png");
 
 //            elementos.push_back((Elemento*)new MenuImagen(painter,x,y,displacement_x,displacement_y,stop_displacement_x_at,stop_displacement_y_at,fade_in_initial,fade_in_speed,
@@ -406,7 +403,7 @@ void Menu::cargarDesdeXml(char* archivo,vector<std::string> chars,vector<std::st
 //1920
 //1080
 
-
+*/
 /*
     TiXmlNode* elemento=doc->FirstChild("svg");
     TiXmlNode* g_node=elemento->FirstChild("g");

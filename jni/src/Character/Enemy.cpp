@@ -33,7 +33,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 
     loadFromXML();
 
-    //loadModifiersFromXML();
+    loadModifiersFromXML();
     life_bar=painter->getTexture(directory+"life_bar.png");
 }
 
@@ -89,7 +89,9 @@ void Enemy::logic(int stage_velocity, string stage_name, int global_iteration, s
         }
 
     if(this->hp>0)
+	{
         modifiersControl();
+	}
     else
     {
         if(orientation!="destroyed" && flag_begin_upload)
@@ -147,68 +149,101 @@ void Enemy::render()
     }
 }
 
+void Enemy::addModifier(int at,std::string variable,std::string value)
+{
+	//Create new if not exists
+	std::map<int, vector<Modifier*>* >::const_iterator it = modifiers.find(at);
+	if(it==modifiers.end())
+	{
+		vector<Modifier*>* temp_modifiers=new vector<Modifier*>();
+		modifiers[at]=temp_modifiers;
+	}
+
+	this->modifiers[at]->push_back(new Modifier(variable,value));
+}
+
 void Enemy::loadModifiersFromXML()
 {
-    //Loading file
-    std::string main_path=directory+"modifiers.xml";
-    TiXmlDocument doc_t(main_path.c_str());
-    doc_t.LoadFile();
-    TiXmlDocument *doc;
-    doc=&doc_t;
-    TiXmlNode *modifiers_file=doc->FirstChild("ModifiersFile");
-    //Loading sprites
-    for(TiXmlNode* modifier_node=modifiers_file->FirstChild("Modifier");
-            modifier_node!=NULL;
-            modifier_node=modifier_node->NextSibling("Modifier"))
-    {
-        vector<Modifier*>* temp_modifiers=new vector<Modifier*>();
+	addModifier(0,"velocity","1");
+	addModifier(0,"angle_change","5");
 
-        int at=atoi(modifier_node->ToElement()->Attribute("at"));
+	addModifier(100,"pattern_type","InitialD");
+	addModifier(1000,"pattern_type","");
 
-        if(modifier_node->ToElement()->Attribute("velocity")!=NULL)
-        {
-            std::string value=modifier_node->ToElement()->Attribute("velocity");
-            temp_modifiers->push_back(new Modifier("velocity",value));
-        }
+	addModifier(1100,"pattern_type","Crazy eyes");
+	addModifier(2950,"pattern_type","");
+	addModifier(2950,"velocity","0");
+	addModifier(2950,"angle_change","0");
 
-        if(modifier_node->ToElement()->Attribute("angle")!=NULL)
-        {
-            std::string value=modifier_node->ToElement()->Attribute("angle");
-            temp_modifiers->push_back(new Modifier("angle",value));
-        }
+	addModifier(3100,"pattern_type","Happy meal");
+	addModifier(3100,"velocity","0");
 
-        if(modifier_node->ToElement()->Attribute("pattern_type")!=NULL)
-        {
-            std::string value=modifier_node->ToElement()->Attribute("pattern_type");
-            temp_modifiers->push_back(new Modifier("pattern_type",value));
-        }
+	for(int i=0;i<4;i++)
+	{
+		addModifier(3300+i*100,"velocity","2");
+		addModifier(3300+i*100,"angle","180");
+	}
 
-        if(modifier_node->ToElement()->Attribute("angle_change")!=NULL)
-        {
-            std::string value=modifier_node->ToElement()->Attribute("angle_change");
-            temp_modifiers->push_back(new Modifier("angle_change",value));
-        }
+	for(int i=0;i<4;i++)
+	{
+		addModifier(3350+i*100,"angle","0");
+	}
 
-        if(modifier_node->ToElement()->Attribute("iterator")!=NULL)
-        {
-            std::string value=modifier_node->ToElement()->Attribute("iterator");
-            temp_modifiers->push_back(new Modifier("iterator",value));
-        }
+	for(int i=0;i<4;i++)
+	{
+		addModifier(3800+i*150,"angle","180");
+	}
 
-        this->modifiers[at]=temp_modifiers;
+	for(int i=0;i<4;i++)
+	{
+		addModifier(3850+i*150,"angle","-60");
+	}
 
-        if(modifier_node->ToElement()->Attribute("repeat")!=NULL)
-        {
-            int repeats = atoi(modifier_node->ToElement()->Attribute("repeat"));
-            int frequency = 1;
-            if(modifier_node->ToElement()->Attribute("repeat_frequency")!=NULL)
-                frequency = atoi(modifier_node->ToElement()->Attribute("repeat_frequency"));
-            for(int i=0;i<repeats;i++)
-            {
-                this->modifiers[at+frequency*(i+1)]=temp_modifiers;
-            }
-        }
-    }
+	for(int i=0;i<4;i++)
+	{
+		addModifier(3900+i*150,"angle","60");
+	}
+
+	addModifier(4550,"pattern_type","");
+	addModifier(4550,"velocity","5");
+	addModifier(4550,"angle","-90");
+
+	addModifier(4600,"pattern_type","Rockets");
+	addModifier(4600,"velocity","5");
+	addModifier(4600,"angle","90");
+	addModifier(4700,"angle","-90");
+	addModifier(4800,"angle","90");
+
+	addModifier(4900,"pattern_type","Feminist Laser");
+	addModifier(4900,"velocity","0");
+	addModifier(5100,"pattern_type","");
+
+	addModifier(5200,"pattern_type","Rockets");
+	addModifier(5200,"velocity","5");
+	addModifier(5200,"angle","-90");
+	addModifier(5300,"angle","90");
+	addModifier(5400,"angle","-90");
+	addModifier(5500,"angle","90");
+	addModifier(5600,"angle","-90");
+	addModifier(5700,"angle","90");
+
+	addModifier(5800,"pattern_type","Feminist Laser");
+	addModifier(5800,"velocity","0");
+	addModifier(6000,"pattern_type","");
+
+	addModifier(6100,"pattern_type","Rockets");
+	addModifier(6100,"velocity","5");
+	addModifier(6100,"angle","-90");
+	addModifier(6200,"angle","90");
+	addModifier(6300,"angle","-90");
+	addModifier(6400,"angle","90");
+	addModifier(6500,"angle","-90");
+	addModifier(6600,"pattern_type","");
+	addModifier(6600,"angle","90");
+
+	addModifier(6700,"velocity","0");
+	addModifier(6700,"pattern_type","KowaiiDesu");
+/**/
 }
 
 void Enemy::addActivePattern(Pattern* pattern)

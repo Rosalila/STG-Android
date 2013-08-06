@@ -103,9 +103,8 @@ selectables_container=new MenuContenedor(painter,elementos_contenedor);
     Menu* menu=new Menu(painter,new Receiver,sonido,(char*)"menu/main_menu.svg");
 menu->elementos=elementos;
 menu->selectables_container=selectables_container;
-/*
+
     menu->playMusic();
-*/
 
     LOGI("Ready to loop");
 
