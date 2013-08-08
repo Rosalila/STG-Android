@@ -153,11 +153,11 @@
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_bvector.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_relops_cont.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/RosalilaGraphics.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/list \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_list.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_list.c \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_carray.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_image/SDL_image.h \
+ /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/log.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Image.h \
+ /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/GLES/gl.h \
+ /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/GLES/glplatform.h \
+ /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/KHR/khrplatform.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_main.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h \
@@ -207,47 +207,15 @@
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_system.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_timer.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_image/SDL_image.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinyxml.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/assert.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/../include/assert.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinystr.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/GL/freeglut.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/GL/freeglut_std.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/GL/gl.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/GL/glext.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/GL/glu.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/GL/freeglut_ext.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Image.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Explosion.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/../STGUtility/STGUtility.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Boton.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Receiver.h \
- /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/log.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/RosalilaAI.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Automata.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Estado.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Transicion.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/map \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_map.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.c \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdlib \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Explosion2.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Cube.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Object3D.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/sstream \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_sstream.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_sstream.c \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/string \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_hash.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_hash_fun.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_io.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_io.c
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinystr.h
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaNetwork/RosalilaNetwork.h:
 
@@ -555,15 +523,15 @@
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/RosalilaGraphics.h:
 
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/list:
+/home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/log.h:
 
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_list.h:
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Image.h:
 
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_list.c:
+/home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/GLES/gl.h:
 
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_carray.h:
+/home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/GLES/glplatform.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_image/SDL_image.h:
+/home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/KHR/khrplatform.h:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL.h:
 
@@ -663,11 +631,15 @@
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h:
 
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_image/SDL_image.h:
+
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinyxml.h:
 
@@ -676,71 +648,3 @@
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/../include/assert.h:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinystr.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/GL/freeglut.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/GL/freeglut_std.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/GL/gl.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/GL/glext.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/GL/glu.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/GL/freeglut_ext.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Image.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Explosion.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/../STGUtility/STGUtility.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Boton.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Receiver.h:
-
-/home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/log.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/RosalilaAI.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Automata.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Estado.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Transicion.h:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/map:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_map.h:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.h:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.c:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdlib:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Explosion2.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Cube.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Object3D.h:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/sstream:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_sstream.h:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_sstream.c:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/string:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_hash.h:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_hash_fun.h:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_io.h:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_io.c:

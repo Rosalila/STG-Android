@@ -548,8 +548,8 @@ class SDLMain implements Runnable {
     public void run() {
         // Runs SDL_main()
     	int_test=8;
-    	classParam(this);
-    	int a=cFunction();
+    	//classParam(this);
+    	//int a=cFunction();
     	
         SDLActivity.nativeInit();
 

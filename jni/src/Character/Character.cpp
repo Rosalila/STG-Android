@@ -214,6 +214,35 @@ void Character::loadPatternsXML()
 	{
 		std::map<int, vector<Modifier*>* >*pattern_modifiers=new std::map<int, vector<Modifier*>* >();
 
+	
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"InitialD",
+					/*velocity*/10,
+					/*max_velocity*/10,
+					/*acceleration*/0,
+					/*a_frequency*/10,
+					/*angle*/-15,
+					/*angle_change*/0,
+					/*stop_ac_at*/-1,
+					/*ac_frequency*/0,
+					/*animation_velocity*/5,
+					/*bullet*/"Rocket",
+					/*offset_x*/-50,
+					/*offset_y*/184,
+					/*startup*/0,
+					/*cooldown*/60,
+					/*duration*/600,
+					/*random_angle*/0,
+					/*aim_player*/true,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false,
+					pattern_modifiers);
+
+		addPattern(sonido,painter,receiver,"Crazy eyes",4,30,0,10,0,0,99999,0,2,
+		"Eye Lazor",80,18,25,4,99999,0,false,0,0,false,pattern_modifiers);
+
 		addPattern(sonido,painter,receiver,"Crazy eyes",4,30,0,10,0,0,99999,0,2,
 		"Eye Lazor",80,18,25,4,99999,0,false,0,0,false,pattern_modifiers);
 

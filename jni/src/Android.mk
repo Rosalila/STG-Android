@@ -7,10 +7,12 @@ LOCAL_MODULE := main
 SDL_PATH := ../SDL
 SDL_IMAGE_PATH := ../SDL2_image
 SDL_MIXER_PATH := ../SDL2_mixer
+SDL_GFX_PATH := ../SDL_gfx
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/$(SDL_PATH)/include
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/$(SDL_IMAGE_PATH)
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/$(SDL_MIXER_PATH)
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/$(SDL_GFX_PATH)
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/Rosalila
 
 # Add your application source files here...
@@ -64,7 +66,7 @@ LOCAL_SRC_FILES += $(LOCAL_PATH)/Rosalila/RosalilaAI/Transicion.cpp
 
 #LOCAL_SRC_FILES := $(wildcard $(LOCAL_PATH)/*/*.cpp)
 
-LOCAL_SHARED_LIBRARIES := SDL2 SDL2_image SDL2_mixer
+LOCAL_SHARED_LIBRARIES := SDL2 SDL2_image SDL2_mixer SDL_gfx
 
 LOCAL_STATIC_LIBRARIES := android_native_app_glue 
 

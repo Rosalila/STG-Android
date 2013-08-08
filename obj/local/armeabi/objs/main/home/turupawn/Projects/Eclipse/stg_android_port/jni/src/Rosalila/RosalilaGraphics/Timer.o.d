@@ -1,5 +1,6 @@
 /home/turupawn/Projects/Eclipse/stg_android_port/obj/local/armeabi/objs/main//home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.o: \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.cpp \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_main.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h \
@@ -106,8 +107,9 @@
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_render.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_system.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_timer.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL.h:
 
@@ -322,5 +324,3 @@
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_timer.h:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h:
