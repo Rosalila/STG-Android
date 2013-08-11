@@ -156,6 +156,27 @@ void Stage::addLayer(string layer_name,int sprite_amount,int frame_duration,int 
 //(textures,textures_size_x,textures_size_y,40,0,0,0,0,0));
 }
 
+void Stage::addLayer(string layer_name,int sprite_amount,int frame_duration,int depth_effect_x,int depth_effect_y,int alignment_x,int alignment_y,int separation_x, int width, int height)
+{
+    std::vector <Image*> textures;
+
+    std::vector <int> textures_size_x;
+    std::vector <int> textures_size_y;
+
+	for(int i=1;i<=sprite_amount;i++)
+	{
+	    Image *image_temp=painter->getTexture("stages/"+name+"/images/"+layer_name+"/"+toString(i)+".png");
+		textures.push_back(image_temp);
+		textures_size_x.push_back(width);
+		textures_size_y.push_back(height);
+	}
+
+    back.push_back(new Layer(textures,textures_size_x,textures_size_y,
+		frame_duration,depth_effect_x,depth_effect_y,
+		alignment_x,alignment_y,separation_x));
+//(textures,textures_size_x,textures_size_y,40,0,0,0,0,0));
+}
+
 void Stage::loadFromXML(std::string name)
 {
     this->name=name;
@@ -179,13 +200,13 @@ void Stage::loadFromXML(std::string name)
     this->bound_y2=painter->screen_height;
 
 
-    this->velocity=0;
+    this->velocity=20;
 
     writeLogLine("Loading stage's BackLayers.");
 
 
 	addLayer("fondo",1,40,0,0,0,0,0);
-	addLayer("planetaguerra",1,40,120,0,300,350,2000);
+	addLayer("planetaguerra",1,40,120,0,300,350,2000-256+32);
 	addLayer("explosion",7,5,120,0,300,350,2000);
 	addLayer("explosion",7,3,120,0,350,375,2000);
 	addLayer("explosion",7,4,120,0,400,445,2000);
@@ -197,12 +218,12 @@ void Stage::loadFromXML(std::string name)
 	addLayer("explosion",7,7,120,0,427,393,2000);
 	addLayer("explosion",7,9,120,0,421,405,2000);
 	addLayer("explosion",7,4,120,0,413,403,2000);
-	addLayer("restosbrillantes",1,5,3,0,300,440,0);
-	addLayer("city",3,21,80,0,900,350,2000);
+	addLayer("restosbrillantes",1,5,3,0,300,440,0,3500,75);
+	addLayer("city",3,21,80,0,900,350,1300);
 	addLayer("restosnegros",1,2,10,0,100,575,0);
 	addLayer("restosnegros",1,2,25,0,300,450,0);
 	addLayer("restosnegros",1,2,30,0,600,300,0);
-	addLayer("plataforma",1,100,1,0,0,0,0);
+	//addLayer("plataforma",1,100,1,0,0,0,0);
 
 
 /*

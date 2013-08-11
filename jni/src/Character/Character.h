@@ -66,7 +66,9 @@ double x,y;
 int hitbox_x,int hitbox_y,int hitbox_w,int hitbox_h,int hitbox_angle,
 int damage);
 
-    void addPattern(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::string name,int velocity,int max_velocity,int acceleration,int a_frequency,float angle,int angle_change,int stop_ac_at,int ac_frequency,int animation_velocity,std::string bullet,int offset_x,int offset_y,int startup,int cooldown,int duration,int random_angle,bool aim_player,float bullet_rotation, float br_change, bool independent_br, std::map<int, vector<Modifier*>* >*modifiers);
+    void addPattern(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::string name,int velocity,int max_velocity,int acceleration,int a_frequency,float angle,int angle_change,int stop_ac_at,int ac_frequency,int animation_velocity,std::string bullet,int offset_x,int offset_y,int startup,int cooldown,int duration,int random_angle,bool aim_player,float bullet_rotation, float br_change, bool independent_br);
+
+	void addModifier(string type,int pattern_pos,int at, string variable, string value);
 
     void loadFromXML();
     void loadMainXML();

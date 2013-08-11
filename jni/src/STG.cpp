@@ -65,7 +65,7 @@ void STG::mainLoop()
             break;
         }
 
-        render();
+		render();
         logic();
 
 /*

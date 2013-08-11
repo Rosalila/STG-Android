@@ -164,7 +164,7 @@ void Enemy::addModifier(int at,std::string variable,std::string value)
 
 void Enemy::loadModifiersFromXML()
 {
-	addModifier(0,"velocity","1");
+	addModifier(0,"velocity","2");
 	addModifier(0,"angle_change","5");
 
 	addModifier(100,"pattern_type","InitialD");
@@ -174,6 +174,9 @@ void Enemy::loadModifiersFromXML()
 	addModifier(2950,"pattern_type","");
 	addModifier(2950,"velocity","0");
 	addModifier(2950,"angle_change","0");
+
+	addModifier(3040,"velocity","4");
+	addModifier(3040,"angle","-90");
 
 	addModifier(3100,"pattern_type","Happy meal");
 	addModifier(3100,"velocity","0");
@@ -189,7 +192,7 @@ void Enemy::loadModifiersFromXML()
 		addModifier(3350+i*100,"angle","0");
 	}
 
-	for(int i=0;i<4;i++)
+	for(int i=0;i<5;i++)
 	{
 		addModifier(3800+i*150,"angle","180");
 	}
@@ -203,6 +206,9 @@ void Enemy::loadModifiersFromXML()
 	{
 		addModifier(3900+i*150,"angle","60");
 	}
+
+	addModifier(4500,"velocity","0");
+	addModifier(4500,"angle","180");
 
 	addModifier(4550,"pattern_type","");
 	addModifier(4550,"velocity","5");
