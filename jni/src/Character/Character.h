@@ -81,6 +81,7 @@ int damage);
     virtual void addActivePattern(Pattern* pattern);
 
     void parrentRender();
+	void renderPatterns();
     void render();
     void setX(int x);
     void setY(int y);

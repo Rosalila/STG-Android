@@ -228,7 +228,7 @@ void Pattern::render()
             true);
     }
 
-    if(receiver->IsKeyDownn(SDLK_h))
+    if(receiver->IsKeyDownn(SDLK_h) || receiver->isOuyaDown('a'))
     {
         for(int i=0;i<(int)bullet->getHitboxes().size();i++)
         {

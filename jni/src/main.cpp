@@ -103,7 +103,7 @@ __android_log_print(ANDROID_LOG_DEBUG, "CHUUUY", "AAAAAAAAAAAAAAAAAAA2");
 
 std::vector<Elemento*> elementos;
             Image* image=painter->getTexture("menu/selection_bg.png");
-            elementos.push_back((Elemento*)new MenuImagen(painter,0,0,0,0,0,0,-1,0,
+            elementos.push_back((Elemento*)new MenuImagen(painter,0,0,0,0,0,0,255,0,
                                                           2048,2048,image,""
                                                           ));
 std::vector<Elemento*>elementos_contenedor;
@@ -119,8 +119,9 @@ elem_lista,"start"));
 MenuContenedor*selectables_container;
 selectables_container=new MenuContenedor(painter,elementos_contenedor);
 
+setReceiver(new Receiver);
 
-    Menu* menu=new Menu(painter,new Receiver,sonido,(char*)"menu/main_menu.svg");
+    Menu* menu=new Menu(painter,getReceiver(),sonido,(char*)"menu/main_menu.svg");
 menu->elementos=elementos;
 menu->selectables_container=selectables_container;
 

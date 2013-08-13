@@ -216,6 +216,19 @@
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_vector.c \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_bvector.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_relops_cont.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGUtility/STGUtility.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Boton.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Receiver.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/RosalilaAI.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Automata.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Estado.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Transicion.h \
+ /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/map \
+ /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_map.h \
+ /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.h \
+ /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.c \
+ /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdlib \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaSound/RosalilaSound.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/string \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_hash.h \
@@ -227,18 +240,6 @@
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/map \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_map.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.c \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Boton.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Receiver.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/RosalilaAI.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Automata.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Estado.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Transicion.h \
- /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdlib \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Spells/Bullet.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Spells/Hitbox.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Spells/../Character/Modifier.h \
@@ -676,6 +677,32 @@
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_relops_cont.h:
 
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGUtility/STGUtility.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Boton.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Receiver.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/RosalilaAI.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Automata.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Estado.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Transicion.h:
+
+/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/map:
+
+/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_map.h:
+
+/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.h:
+
+/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.c:
+
+/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdlib:
+
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaSound/RosalilaSound.h:
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/string:
@@ -697,30 +724,6 @@
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/map:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_map.h:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.h:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.c:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Boton.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Receiver.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/RosalilaAI.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Automata.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Estado.h:
-
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Transicion.h:
-
-/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdlib:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Spells/Bullet.h:
 

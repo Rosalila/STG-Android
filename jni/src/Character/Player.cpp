@@ -11,7 +11,7 @@ Player::Player(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::s
     this->active_patterns=new std::list<Pattern*>;
     this->shooting=true;
     this->orientation="idle";
-    this->current_type="1";
+    this->current_type="o";
     this->visible=true;
 
     //Sprites animation
@@ -26,6 +26,36 @@ Player::Player(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::s
     life_bar=painter->getTexture(directory+"life_bar.png");
 
     loadPlayerFromXML();
+
+	shadow_x.push_back(this->x);
+	shadow_y.push_back(this->y);
+	shadow_x.push_back(this->x);
+	shadow_y.push_back(this->y);
+	shadow_x.push_back(this->x);
+	shadow_y.push_back(this->y);
+	shadow_x.push_back(this->x);
+	shadow_y.push_back(this->y);
+
+
+	shadow_orientation.push_back(this->orientation);
+	shadow_orientation.push_back(this->orientation);
+	shadow_orientation.push_back(this->orientation);
+	shadow_orientation.push_back(this->orientation);
+
+	shadow_current_sprite.push_back(this->current_sprite);
+	shadow_current_sprite.push_back(this->current_sprite);
+	shadow_current_sprite.push_back(this->current_sprite);
+	shadow_current_sprite.push_back(this->current_sprite);
+
+	shadow_effect_green.push_back(false);
+	shadow_effect_green.push_back(false);
+	shadow_effect_green.push_back(false);
+	shadow_effect_green.push_back(false);
+
+	shadow_effect_red.push_back(false);
+	shadow_effect_red.push_back(false);
+	shadow_effect_red.push_back(false);
+	shadow_effect_red.push_back(false);
 }
 
 void Player::loadPlayerFromXML()
@@ -33,8 +63,8 @@ void Player::loadPlayerFromXML()
     loadFromXML();
 
 
-    this->current_slow=0;
-    this->max_slow=-1;
+    this->current_slow=750;
+    this->max_slow=750;
 
     this->slow_decrement=3;
 
@@ -44,21 +74,20 @@ void Player::loadPlayerFromXML()
 
     this->slow_cooldown_increment=2;
 
-
-    this->slow_bar_x=0;
-    this->slow_bar_y=0;
+    this->slow_bar_x=85;
+    this->slow_bar_y=77;
     this->slow_bar_rect_offset_x=0;
     this->slow_bar_rect_offset_y=0;
-    this->slow_bar_rect_height=0;
-    this->slow_bar_rect_width=0;
+    this->slow_bar_rect_width=186;
+    this->slow_bar_rect_height=5;
     this->slow_bar_color.red=0;
-    this->slow_bar_color.green=0;
-    this->slow_bar_color.blue=0;
+    this->slow_bar_color.green=64;
+    this->slow_bar_color.blue=128;
     this->slow_bar_color.alpha=255;
-    this->slow_bar_cooldown_color.red=0;
-    this->slow_bar_cooldown_color.green=0;
-    this->slow_bar_cooldown_color.blue=0;
-    this->slow_bar_cooldown_color.alpha=128;
+    this->slow_bar_cooldown_color.red=50;
+    this->slow_bar_cooldown_color.green=50;
+    this->slow_bar_cooldown_color.blue=50;
+    this->slow_bar_cooldown_color.alpha=255;
 
 }
 
@@ -103,34 +132,102 @@ void Player::inputControl()
         orientation="idle";
     }
 
+    if((receiver->IsKeyDownn(SDLK_DOWN) && receiver->IsKeyDownn(SDLK_LEFT))
+       || (receiver->IsJoyDown(-2,0) && receiver->IsJoyDown(-4,0))
+	   || (receiver->isOuyaDown(2) && receiver->isOuyaDown(4)))
+    {
+		double delta = sqrt(pow(velocity/getSlowdown(),2)/2);
+		if(receiver->isOuyaDown('l'))
+			delta/=2;
+		if(receiver->isOuyaDown('r'))
+			delta*=2;
+        this->y+=delta;
+        this->x-=delta;
+	}else if((receiver->IsKeyDownn(SDLK_DOWN) && receiver->IsKeyDownn(SDLK_RIGHT))
+       || (receiver->IsJoyDown(-2,0) && receiver->IsJoyDown(-6,0))
+	   || (receiver->isOuyaDown(2) && receiver->isOuyaDown(6)))
+    {
+		double delta = sqrt(pow(velocity/getSlowdown(),2)/2);
+		if(receiver->isOuyaDown('l'))
+			delta/=2;
+		if(receiver->isOuyaDown('r'))
+			delta*=2;
+        this->y+=delta;
+        this->x+=delta;
+	}else if((receiver->IsKeyDownn(SDLK_UP) && receiver->IsKeyDownn(SDLK_LEFT))
+       || (receiver->IsJoyDown(-8,0) && receiver->IsJoyDown(-4,0))
+	   || (receiver->isOuyaDown(8) && receiver->isOuyaDown(4)))
+    {
+		double delta = sqrt(pow(velocity/getSlowdown(),2)/2);
+		if(receiver->isOuyaDown('l'))
+			delta/=2;
+		if(receiver->isOuyaDown('r'))
+			delta*=2;
+        this->y-=delta;
+        this->x-=delta;
+	}else if((receiver->IsKeyDownn(SDLK_UP) && receiver->IsKeyDownn(SDLK_RIGHT))
+       || (receiver->IsJoyDown(-8,0) && receiver->IsJoyDown(-6,0))
+	   || (receiver->isOuyaDown(8) && receiver->isOuyaDown(6)))
+    {
+		double delta = sqrt(pow(velocity/getSlowdown(),2)/2);
+		if(receiver->isOuyaDown('l'))
+			delta/=2;
+		if(receiver->isOuyaDown('r'))
+			delta*=2;
+        this->y-=delta;
+        this->x+=delta;
+	}else
     if(receiver->IsKeyDownn(SDLK_DOWN)
        || receiver->IsJoyDown(-2,0)
 	   || receiver->isOuyaDown(2))
     {
-        this->y+=velocity/getSlowdown();
-    }
+		double delta = velocity/getSlowdown();
+		if(receiver->isOuyaDown('l'))
+			delta/=2;
+		if(receiver->isOuyaDown('r'))
+			delta*=2;
+        this->y+=delta;
+    }else
     if(receiver->IsKeyDownn(SDLK_UP)
        || receiver->IsJoyDown(-8,0)
 	   || receiver->isOuyaDown(8))
     {
-        this->y-=velocity/getSlowdown();
-    }
+		double delta = velocity/getSlowdown();
+		if(receiver->isOuyaDown('l'))
+			delta/=2;
+		if(receiver->isOuyaDown('r'))
+			delta*=2;
+        this->y-=delta;
+    }else
     if(receiver->IsKeyDownn(SDLK_LEFT)
        || receiver->IsJoyDown(-4,0)
 	   || receiver->isOuyaDown(4))
     {
-        this->x-=velocity/getSlowdown();
-    }
+		double delta = velocity/getSlowdown();
+		if(receiver->isOuyaDown('l'))
+			delta/=2;
+		if(receiver->isOuyaDown('r'))
+			delta*=2;
+        this->x-=delta;
+    }else
     if(receiver->IsKeyDownn(SDLK_RIGHT)
        || receiver->IsJoyDown(-6,0)
 	   || receiver->isOuyaDown(6))
     {
-       this->x+=velocity/getSlowdown();
+		double delta = velocity/getSlowdown();
+		if(receiver->isOuyaDown('l'))
+			delta/=2;
+		if(receiver->isOuyaDown('r'))
+			delta*=2;
+       this->x+=delta;
     }
 
     if(receiver->IsKeyDownn(SDLK_z)
-       || receiver->IsJoyDown(0,0)
-	   || receiver->isOuyaDown('o'))
+		|| receiver->IsJoyDown(0,0)
+		|| receiver->isOuyaDown('o')
+		|| receiver->isOuyaDown('u')
+		|| receiver->isOuyaDown('y')
+		|| receiver->isOuyaDown('a'))
     {
         this->shooting=true;
     }
@@ -143,6 +240,15 @@ void Player::inputControl()
 void Player::logic(int stage_velocity)
 {
     animationControl();
+
+	if(receiver->isOuyaDown('o'))
+		current_type="o";
+	if(receiver->isOuyaDown('u'))
+		current_type="u";
+	if(receiver->isOuyaDown('y'))
+		current_type="y";
+	if(receiver->isOuyaDown('a'))
+		current_type="a";
 
     if(this->hp!=0)
     {
@@ -162,6 +268,8 @@ void Player::logic(int stage_velocity)
     {
         enableSlow();
         current_slow-=slow_decrement;
+		if(receiver->isOuyaDown('x') && receiver->isOuyaDown('z'))//double
+			current_slow-=slow_decrement;
     }else
     {
         disableSlow();
@@ -195,32 +303,63 @@ void Player::logic(int stage_velocity)
 
 	this->setX(this->getX()+stage_velocity);
 
+	//shadow control
+	if(iteration%1==0)
+	{
+		for(int i=shadow_x.size()-1;i>=1;i--)
+		{
+			shadow_x[i]=shadow_x[i-1];
+			shadow_y[i]=shadow_y[i-1];
+
+			shadow_orientation[i]=shadow_orientation[i-1];
+			shadow_current_sprite[i]=shadow_current_sprite[i-1];
+			shadow_effect_green[i]=shadow_effect_green[i-1];
+			shadow_effect_red[i]=shadow_effect_red[i-1];
+		}
+
+		shadow_x[0]=this->x-painter->camera_x;
+		shadow_y[0]=this->y;
+
+		shadow_orientation[0]=this->orientation;
+		shadow_current_sprite[0]=this->current_sprite;
+		shadow_effect_green[0]=receiver->isOuyaDown('l');
+		shadow_effect_red[0]=receiver->isOuyaDown('r');
+	}
+
     iteration++;
 }
 
 void Player::render()
 {
-/*
-    //HP
-    painter->drawRectangle(life_bar_x+life_bar_rect_offset_x,life_bar_y+life_bar_rect_offset_y,(life_bar_rect_width*hp)/max_hp,life_bar_rect_height,0,this->color.getRed(),this->color.getGreen(),this->color.getBlue(),this->color.getAlpha(),false);
-    if(!slow_in_cooldown)
-        painter->drawRectangle(slow_bar_x+slow_bar_rect_offset_x,slow_bar_y+slow_bar_rect_offset_y,(slow_bar_rect_width*current_slow)/max_slow,slow_bar_rect_height,0,this->slow_bar_color.getRed(),this->slow_bar_color.getGreen(),this->slow_bar_color.getBlue(),this->slow_bar_color.getAlpha(),false);
-    else
-        painter->drawRectangle(slow_bar_x+slow_bar_rect_offset_x,slow_bar_y+slow_bar_rect_offset_y,(slow_bar_rect_width*current_slow)/max_slow,slow_bar_rect_height,0,this->slow_bar_cooldown_color.getRed(),this->slow_bar_cooldown_color.getGreen(),this->slow_bar_cooldown_color.getBlue(),this->slow_bar_cooldown_color.getAlpha(),false);
-*/
-    parrentRender();
-/*
+
+for(int i=1;i<shadow_x.size();i++)
+{
+	int shadow_x_int=shadow_x[i];
+	int shadow_y_int=shadow_y[i];
+
+	int effect_red=0;
+	int effect_green=0;
+
+	if(shadow_effect_red[i])
+		effect_red=128;
+
+	if(shadow_effect_green[i])
+		effect_green=128;
+
     painter->draw2DImage
-    (   life_bar,
-        life_bar->getWidth(),life_bar->getHeight(),
-        painter->camera_x+life_bar_x,life_bar_y,
+    (   sprites[shadow_orientation[0]][shadow_current_sprite[0]],
+        sprites[shadow_orientation[0]][shadow_current_sprite[0]]->getWidth(),sprites[shadow_orientation[0]][shadow_current_sprite[0]]->getHeight(),
+        shadow_x_int-sprites[shadow_orientation[0]][shadow_current_sprite[0]]->getWidth()/2,shadow_y_int-sprites[shadow_orientation[0]][shadow_current_sprite[0]]->getHeight()/2,
         1.0,
         0.0,
         false,
         0,0,
-        Color(255,255,255,255),
-        true);
+        Color(effect_red,effect_green,128,255/(i+1)),
+        false);
+}
 
+    parrentRender();
+/*
     if(isSlowActive())
     {
         painter->draw3DCube(this->getHitbox().getX(),this->getHitbox().getY(),2.0,Color(255,0,0,180));
@@ -236,4 +375,24 @@ void Player::render()
 //    }
     painter->draw3D();
 */
+}
+void Player::renderHUD()
+{
+    //HP
+    painter->drawRectangle(life_bar_x+life_bar_rect_offset_x,life_bar_y+life_bar_rect_offset_y,(life_bar_rect_width*hp)/max_hp,life_bar_rect_height,0,this->color.getRed(),this->color.getGreen(),this->color.getBlue(),this->color.getAlpha(),false);
+    if(!slow_in_cooldown)
+        painter->drawRectangle(slow_bar_x+slow_bar_rect_offset_x,slow_bar_y+slow_bar_rect_offset_y,(slow_bar_rect_width*current_slow)/max_slow,slow_bar_rect_height,0,this->slow_bar_color.getRed(),this->slow_bar_color.getGreen(),this->slow_bar_color.getBlue(),this->slow_bar_color.getAlpha(),false);
+    else
+        painter->drawRectangle(slow_bar_x+slow_bar_rect_offset_x,slow_bar_y+slow_bar_rect_offset_y,(slow_bar_rect_width*current_slow)/max_slow,slow_bar_rect_height,0,this->slow_bar_cooldown_color.getRed(),this->slow_bar_cooldown_color.getGreen(),this->slow_bar_cooldown_color.getBlue(),this->slow_bar_cooldown_color.getAlpha(),false);
+
+    painter->draw2DImage
+    (   life_bar,
+        life_bar->getWidth(),life_bar->getHeight(),
+        painter->camera_x+life_bar_x,life_bar_y,
+        1.0,
+        0.0,
+        false,
+        0,0,
+        Color(255,255,255,255),
+        true);
 }

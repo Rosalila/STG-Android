@@ -29,7 +29,7 @@ private:
     bool exit_signal,save_inputs_signal;
     MenuCharSelect* char_select;
 
-    void iniciarJuego(std::string character_name,std::string stage_name);
+    void iniciarJuego(std::string character_name,std::string stage_name,std::string dificulty);
 public:
 std::vector<Elemento*> elementos;
 MenuContenedor*selectables_container;

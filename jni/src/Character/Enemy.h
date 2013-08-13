@@ -26,11 +26,12 @@ class Enemy : public Character
     string score_upload_message;
     bool flag_begin_upload;
 public:
-    Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::string name,Player*player);
-	void addModifier(int at,std::string variable,std::string value);
+    Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::string name,Player*player, string dificulty);
+	void addEnemyModifier(int at,std::string variable,std::string value);
     void logic(int stage_velocity, string stage_name, int global_iteration, string username);
     void modifiersControl();
     void render();
+	void renderHUD();
     void loadModifiersFromXML();
     virtual void addActivePattern(Pattern* pattern);
     void aimPlayer(Pattern* pattern);

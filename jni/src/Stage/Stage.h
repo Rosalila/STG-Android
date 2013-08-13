@@ -34,6 +34,9 @@ private:
     bool iterate_slowdown_flag;
     int current_slowdown_iteration;
 
+	//effects
+	int transparency_effect;
+
 public:
     Stage(RosalilaGraphics* painter,Sound* sonido,Receiver*receiver);
 	void addLayer(string layer_name,int sprite_amount,int frame_duration,int depth_effect_x,int depth_effect_y,int alignment_x,int alignment_y,int separation_x);

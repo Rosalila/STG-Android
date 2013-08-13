@@ -11,6 +11,7 @@ STG::STG(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,Player*playe
     painter->camera_x=0;
     painter->camera_y=0;
     iteration=0;
+	iteration_2=0;
 
     //XML Initializations
 
@@ -65,21 +66,16 @@ void STG::mainLoop()
             break;
         }
 
-		render();
-        logic();
+		if(iteration_2 % 2 == 0)
+		{
+	        logic();
+			render();
+		}else
+		{
+			painter->frameCap();
+		}
 
-/*
-if(receiver->isOuyaDown(6))
-	player->setX(player->getX()+1);
-if(receiver->isOuyaDown(4))
-	player->setX(player->getX()-1);
-if(receiver->isOuyaDown(8))
-	player->setY(player->getY()+1);
-if(receiver->isOuyaDown(2))
-	player->setY(player->getY()-1);
-if(receiver->isOuyaDown('o'))
-	player->setY(player->getY()-1);
-*/
+		iteration_2++;
 
         if(player->getHP()==0
            || enemy->getHP()==0)
@@ -158,8 +154,14 @@ void STG::logic()
 void STG::render()
 {
     stage->dibujarBack();
-    player->render();
     enemy->render();
+    player->render();
+
+	enemy->renderPatterns();
+	player->renderPatterns();
+
+	enemy->renderHUD();
+	player->renderHUD();
 
 //    stage->render();
 //    stage->dibujarFront();
@@ -208,7 +210,7 @@ void STG::render()
 
     painter->drawText("Time: "+toString(iteration),0,65);
 /**/
-
+	painter->frameCap();
     painter->updateScreen();
 }
 

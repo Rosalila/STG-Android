@@ -60,7 +60,7 @@ Menu::Menu(RosalilaGraphics* painter,Receiver* receiver,Sound* sonido,char* arch
     cargarDesdeXml(archivo,chars,stages);
 }
 
-void Menu::iniciarJuego(std::string character_name,std::string stage_name)
+void Menu::iniciarJuego(std::string character_name,std::string stage_name, std::string dificulty)
 {
     this->printLoadingScreen();
     writeLogLine("Initializing game.");
@@ -71,7 +71,7 @@ __android_log_print(ANDROID_LOG_DEBUG, APPNAME, "despues de stage");
 __android_log_print(ANDROID_LOG_DEBUG, APPNAME, "despues de stage xml");
     Player*player=new Player(sonido,painter,receiver,character_name);
 __android_log_print(ANDROID_LOG_DEBUG, APPNAME, "despues del personaje");
-    Enemy*enemy=new Enemy(sonido,painter,receiver,stage_name,player);
+    Enemy*enemy=new Enemy(sonido,painter,receiver,stage_name,player,dificulty);
 __android_log_print(ANDROID_LOG_DEBUG, APPNAME, "despues del enemigo");
     STG*stg=new STG(sonido,painter,receiver,player,enemy,stage);
     delete stg;
@@ -215,8 +215,20 @@ void Menu::loopMenu()
                 }
             }else if(receiver->IsKeyPressed(SDLK_RETURN) || receiver->IsKeyPressed(SDLK_z) || receiver->IsJoyPressed(0,0) || receiver->isOuyaPressed('u') || receiver->isOuyaDown('u'))
             {
-__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "READY to crashh");
-iniciarJuego("Iguro","FeministKillBot_normal");
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "READY to crashh easy");
+iniciarJuego("Iguro","FeministKillBot_normal","easy");
+
+			}
+			else if(receiver->IsKeyPressed(SDLK_RETURN) || receiver->IsKeyPressed(SDLK_z) || receiver->IsJoyPressed(0,0) || receiver->isOuyaPressed('y') || receiver->isOuyaDown('y'))
+            {
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "READY to crashh normal");
+iniciarJuego("Iguro","FeministKillBot_normal","normal");
+
+			}
+			else if(receiver->IsKeyPressed(SDLK_RETURN) || receiver->IsKeyPressed(SDLK_z) || receiver->IsJoyPressed(0,0) || receiver->isOuyaPressed('a') || receiver->isOuyaDown('a'))
+            {
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "READY to crashh hard");
+iniciarJuego("Iguro","FeministKillBot_normal","hard");
 
 /*
                 if(((MenuContenedor*)selectables_container)->getElementoSeleccionado()->getTipo()=="Lista")
@@ -345,7 +357,8 @@ iniciarJuego("Iguro","FeministKillBot_normal");
                     }
                 }
 */
-            }else
+            }
+			else
             {
                 tecla_arriba=true;
             }

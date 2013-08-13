@@ -11,6 +11,9 @@ Stage::Stage(RosalilaGraphics* painter,Sound* sonido,Receiver*receiver)
     //slow extra control
     this->iterate_slowdown_flag=false;
     this->current_slowdown_iteration=0;
+
+	//effects
+	this->transparency_effect=255;
 }
 
 void Stage::drawLayer(Layer* layer)
@@ -38,6 +41,31 @@ void Stage::drawLayer(Layer* layer)
 
     int pos_x=layer->alignment_x;
     int pos_y=painter->screen_height-size_y-layer->alignment_y;
+
+/*
+	if(isSlowActive())
+	{
+		transparency_effect--;
+	}else
+	{
+		transparency_effect++;
+	}
+
+	if(transparency_effect>255)
+		transparency_effect=255;
+
+	if(isSlowActive()
+		&& receiver->isOuyaDown('m') && receiver->isOuyaDown('s'))
+	{
+		if(transparency_effect<64)
+		{
+			transparency_effect=64;
+		}
+	}else if(transparency_effect<128)
+	{
+		transparency_effect=128;
+	}
+*/
 
     for(int i=0;i<painter->screen_width/(size_x+layer->separation_x)+2;i++)
     {

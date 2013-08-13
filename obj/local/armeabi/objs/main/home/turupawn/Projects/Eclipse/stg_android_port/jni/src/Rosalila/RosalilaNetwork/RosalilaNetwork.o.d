@@ -212,10 +212,23 @@
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGUtility/STGUtility.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Boton.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Receiver.h \
  /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinyxml.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/assert.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/../include/assert.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinystr.h
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinystr.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/RosalilaAI.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Automata.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Estado.h \
+ /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Transicion.h \
+ /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/map \
+ /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_map.h \
+ /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.h \
+ /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.c \
+ /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdlib
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaNetwork/RosalilaNetwork.h:
 
@@ -641,6 +654,14 @@
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h:
 
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGUtility/STGUtility.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Boton.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Receiver.h:
+
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinyxml.h:
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/assert.h:
@@ -648,3 +669,21 @@
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/../include/assert.h:
 
 /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinystr.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/RosalilaAI.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Automata.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Estado.h:
+
+/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Transicion.h:
+
+/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/map:
+
+/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_map.h:
+
+/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.h:
+
+/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.c:
+
+/home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdlib:

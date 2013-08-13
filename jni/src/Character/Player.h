@@ -13,6 +13,8 @@
 #include "../Spells/Pattern.h"
 #include "Character.h"
 
+using namespace std;
+
 class Player:public Character
 {
     Image*life_bar;
@@ -31,11 +33,18 @@ class Player:public Character
     int slow_bar_rect_width;
     Color slow_bar_color;
     Color slow_bar_cooldown_color;
+	vector<int>shadow_x;
+	vector<int>shadow_y;
+	vector<string>shadow_orientation;
+	vector<int>shadow_current_sprite;
+	vector<bool>shadow_effect_green;
+	vector<bool>shadow_effect_red;
 public:
     Player(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::string name);
     void logic(int stage_velocity);
     void inputControl();
     void render();
+	void renderHUD();
     void loadPlayerFromXML();
 };
 
