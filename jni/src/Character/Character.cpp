@@ -141,7 +141,7 @@ void Character::loadMainXML()
 		this->color.blue=0;
 		this->color.alpha=255;
 
-		//this->iteration=1200;
+		//this->iteration=4275;
 
 		int hitbox_x=-100;
 		int hitbox_y=-250;

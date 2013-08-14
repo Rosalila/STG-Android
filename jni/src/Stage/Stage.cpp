@@ -42,7 +42,7 @@ void Stage::drawLayer(Layer* layer)
     int pos_x=layer->alignment_x;
     int pos_y=painter->screen_height-size_y-layer->alignment_y;
 
-/*
+
 	if(isSlowActive())
 	{
 		transparency_effect--;
@@ -65,7 +65,7 @@ void Stage::drawLayer(Layer* layer)
 	{
 		transparency_effect=128;
 	}
-*/
+/**/
 
     for(int i=0;i<painter->screen_width/(size_x+layer->separation_x)+2;i++)
     {
@@ -78,7 +78,7 @@ void Stage::drawLayer(Layer* layer)
             false,
             layer->depth_effect_x,
             layer->depth_effect_y,
-            Color(255,255,255,255),
+            Color(255,255,255,transparency_effect),
             false);
     }
 
