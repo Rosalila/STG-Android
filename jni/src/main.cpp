@@ -104,7 +104,7 @@ __android_log_print(ANDROID_LOG_DEBUG, "CHUUUY", "AAAAAAAAAAAAAAAAAAA2");
 std::vector<Elemento*> elementos;
             Image* image=painter->getTexture("menu/selection_bg.png");
             elementos.push_back((Elemento*)new MenuImagen(painter,0,0,0,0,0,0,255,0,
-                                                          2048,2048,image,""
+                                                          2048,1024,image,""
                                                           ));
 std::vector<Elemento*>elementos_contenedor;
 

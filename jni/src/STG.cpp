@@ -49,6 +49,23 @@ STG::STG(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,Player*playe
         you_win.addImage(painter->getTexture(path));
     }
 */
+
+	you_win=Animation(200,200,2,painter);
+	you_win.addImage(painter->getTexture("misc/you win/1.png"));
+	you_win.addImage(painter->getTexture("misc/you win/2.png"));
+	you_win.addImage(painter->getTexture("misc/you win/3.png"));
+	you_win.addImage(painter->getTexture("misc/you win/4.png"));
+	you_win.addImage(painter->getTexture("misc/you win/5.png"));
+	you_win.addImage(painter->getTexture("misc/you win/6.png"));
+
+	you_loose=Animation(200,200,2,painter);
+	you_loose.addImage(painter->getTexture("misc/you loose/1.png"));
+	you_loose.addImage(painter->getTexture("misc/you loose/2.png"));
+	you_loose.addImage(painter->getTexture("misc/you loose/3.png"));
+	you_loose.addImage(painter->getTexture("misc/you loose/4.png"));
+	you_loose.addImage(painter->getTexture("misc/you loose/5.png"));
+	you_loose.addImage(painter->getTexture("misc/you loose/6.png"));
+
     stage->playMusic();
 
     mainLoop();
@@ -80,6 +97,14 @@ void STG::mainLoop()
         if(player->getHP()==0
            || enemy->getHP()==0)
         {
+            if(receiver->isOuyaPressed('o'))
+                break;
+            if(receiver->isOuyaPressed('u'))
+                break;
+            if(receiver->isOuyaPressed('y'))
+                break;
+            if(receiver->isOuyaPressed('a'))
+                break;
             if(receiver->IsKeyPressed(SDLK_RETURN))
                 break;
             if(receiver->IsKeyPressed(SDLK_z) && end_key_up_keyboard)

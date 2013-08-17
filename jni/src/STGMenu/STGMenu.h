@@ -39,6 +39,7 @@ MenuContenedor*selectables_container;
 
     //Misc
     Image* loading_screen;
+    Image* instructions_screen;
 
     Menu(){}
     Menu(RosalilaGraphics* painter,Receiver* receiver,Sound* sonido,char* archivo);

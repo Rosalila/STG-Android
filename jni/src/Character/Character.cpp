@@ -47,7 +47,7 @@ void Character::loadMainXML()
     this->max_hp=100;
     this->hp=this->max_hp;
 
-    this->max_hp=6500;
+    this->max_hp=1;
     this->hp=this->max_hp;
 
     this->x=100;
@@ -70,7 +70,7 @@ void Character::loadMainXML()
 	{
 	    this->velocity=10;
 
-		this->max_hp=100000;
+		this->max_hp=200;
 		this->hp=this->max_hp;
 
 		this->life_bar_x=50;
@@ -85,10 +85,10 @@ void Character::loadMainXML()
 		this->color.blue=0;
 		this->color.alpha=255;
 
-		int hitbox_x=10;
-		int hitbox_y=10;
-		int hitbox_width=100;
-		int hitbox_height=10;
+		int hitbox_x=-15;
+		int hitbox_y=-15;
+		int hitbox_width=30;
+		int hitbox_height=30;
 		int hitbox_angle=0;
 		this->hitbox.setValues(hitbox_x,hitbox_y,hitbox_width,hitbox_height,hitbox_angle);
 
@@ -113,12 +113,24 @@ void Character::loadMainXML()
 		vector_back.push_back(painter->getTexture("chars/Iguro/sprites/nuevas/1back.png"));
 		vector_back.push_back(painter->getTexture("chars/Iguro/sprites/nuevas/2back.png"));
 
+        std::vector<Image*>vector_destroyed;
+		vector_destroyed.push_back(painter->getTexture("chars/Iguro/sprites/destroyed/1.png"));
+		vector_destroyed.push_back(painter->getTexture("chars/Iguro/sprites/destroyed/2.png"));
+		vector_destroyed.push_back(painter->getTexture("chars/Iguro/sprites/destroyed/3.png"));
+		vector_destroyed.push_back(painter->getTexture("chars/Iguro/sprites/destroyed/4.png"));
+		vector_destroyed.push_back(painter->getTexture("chars/Iguro/sprites/destroyed/5.png"));
+		vector_destroyed.push_back(painter->getTexture("chars/Iguro/sprites/destroyed/6.png"));
+		vector_destroyed.push_back(painter->getTexture("chars/Iguro/sprites/destroyed/7.png"));
+		vector_destroyed.push_back(painter->getTexture("chars/Iguro/sprites/destroyed/8.png"));
+
 		sprites["idle"]=sprites_vector;
 
 		sprites["up"]=vector_up;
 		sprites["down"]=vector_down;
 		sprites["left"]=vector_back;
 		sprites["right"]=vector_forward;
+
+		sprites["destroyed"]=vector_destroyed;
 	}else
 	{
 	    this->velocity=0;
@@ -141,7 +153,7 @@ void Character::loadMainXML()
 		this->color.blue=0;
 		this->color.alpha=255;
 
-		//this->iteration=4275;
+		//this->iteration=1200;
 
 		int hitbox_x=-100;
 		int hitbox_y=-250;
@@ -155,7 +167,18 @@ void Character::loadMainXML()
 		sprites_vector.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/idle/2.png"));
 		sprites_vector.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/idle/3.png"));
 
+        std::vector<Image*>vector_destroyed;
+		vector_destroyed.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/destroyed/1.png"));
+		vector_destroyed.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/destroyed/2.png"));
+		vector_destroyed.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/destroyed/3.png"));
+		vector_destroyed.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/destroyed/4.png"));
+		vector_destroyed.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/destroyed/5.png"));
+		vector_destroyed.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/destroyed/6.png"));
+		vector_destroyed.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/destroyed/7.png"));
+		vector_destroyed.push_back(painter->getTexture("stages/FeministKillBot_normal/Enemy/sprites/destroyed/8.png"));
+
 		sprites["idle"]=sprites_vector;
+		sprites["destroyed"]=vector_destroyed;
 	}
 }
 
@@ -193,7 +216,7 @@ void Character::loadBulletsXML()
 						/*hitbox_w*/240,
 						/*hitbox_h*/20,
 						/*hitbox_angle*/0,
-						/*damage*/2);
+						/*damage*/10);
 
 		addBullet(sonido,painter,receiver,
 						/*name*/"machinegun",
@@ -206,6 +229,7 @@ void Character::loadBulletsXML()
 						/*damage*/2);
 
 		sonido->addSound("bullet.lazor",directory+string("sounds/lazor.ogg"));
+		//sonido->addSound("bullet.machinegun",directory+string("sounds/machinegun.ogg"));
 	}else
 	{
 		addBullet(sonido,painter,receiver,
@@ -217,6 +241,7 @@ void Character::loadBulletsXML()
 						/*hitbox_h*/6,
 						/*hitbox_angle*/0,
 						/*damage*/20);
+		sonido->addSound("bullet.Eye Lazor",directory+string("sounds/Eye Lazor.ogg"));
 
 		addBullet(sonido,painter,receiver,
 						/*name*/"Feminist Laser startup",
@@ -257,6 +282,7 @@ void Character::loadBulletsXML()
 						/*hitbox_h*/20,
 						/*hitbox_angle*/0,
 						/*damage*/20);
+		sonido->addSound("bullet.Rocket",directory+string("sounds/Rocket.ogg"));
 	}
 }
 
@@ -335,8 +361,8 @@ void Character::loadPatternsXML()
 					/*ac_frequency*/0,
 					/*animation_velocity*/2,
 					/*bullet*/"lazor",
-					/*offset_x*/120,
-					/*offset_y*/-17,
+					/*offset_x*/65,
+					/*offset_y*/-44,
 					/*startup*/4,
 					/*cooldown*/22,
 					/*duration*/99999,
@@ -358,8 +384,8 @@ void Character::loadPatternsXML()
 					/*ac_frequency*/0,
 					/*animation_velocity*/2,
 					/*bullet*/"machinegun",
-					/*offset_x*/80,
-					/*offset_y*/25,
+					/*offset_x*/85,
+					/*offset_y*/4,
 					/*startup*/25,
 					/*cooldown*/4,
 					/*duration*/99999,
@@ -381,8 +407,8 @@ void Character::loadPatternsXML()
 					/*ac_frequency*/0,
 					/*animation_velocity*/2,
 					/*bullet*/"machinegun",
-					/*offset_x*/80,
-					/*offset_y*/18,
+					/*offset_x*/75,
+					/*offset_y*/-4,
 					/*startup*/25,
 					/*cooldown*/4,
 					/*duration*/99999,
@@ -393,6 +419,7 @@ void Character::loadPatternsXML()
 					/*independent_br*/false);
 
 ////////////////////////////////////U////////////////////////////////////
+
 		addPattern(sonido,painter,receiver,
 					/*name*/"u",
 					/*velocity*/0,
@@ -405,8 +432,8 @@ void Character::loadPatternsXML()
 					/*ac_frequency*/0,
 					/*animation_velocity*/2,
 					/*bullet*/"lazor",
-					/*offset_x*/120,
-					/*offset_y*/-17,
+					/*offset_x*/65,
+					/*offset_y*/-44,
 					/*startup*/4,
 					/*cooldown*/22,
 					/*duration*/99999,
@@ -416,7 +443,54 @@ void Character::loadPatternsXML()
 					/*br_change*/0,
 					/*independent_br*/false);
 
+		addPattern(sonido,painter,receiver,
+					/*name*/"u",
+					/*velocity*/20,
+					/*max_velocity*/120,
+					/*acceleration*/1,
+					/*a_frequency*/1,
+					/*angle*/0,
+					/*angle_change*/0,
+					/*stop_ac_at*/99999,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"machinegun",
+					/*offset_x*/85,
+					/*offset_y*/4,
+					/*startup*/25,
+					/*cooldown*/4,
+					/*duration*/99999,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"u",
+					/*velocity*/20,
+					/*max_velocity*/90,
+					/*acceleration*/2,
+					/*a_frequency*/1,
+					/*angle*/0,
+					/*angle_change*/0,
+					/*stop_ac_at*/99999,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"machinegun",
+					/*offset_x*/75,
+					/*offset_y*/-4,
+					/*startup*/25,
+					/*cooldown*/4,
+					/*duration*/99999,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+
 ////////////////////////////////////Y////////////////////////////////////
+
 		addPattern(sonido,painter,receiver,
 					/*name*/"y",
 					/*velocity*/0,
@@ -429,8 +503,8 @@ void Character::loadPatternsXML()
 					/*ac_frequency*/0,
 					/*animation_velocity*/2,
 					/*bullet*/"lazor",
-					/*offset_x*/120,
-					/*offset_y*/-17,
+					/*offset_x*/65,
+					/*offset_y*/-44,
 					/*startup*/4,
 					/*cooldown*/22,
 					/*duration*/99999,
@@ -440,7 +514,54 @@ void Character::loadPatternsXML()
 					/*br_change*/0,
 					/*independent_br*/false);
 
+		addPattern(sonido,painter,receiver,
+					/*name*/"y",
+					/*velocity*/20,
+					/*max_velocity*/120,
+					/*acceleration*/1,
+					/*a_frequency*/1,
+					/*angle*/0,
+					/*angle_change*/0,
+					/*stop_ac_at*/99999,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"machinegun",
+					/*offset_x*/85,
+					/*offset_y*/4,
+					/*startup*/25,
+					/*cooldown*/4,
+					/*duration*/99999,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"y",
+					/*velocity*/20,
+					/*max_velocity*/90,
+					/*acceleration*/2,
+					/*a_frequency*/1,
+					/*angle*/0,
+					/*angle_change*/0,
+					/*stop_ac_at*/99999,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"machinegun",
+					/*offset_x*/75,
+					/*offset_y*/-4,
+					/*startup*/25,
+					/*cooldown*/4,
+					/*duration*/99999,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+
 ////////////////////////////////////A////////////////////////////////////
+
 		addPattern(sonido,painter,receiver,
 					/*name*/"a",
 					/*velocity*/0,
@@ -453,10 +574,56 @@ void Character::loadPatternsXML()
 					/*ac_frequency*/0,
 					/*animation_velocity*/2,
 					/*bullet*/"lazor",
-					/*offset_x*/120,
-					/*offset_y*/-17,
+					/*offset_x*/65,
+					/*offset_y*/-44,
 					/*startup*/4,
 					/*cooldown*/22,
+					/*duration*/99999,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"a",
+					/*velocity*/20,
+					/*max_velocity*/120,
+					/*acceleration*/1,
+					/*a_frequency*/1,
+					/*angle*/0,
+					/*angle_change*/0,
+					/*stop_ac_at*/99999,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"machinegun",
+					/*offset_x*/85,
+					/*offset_y*/4,
+					/*startup*/25,
+					/*cooldown*/4,
+					/*duration*/99999,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"a",
+					/*velocity*/20,
+					/*max_velocity*/90,
+					/*acceleration*/2,
+					/*a_frequency*/1,
+					/*angle*/0,
+					/*angle_change*/0,
+					/*stop_ac_at*/99999,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"machinegun",
+					/*offset_x*/75,
+					/*offset_y*/-4,
+					/*startup*/25,
+					/*cooldown*/4,
 					/*duration*/99999,
 					/*random_angle*/0,
 					/*aim_player*/false,

@@ -11,6 +11,7 @@ Menu::Menu(RosalilaGraphics* painter,Receiver* receiver,Sound* sonido,char* arch
 
     std::vector<std::string> chars,stages;
     loading_screen=painter->getTexture("misc/loading_screen.png");
+    instructions_screen=painter->getTexture("misc/instructions_screen.png");
 
 /*
 
@@ -74,9 +75,12 @@ __android_log_print(ANDROID_LOG_DEBUG, APPNAME, "despues del personaje");
     Enemy*enemy=new Enemy(sonido,painter,receiver,stage_name,player,dificulty);
 __android_log_print(ANDROID_LOG_DEBUG, APPNAME, "despues del enemigo");
     STG*stg=new STG(sonido,painter,receiver,player,enemy,stage);
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "borrando");
     delete stg;
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "borrado");
     this->playMusic();
-    char_select->clearLocks();
+__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "yea");
+    //char_select->clearLocks();
 }
 
 void Menu::loopMenu()
@@ -378,6 +382,21 @@ void Menu::dibujarMenu()
             elementos[i]->dibujar();
         }
     }
+
+
+	if(receiver->isOuyaDown('o'))
+	{
+		painter->draw2DImage
+		(   instructions_screen,
+		    instructions_screen->getWidth(),instructions_screen->getHeight(),
+		    0,0,
+		    1.0,
+		    0.0,
+		    false,
+		    0,0,
+		    Color(255,255,255,255),
+		    false);
+	}
 
     receiver->updateInputs();
     painter->updateScreen();
