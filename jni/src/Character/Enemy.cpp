@@ -1360,8 +1360,8 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*offset_x*/-945,
 					/*offset_y*/150,
 					/*startup*/0,
-					/*cooldown*/200,
-					/*duration*/22,
+					/*cooldown*/100,
+					/*duration*/11,
 					/*random_angle*/0,
 					/*aim_player*/false,
 					/*bullet_rotation*/0,
@@ -1382,9 +1382,9 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*bullet*/"Feminist Laser active",
 					/*offset_x*/-945,
 					/*offset_y*/150,
-					/*startup*/22,
-					/*cooldown*/200,
-					/*duration*/150,
+					/*startup*/11,
+					/*cooldown*/100,
+					/*duration*/75,
 					/*random_angle*/0,
 					/*aim_player*/false,
 					/*bullet_rotation*/0,
@@ -1405,9 +1405,9 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*bullet*/"Feminist Laser cooldown",
 					/*offset_x*/-945,
 					/*offset_y*/150,
-					/*startup*/172,
-					/*cooldown*/200,
-					/*duration*/22,
+					/*startup*/86,
+					/*cooldown*/100,
+					/*duration*/11,
 					/*random_angle*/0,
 					/*aim_player*/false,
 					/*bullet_rotation*/0,
@@ -3904,8 +3904,8 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*offset_x*/-945,
 					/*offset_y*/150,
 					/*startup*/0,
-					/*cooldown*/200,
-					/*duration*/22,
+					/*cooldown*/100,
+					/*duration*/11,
 					/*random_angle*/0,
 					/*aim_player*/false,
 					/*bullet_rotation*/0,
@@ -3926,9 +3926,9 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*bullet*/"Feminist Laser active",
 					/*offset_x*/-945,
 					/*offset_y*/150,
-					/*startup*/22,
-					/*cooldown*/200,
-					/*duration*/150,
+					/*startup*/11,
+					/*cooldown*/100,
+					/*duration*/75,
 					/*random_angle*/0,
 					/*aim_player*/false,
 					/*bullet_rotation*/0,
@@ -3949,9 +3949,9 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*bullet*/"Feminist Laser cooldown",
 					/*offset_x*/-945,
 					/*offset_y*/150,
-					/*startup*/172,
-					/*cooldown*/200,
-					/*duration*/22,
+					/*startup*/86,
+					/*cooldown*/100,
+					/*duration*/11,
 					/*random_angle*/0,
 					/*aim_player*/false,
 					/*bullet_rotation*/0,
@@ -3968,7 +3968,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/60,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -3995,7 +3995,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/60,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -4022,7 +4022,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/60,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -4049,7 +4049,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/60,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -4076,7 +4076,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/60,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -4103,7 +4103,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/60,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -4130,7 +4130,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/60,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -4157,7 +4157,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/60,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -6117,7 +6117,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*br_change*/0,
 					/*independent_br*/false);
 		addModifier("Happy meal",24,10, "angle", "135");
-		addModifier("Happy meal",24,30, "angle", "225");
+		addModifier("Happy meal",24,20, "angle", "225");
 
 		addPattern(sonido,painter,receiver,
 					/*name*/"Happy meal",
@@ -6142,8 +6142,8 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*br_change*/0,
 					/*independent_br*/false);
 		addModifier("Happy meal",25,10, "angle", "135");
-		addModifier("Happy meal",25,30, "angle", "225");
-		addModifier("Happy meal",25,50, "angle", "135");
+		addModifier("Happy meal",25,20, "angle", "225");
+		addModifier("Happy meal",25,30, "angle", "135");
 
 		addPattern(sonido,painter,receiver,
 					/*name*/"Happy meal",
@@ -6168,9 +6168,127 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*br_change*/0,
 					/*independent_br*/false);
 		addModifier("Happy meal",26,10, "angle", "135");
-		addModifier("Happy meal",26,30, "angle", "225");
-		addModifier("Happy meal",26,50, "angle", "135");
-		addModifier("Happy meal",26,70, "angle", "225");
+		addModifier("Happy meal",26,20, "angle", "225");
+		addModifier("Happy meal",26,30, "angle", "135");
+		addModifier("Happy meal",26,40, "angle", "225");
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"Happy meal",
+					/*velocity*/0,
+					/*max_velocity*/16,
+					/*acceleration*/1,
+					/*a_frequency*/1,
+					/*angle*/180,
+					/*angle_change*/0,
+					/*stop_ac_at*/-1,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"Eye Lazor",
+					/*offset_x*/-80,
+					/*offset_y*/220,
+					/*startup*/0,
+					/*cooldown*/10,
+					/*duration*/-1,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+		addModifier("Happy meal",27,10, "angle", "135");
+		addModifier("Happy meal",27,20, "angle", "225");
+		addModifier("Happy meal",27,30, "angle", "135");
+		addModifier("Happy meal",27,40, "angle", "225");
+		addModifier("Happy meal",27,50, "angle", "135");
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"Happy meal",
+					/*velocity*/0,
+					/*max_velocity*/16,
+					/*acceleration*/1,
+					/*a_frequency*/1,
+					/*angle*/180,
+					/*angle_change*/0,
+					/*stop_ac_at*/-1,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"Eye Lazor",
+					/*offset_x*/-80,
+					/*offset_y*/220,
+					/*startup*/0,
+					/*cooldown*/10,
+					/*duration*/-1,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+		addModifier("Happy meal",28,10, "angle", "135");
+		addModifier("Happy meal",28,20, "angle", "225");
+		addModifier("Happy meal",28,30, "angle", "135");
+		addModifier("Happy meal",28,40, "angle", "225");
+		addModifier("Happy meal",28,50, "angle", "135");
+		addModifier("Happy meal",28,60, "angle", "225");
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"Happy meal",
+					/*velocity*/0,
+					/*max_velocity*/16,
+					/*acceleration*/1,
+					/*a_frequency*/1,
+					/*angle*/180,
+					/*angle_change*/0,
+					/*stop_ac_at*/-1,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"Eye Lazor",
+					/*offset_x*/-80,
+					/*offset_y*/220,
+					/*startup*/0,
+					/*cooldown*/10,
+					/*duration*/-1,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+		addModifier("Happy meal",29,10, "angle", "135");
+		addModifier("Happy meal",29,20, "angle", "225");
+		addModifier("Happy meal",29,30, "angle", "135");
+		addModifier("Happy meal",29,40, "angle", "225");
+		addModifier("Happy meal",29,50, "angle", "135");
+		addModifier("Happy meal",29,60, "angle", "225");
+		addModifier("Happy meal",29,70, "angle", "135");
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"Happy meal",
+					/*velocity*/0,
+					/*max_velocity*/16,
+					/*acceleration*/1,
+					/*a_frequency*/1,
+					/*angle*/180,
+					/*angle_change*/0,
+					/*stop_ac_at*/-1,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"Eye Lazor",
+					/*offset_x*/-80,
+					/*offset_y*/220,
+					/*startup*/0,
+					/*cooldown*/10,
+					/*duration*/-1,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+		addModifier("Happy meal",30,10, "angle", "135");
+		addModifier("Happy meal",30,20, "angle", "225");
+		addModifier("Happy meal",30,30, "angle", "135");
+		addModifier("Happy meal",30,40, "angle", "225");
+		addModifier("Happy meal",30,50, "angle", "135");
+		addModifier("Happy meal",30,60, "angle", "225");
+		addModifier("Happy meal",30,70, "angle", "135");
+		addModifier("Happy meal",30,80, "angle", "225");
 
 ///
 
@@ -6196,7 +6314,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*bullet_rotation*/0,
 					/*br_change*/0,
 					/*independent_br*/false);
-		addModifier("Happy meal",27,10, "angle", "225");
+		addModifier("Happy meal",31,10, "angle", "225");
 
 		addPattern(sonido,painter,receiver,
 					/*name*/"Happy meal",
@@ -6220,8 +6338,8 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*bullet_rotation*/0,
 					/*br_change*/0,
 					/*independent_br*/false);
-		addModifier("Happy meal",28,10, "angle", "225");
-		addModifier("Happy meal",28,30, "angle", "135");
+		addModifier("Happy meal",32,10, "angle", "225");
+		addModifier("Happy meal",32,20, "angle", "135");
 
 		addPattern(sonido,painter,receiver,
 					/*name*/"Happy meal",
@@ -6245,9 +6363,9 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*bullet_rotation*/0,
 					/*br_change*/0,
 					/*independent_br*/false);
-		addModifier("Happy meal",29,10, "angle", "225");
-		addModifier("Happy meal",29,30, "angle", "135");
-		addModifier("Happy meal",29,50, "angle", "225");
+		addModifier("Happy meal",33,10, "angle", "225");
+		addModifier("Happy meal",33,20, "angle", "135");
+		addModifier("Happy meal",33,30, "angle", "225");
 
 		addPattern(sonido,painter,receiver,
 					/*name*/"Happy meal",
@@ -6271,10 +6389,128 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*bullet_rotation*/0,
 					/*br_change*/0,
 					/*independent_br*/false);
-		addModifier("Happy meal",30,10, "angle", "225");
-		addModifier("Happy meal",30,30, "angle", "135");
-		addModifier("Happy meal",30,50, "angle", "225");
-		addModifier("Happy meal",30,70, "angle", "135");
+		addModifier("Happy meal",34,10, "angle", "225");
+		addModifier("Happy meal",34,20, "angle", "135");
+		addModifier("Happy meal",34,30, "angle", "225");
+		addModifier("Happy meal",34,40, "angle", "135");
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"Happy meal",
+					/*velocity*/0,
+					/*max_velocity*/16,
+					/*acceleration*/1,
+					/*a_frequency*/1,
+					/*angle*/180,
+					/*angle_change*/0,
+					/*stop_ac_at*/-1,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"Eye Lazor",
+					/*offset_x*/-80,
+					/*offset_y*/220,
+					/*startup*/0,
+					/*cooldown*/10,
+					/*duration*/-1,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+		addModifier("Happy meal",35,10, "angle", "225");
+		addModifier("Happy meal",35,20, "angle", "135");
+		addModifier("Happy meal",35,30, "angle", "225");
+		addModifier("Happy meal",35,40, "angle", "135");
+		addModifier("Happy meal",35,50, "angle", "225");
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"Happy meal",
+					/*velocity*/0,
+					/*max_velocity*/16,
+					/*acceleration*/1,
+					/*a_frequency*/1,
+					/*angle*/180,
+					/*angle_change*/0,
+					/*stop_ac_at*/-1,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"Eye Lazor",
+					/*offset_x*/-80,
+					/*offset_y*/220,
+					/*startup*/0,
+					/*cooldown*/10,
+					/*duration*/-1,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+		addModifier("Happy meal",36,10, "angle", "225");
+		addModifier("Happy meal",36,20, "angle", "135");
+		addModifier("Happy meal",36,30, "angle", "225");
+		addModifier("Happy meal",36,40, "angle", "135");
+		addModifier("Happy meal",36,50, "angle", "225");
+		addModifier("Happy meal",36,60, "angle", "135");
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"Happy meal",
+					/*velocity*/0,
+					/*max_velocity*/16,
+					/*acceleration*/1,
+					/*a_frequency*/1,
+					/*angle*/180,
+					/*angle_change*/0,
+					/*stop_ac_at*/-1,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"Eye Lazor",
+					/*offset_x*/-80,
+					/*offset_y*/220,
+					/*startup*/0,
+					/*cooldown*/10,
+					/*duration*/-1,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+		addModifier("Happy meal",37,10, "angle", "225");
+		addModifier("Happy meal",37,20, "angle", "135");
+		addModifier("Happy meal",37,30, "angle", "225");
+		addModifier("Happy meal",37,40, "angle", "135");
+		addModifier("Happy meal",37,50, "angle", "225");
+		addModifier("Happy meal",37,60, "angle", "135");
+		addModifier("Happy meal",37,70, "angle", "225");
+
+		addPattern(sonido,painter,receiver,
+					/*name*/"Happy meal",
+					/*velocity*/0,
+					/*max_velocity*/16,
+					/*acceleration*/1,
+					/*a_frequency*/1,
+					/*angle*/180,
+					/*angle_change*/0,
+					/*stop_ac_at*/-1,
+					/*ac_frequency*/0,
+					/*animation_velocity*/2,
+					/*bullet*/"Eye Lazor",
+					/*offset_x*/-80,
+					/*offset_y*/220,
+					/*startup*/0,
+					/*cooldown*/10,
+					/*duration*/-1,
+					/*random_angle*/0,
+					/*aim_player*/false,
+					/*bullet_rotation*/0,
+					/*br_change*/0,
+					/*independent_br*/false);
+		addModifier("Happy meal",38,10, "angle", "225");
+		addModifier("Happy meal",38,20, "angle", "135");
+		addModifier("Happy meal",38,30, "angle", "225");
+		addModifier("Happy meal",38,40, "angle", "135");
+		addModifier("Happy meal",38,50, "angle", "225");
+		addModifier("Happy meal",38,60, "angle", "135");
+		addModifier("Happy meal",38,70, "angle", "225");
+		addModifier("Happy meal",38,80, "angle", "135");
 
 ////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////Rockets///////////////////////////////////////////
@@ -6492,8 +6728,8 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*offset_x*/-945,
 					/*offset_y*/150,
 					/*startup*/0,
-					/*cooldown*/200,
-					/*duration*/22,
+					/*cooldown*/100,
+					/*duration*/11,
 					/*random_angle*/0,
 					/*aim_player*/false,
 					/*bullet_rotation*/0,
@@ -6514,9 +6750,9 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*bullet*/"Feminist Laser active",
 					/*offset_x*/-945,
 					/*offset_y*/150,
-					/*startup*/22,
-					/*cooldown*/200,
-					/*duration*/150,
+					/*startup*/11,
+					/*cooldown*/100,
+					/*duration*/75,
 					/*random_angle*/0,
 					/*aim_player*/false,
 					/*bullet_rotation*/0,
@@ -6537,9 +6773,9 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*bullet*/"Feminist Laser cooldown",
 					/*offset_x*/-945,
 					/*offset_y*/150,
-					/*startup*/172,
-					/*cooldown*/200,
-					/*duration*/22,
+					/*startup*/86,
+					/*cooldown*/100,
+					/*duration*/11,
 					/*random_angle*/0,
 					/*aim_player*/false,
 					/*bullet_rotation*/0,
@@ -6556,7 +6792,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/100,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -6583,7 +6819,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/100,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -6610,7 +6846,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/100,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -6637,7 +6873,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/100,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -6664,7 +6900,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/100,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -6691,7 +6927,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/100,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -6718,7 +6954,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/100,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,
@@ -6745,7 +6981,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
 					/*velocity*/0,
 					/*max_velocity*/100,
 					/*acceleration*/1,
-					/*a_frequency*/0,
+					/*a_frequency*/1,
 					/*angle*/180,
 					/*angle_change*/0,
 					/*stop_ac_at*/-1,

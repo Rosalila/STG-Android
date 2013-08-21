@@ -68,11 +68,14 @@ LOCAL_SRC_FILES += $(LOCAL_PATH)/Rosalila/RosalilaAI/Transicion.cpp
 
 LOCAL_SHARED_LIBRARIES := SDL2 SDL2_image SDL2_mixer SDL_gfx
 
-LOCAL_STATIC_LIBRARIES := android_native_app_glue 
+LOCAL_STATIC_LIBRARIES := android_native_app_glue         nv_and_util nv_egl_util nv_bitfont nv_math nv_glesutil nv_hhdds nv_log nv_shader nv_file nv_thread 
 
 LOCAL_CXXFLAGS := -DFREEGLUT_GLES2
 
-LOCAL_LDLIBS := -landroid -llog -lEGL -lGLESv1_CM -lOpenSLES -lGLESv2
+#nvidia
+LOCAL_ARM_MODE   := arm
+
+LOCAL_LDLIBS := -landroid -llog -lEGL -lGLESv1_CM -lOpenSLES -lGLESv2      -lstdc++ -lc -lm -ldl
 #-lGLESv1_CM
 #-lGLESv2
 
@@ -82,3 +85,17 @@ LOCAL_LDLIBS := -landroid -llog -lEGL -lGLESv1_CM -lOpenSLES -lGLESv2
 
 include $(BUILD_SHARED_LIBRARY)
 $(call import-module,android/native_app_glue)
+
+
+$(call import-add-path, ~/NVPACK/TDK_Samples/tegra_android_native_samples_v10p10/libs/jni)
+
+$(call import-module,nv_and_util)
+$(call import-module,nv_egl_util)
+$(call import-module,nv_bitfont)
+$(call import-module,nv_math)
+$(call import-module,nv_glesutil)
+$(call import-module,nv_hhdds)
+$(call import-module,nv_log)
+$(call import-module,nv_shader)
+$(call import-module,nv_file)
+$(call import-module,nv_thread)

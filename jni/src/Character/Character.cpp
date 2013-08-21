@@ -153,7 +153,12 @@ void Character::loadMainXML()
 		this->color.blue=0;
 		this->color.alpha=255;
 
-		//this->iteration=1200;
+		//this->iteration=100;//initiald
+		//this->iteration=550;//crazy eyes
+		//this->iteration=1200;//happy meal
+		//this->iteration=2075;//rockets
+		//this->iteration=2375;//feminst laser
+		//this->iteration=4275;//kowaii
 
 		int hitbox_x=-100;
 		int hitbox_y=-250;
@@ -288,7 +293,7 @@ void Character::loadBulletsXML()
 
 void Character::addPattern(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::string name,int velocity,int max_velocity,int acceleration,int a_frequency,float angle,int angle_change,int stop_ac_at,int ac_frequency,int animation_velocity,std::string bullet,int offset_x,int offset_y,int startup,int cooldown,int duration,int random_angle,bool aim_player,float bullet_rotation, float br_change, bool independent_br)
 {
-	//32 frames converter
+	//30 frames converter
 	/*
 	velocity*=2;
 	max_velocity*=2;
@@ -304,6 +309,23 @@ void Character::addPattern(Sound* sonido,RosalilaGraphics* painter,Receiver* rec
 	if(duration!=-1)
 		duration/=2;
 	br_change*=2;
+	/**/
+
+	//60 frames converter
+	velocity=ceil(velocity/2.0);
+	max_velocity=ceil(max_velocity/2.0);
+	acceleration=ceil(acceleration/2.0);
+	a_frequency*=2;
+	angle_change=ceil(angle_change/2.0);
+	if(stop_ac_at!=-1)
+		stop_ac_at=ceil(stop_ac_at/2.0);
+	ac_frequency*=2;
+	animation_velocity*=2;
+	startup*=2;
+	cooldown*=2;
+	if(duration!=-1)
+		duration*=2;
+	br_change=ceil(br_change/2.0);
 	/**/
 
 	//Create new if not exists
@@ -324,9 +346,13 @@ bullet_rotation,br_change,independent_br,new std::map<int, vector<Modifier*>* >(
 
 void Character::addModifier(string type_param,int pattern_pos,int at, string variable, string value)
 {
-	//32 frames converter
+	//30 frames converter
 	/*
 	at/=2;
+	/**/
+
+	//60 frames converter
+	at*=2;
 	/**/
 
 	//Create new if not exists
@@ -363,8 +389,8 @@ void Character::loadPatternsXML()
 					/*bullet*/"lazor",
 					/*offset_x*/65,
 					/*offset_y*/-44,
-					/*startup*/4,
-					/*cooldown*/22,
+					/*startup*/2,
+					/*cooldown*/11,
 					/*duration*/99999,
 					/*random_angle*/0,
 					/*aim_player*/false,
@@ -374,10 +400,10 @@ void Character::loadPatternsXML()
 
 		addPattern(sonido,painter,receiver,
 					/*name*/"o",
-					/*velocity*/20,
+					/*velocity*/40,
 					/*max_velocity*/120,
 					/*acceleration*/1,
-					/*a_frequency*/1,
+					/*a_frequency*/0,
 					/*angle*/0,
 					/*angle_change*/0,
 					/*stop_ac_at*/99999,
@@ -386,8 +412,8 @@ void Character::loadPatternsXML()
 					/*bullet*/"machinegun",
 					/*offset_x*/85,
 					/*offset_y*/4,
-					/*startup*/25,
-					/*cooldown*/4,
+					/*startup*/12,
+					/*cooldown*/2,
 					/*duration*/99999,
 					/*random_angle*/0,
 					/*aim_player*/false,
@@ -397,10 +423,10 @@ void Character::loadPatternsXML()
 
 		addPattern(sonido,painter,receiver,
 					/*name*/"o",
-					/*velocity*/20,
+					/*velocity*/40,
 					/*max_velocity*/90,
 					/*acceleration*/2,
-					/*a_frequency*/1,
+					/*a_frequency*/0,
 					/*angle*/0,
 					/*angle_change*/0,
 					/*stop_ac_at*/99999,
@@ -409,8 +435,8 @@ void Character::loadPatternsXML()
 					/*bullet*/"machinegun",
 					/*offset_x*/75,
 					/*offset_y*/-4,
-					/*startup*/25,
-					/*cooldown*/4,
+					/*startup*/12,
+					/*cooldown*/2,
 					/*duration*/99999,
 					/*random_angle*/0,
 					/*aim_player*/false,

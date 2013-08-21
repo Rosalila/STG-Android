@@ -83,7 +83,7 @@ void STG::mainLoop()
             break;
         }
 
-		if(iteration_2 % 2 == 0)
+		if(iteration_2 % 2 == 0 || true)
 		{
 	        logic();
 			render();
