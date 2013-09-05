@@ -14,7 +14,9 @@
 #include <stdio.h>
 #include <time.h>
 
-#include <android_native_app_glue.h>
+//#include <android_native_app_glue.h>
+#include <nv_and_util/nv_native_app_glue.h>
+#include <nv_egl_util/nv_egl_util.h>
 
 #include "SDL.h"
 #include "SDL_image.h"
@@ -76,10 +78,12 @@ static JNIEnv* mEnv = NULL;
 static JNIEnv* mAudioEnv = NULL;
 static JavaVM* mJavaVM;
 
+/*
 extern "C" JNIEXPORT jint JNICALL Java_org_libsdl_app_SDLMain_cFunction(JNIEnv* env, jobject o)
 {
     return (jint) 2;
 }
+*/
 
 extern "C" JNIEXPORT jint JNICALL Java_org_libsdl_app_SDLMain_classParam(JNIEnv* env, jobject o)
 {

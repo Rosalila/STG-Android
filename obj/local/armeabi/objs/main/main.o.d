@@ -1,6 +1,6 @@
-/home/turupawn/Projects/Eclipse/stg_android_port/obj/local/armeabi/objs/main/main.o: \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/main.cpp \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/RosalilaGraphics.h \
+/home/turupawn/NVPACK/Projects/stg_android_port/obj/local/armeabi/objs/main/main.o: \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/main.cpp \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaGraphics/RosalilaGraphics.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/log.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdarg.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cprolog.h \
@@ -16,7 +16,7 @@
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/config/_native_headers.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_epilog.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Image.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Image.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdlib.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/../include/stdlib.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
@@ -44,14 +44,14 @@
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/GLES/gl.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/GLES/glplatform.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/KHR/khrplatform.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_main.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_platform.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config_android.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_main.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_stdinc.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_config.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_platform.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/begin_code.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/close_code.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_config_android.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdio.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/../include/stdio.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/inttypes.h \
@@ -68,7 +68,7 @@
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/machine/limits.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/syslimits.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/page.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_assert.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_assert.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/signal.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/../include/signal.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/signal.h \
@@ -76,49 +76,49 @@
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/sigcontext.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/siginfo.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm-generic/siginfo.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_atomic.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_error.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_atomic.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_audio.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_error.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_endian.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/endian.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/sys/endian.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/machine/endian.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_mutex.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_thread.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_clipboard.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_cpuinfo.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_events.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_video.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_pixels.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rect.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_surface.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_blendmode.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_keyboard.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_keycode.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_scancode.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_mouse.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_joystick.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_gamecontroller.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_quit.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_gesture.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_touch.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_haptic.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_hints.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_loadso.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_log.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_messagebox.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_power.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_render.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_system.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_timer.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_image/SDL_image.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaUtility/RosalilaUtility.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_mutex.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_thread.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_rwops.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_clipboard.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_cpuinfo.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_events.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_video.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_pixels.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_rect.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_surface.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_blendmode.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_keyboard.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_keycode.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_scancode.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_mouse.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_joystick.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_gamecontroller.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_quit.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_gesture.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_touch.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_haptic.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_hints.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_loadso.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_log.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_messagebox.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_power.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_render.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_system.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_timer.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_version.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL2_image/SDL_image.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_version.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/begin_code.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/close_code.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaUtility/RosalilaUtility.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/iostream \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/debug/_debug.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_ioserr.h \
@@ -211,18 +211,18 @@
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_vector.c \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_bvector.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_relops_cont.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGUtility/STGUtility.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Boton.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Receiver.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinyxml.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGUtility/STGUtility.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaInputs/Boton.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaInputs/Receiver.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/TinyXml/tinyxml.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/assert.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/../include/assert.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinystr.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/RosalilaAI.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Automata.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Estado.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Transicion.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/TinyXml/tinystr.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaAI/RosalilaAI.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaAI/Automata.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaAI/Estado.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaAI/Transicion.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/map \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_map.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_tree.h \
@@ -251,8 +251,8 @@
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_hash_fun.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_io.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_io.c \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/android_rwops.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/android_rwops.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_rwops.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/asset_manager_jni.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/errno.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/../include/errno.h \
@@ -261,51 +261,51 @@
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm-generic/errno.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm-generic/errno-base.h \
  /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/sensor.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaSound/RosalilaSound.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_mixer/SDL_mixer.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGUtility/STGUtility.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/STGMenu.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/Stage.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/Character.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaSound/RosalilaSound.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL2_mixer/SDL_mixer.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_stdinc.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_audio.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_endian.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGUtility/STGUtility.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/STGMenu.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/Stage.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/Character.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/list \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_list.h \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_list.c \
  /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_carray.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Bullet.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Hitbox.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Pattern.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Bullet.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/../Character/Modifier.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/../STGUtility/STGUtility.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/Modifier.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaNetwork/RosalilaNetwork.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/Layer.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/Dialogue.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../STGUtility/STGUtility.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuContenedor.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/Elemento.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuLista.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuBarra.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuBoton.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuImagen.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuTexto.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuCharSelect.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../STG.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/Character.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/Player.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/../Spells/Bullet.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/../Spells/Pattern.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/Character.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/Enemy.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/Player.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/Stage.h \
- /home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Animation.h
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Bullet.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Hitbox.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Pattern.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Bullet.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/../Character/Modifier.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/../STGUtility/STGUtility.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/Modifier.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaNetwork/RosalilaNetwork.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/Layer.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/Dialogue.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../STGUtility/STGUtility.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuContenedor.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/Elemento.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuLista.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuBarra.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuBoton.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuImagen.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuTexto.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuCharSelect.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../STG.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/Character.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/Player.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/../Spells/Bullet.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/../Spells/Pattern.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/Character.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/Enemy.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/Player.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/Stage.h \
+ /home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Animation.h
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/RosalilaGraphics.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaGraphics/RosalilaGraphics.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/log.h:
 
@@ -337,7 +337,7 @@
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Image.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Image.h:
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdlib.h:
 
@@ -393,21 +393,21 @@
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/KHR/khrplatform.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_main.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_main.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_stdinc.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_config.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_platform.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_platform.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/begin_code.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/close_code.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_config_android.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_config_android.h:
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdio.h:
 
@@ -441,7 +441,7 @@
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm/page.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_assert.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_assert.h:
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/signal.h:
 
@@ -457,13 +457,13 @@
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/asm-generic/siginfo.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_atomic.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_atomic.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_audio.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_error.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_error.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_endian.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/endian.h:
 
@@ -471,77 +471,77 @@
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/machine/endian.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_mutex.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_mutex.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_thread.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_thread.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_rwops.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_clipboard.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_clipboard.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_cpuinfo.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_cpuinfo.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_events.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_events.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_video.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_video.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_pixels.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_pixels.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rect.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_rect.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_surface.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_surface.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_blendmode.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_blendmode.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_keyboard.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_keyboard.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_keycode.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_keycode.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_scancode.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_scancode.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_mouse.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_mouse.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_joystick.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_joystick.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_gamecontroller.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_gamecontroller.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_quit.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_quit.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_gesture.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_gesture.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_touch.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_touch.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_haptic.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_haptic.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_hints.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_hints.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_loadso.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_loadso.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_log.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_log.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_messagebox.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_messagebox.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_power.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_power.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_render.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_render.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_system.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_system.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_timer.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_timer.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_version.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_image/SDL_image.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL2_image/SDL_image.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_version.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_version.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/begin_code.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/begin_code.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/close_code.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/close_code.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Timer.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaUtility/RosalilaUtility.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaUtility/RosalilaUtility.h:
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/iostream:
 
@@ -727,29 +727,29 @@
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_relops_cont.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGUtility/STGUtility.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGUtility/STGUtility.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Boton.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaInputs/Boton.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/Receiver.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaInputs/Receiver.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinyxml.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/TinyXml/tinyxml.h:
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/assert.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/../include/assert.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/TinyXml/tinystr.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/TinyXml/tinystr.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/RosalilaAI.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaAI/RosalilaAI.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Automata.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaAI/Automata.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Estado.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaAI/Estado.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaAI/Transicion.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaAI/Transicion.h:
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/map:
 
@@ -807,9 +807,9 @@
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_io.c:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/android_rwops.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/android_rwops.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_rwops.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_rwops.h:
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/asset_manager_jni.h:
 
@@ -827,25 +827,25 @@
 
 /home/turupawn/Libraries/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android/sensor.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaInputs/RosalilaInputs.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaSound/RosalilaSound.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaSound/RosalilaSound.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL2_mixer/SDL_mixer.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL2_mixer/SDL_mixer.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_stdinc.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_stdinc.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_audio.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_audio.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/SDL/include/SDL_endian.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/SDL/include/SDL_endian.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGUtility/STGUtility.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGUtility/STGUtility.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/STGMenu.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/STGMenu.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/Stage.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/Stage.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/Character.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/Character.h:
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/list:
 
@@ -855,60 +855,60 @@
 
 /home/turupawn/Libraries/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_carray.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Bullet.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Bullet.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Hitbox.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Hitbox.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Pattern.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Pattern.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Bullet.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/Bullet.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/../Character/Modifier.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/../Character/Modifier.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/../STGUtility/STGUtility.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/../Spells/../STGUtility/STGUtility.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../Character/Modifier.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../Character/Modifier.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaNetwork/RosalilaNetwork.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaNetwork/RosalilaNetwork.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/Layer.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/Layer.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/Dialogue.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/Dialogue.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/../STGUtility/STGUtility.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/../STGUtility/STGUtility.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuContenedor.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuContenedor.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/Elemento.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/Elemento.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuLista.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuLista.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuBarra.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuBarra.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuBoton.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuBoton.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuImagen.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuImagen.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuTexto.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuTexto.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuCharSelect.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaMenus/MenuCharSelect.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../STG.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../STG.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/Character.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/Character.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/Player.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/Player.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/../Spells/Bullet.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/../Spells/Bullet.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/../Spells/Pattern.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/../Spells/Pattern.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/Character.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/Character.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/Enemy.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/Enemy.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Character/Player.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Character/Player.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/STGMenu/../Stage/Stage.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/STGMenu/../Stage/Stage.h:
 
-/home/turupawn/Projects/Eclipse/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Animation.h:
+/home/turupawn/NVPACK/Projects/stg_android_port/jni/src/Rosalila/RosalilaGraphics/Animation.h:

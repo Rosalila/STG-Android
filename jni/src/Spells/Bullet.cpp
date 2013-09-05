@@ -70,3 +70,27 @@ void Bullet::playHitSound()
         sonido->playSound("bullet_hit."+name);
     }
 }
+
+Bullet::~Bullet()
+{
+	for(;!sprites.empty();)
+	{
+	    Image*image=sprites.back();
+	    sprites.pop_back();
+	    delete image;
+	}
+
+	for(;!sprites_on_hit.empty();)
+	{
+	    Image*image=sprites_on_hit.back();
+	    sprites_on_hit.pop_back();
+	    delete image;
+	}
+
+	for(;!hitboxes.empty();)
+	{
+	    Hitbox*hitbox=hitboxes.back();
+	    hitboxes.pop_back();
+	    delete hitbox;
+	}
+}

@@ -39,6 +39,8 @@ class Player:public Character
 	vector<int>shadow_current_sprite;
 	vector<bool>shadow_effect_green;
 	vector<bool>shadow_effect_red;
+	vector<Image*>hitbox_sprites;
+	int current_hitbox_sprite;
 public:
     Player(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::string name);
     void logic(int stage_velocity);

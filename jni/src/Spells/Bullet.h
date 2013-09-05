@@ -30,6 +30,7 @@ public:
     Image*getOnHitImage(int position);
     int spritesSize();
     int spritesOnHitSize();
+	~Bullet();
 };
 
 #endif

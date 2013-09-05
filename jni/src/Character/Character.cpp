@@ -1,5 +1,10 @@
 #include "Character.h"
 
+extern "C" JNIEXPORT jint JNICALL Java_org_libsdl_app_SDLMain_cFunction(JNIEnv* env, jobject o)
+{
+    return (jint) 2;
+}
+
 Character::Character(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::string name)
 {
     //Setting up the other variables
@@ -69,6 +74,13 @@ void Character::loadMainXML()
 	if(directory=="chars/Iguro/")
 	{
 	    this->velocity=10;
+
+	    /*
+		TiXmlDocument docTemp;
+		const string strData = "<?xml version=\"1.0\" ?><Hello velocity=\"60\">World</Hello>";
+		const char* pTest = docTemp.Parse(strData.c_str(), 0 , TIXML_ENCODING_UTF8);
+		this->velocity=atoi(docTemp.FirstChild("Hello")->ToElement()->Attribute("velocity"));
+		*/
 
 		this->max_hp=200;
 		this->hp=this->max_hp;
@@ -815,4 +827,28 @@ void Character::addActivePattern(Pattern* pattern)
     active_patterns->push_back(pattern_temp);
 
     painter->addExplosion(pattern_temp->getX()-pattern_temp->getBullet()->getImage(0)->getWidth()/2,pattern_temp->getY());
+}
+
+Character::~Character()
+{
+	for(std::map<std::string,std::vector<Image*> >::iterator MapItor = sprites.begin(); MapItor != sprites.end(); ++MapItor)
+	{
+		std::vector<Image*> Value = (*MapItor).second;
+
+		for(;!Value.empty();)
+		{
+		    Image*image=Value.back();
+		    Value.pop_back();
+		    delete image;
+		}
+	}
+
+
+
+	for(std::map<std::string,Bullet* >::iterator MapItor = bullets.begin(); MapItor != bullets.end(); ++MapItor)
+	{
+		Bullet* Value = (*MapItor).second;
+		delete Value;
+	}
+
 }

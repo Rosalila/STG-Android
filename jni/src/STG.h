@@ -34,6 +34,7 @@ class STG
     void checkCharacterOutOfBounds();
 public:
     STG(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,Player*player,Enemy*enemy,Stage*stage);
+	~STG();
 };
 
 #endif

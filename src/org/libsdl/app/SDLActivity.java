@@ -8,20 +8,36 @@ import javax.microedition.khronos.egl.EGLContext;
 import javax.microedition.khronos.egl.EGLDisplay;
 import javax.microedition.khronos.egl.EGLSurface;
 
-import android.app.*;
-import android.content.*;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.AssetManager;
-import android.view.*;
+import android.graphics.Canvas;
+import android.graphics.PixelFormat;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.media.AudioFormat;
+import android.media.AudioManager;
+import android.media.AudioTrack;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+import android.view.ActionMode.Callback;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.BaseInputConnection;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AbsoluteLayout;
-import android.os.*;
-import android.util.Log;
-import android.graphics.*;
-import android.media.*;
-import android.hardware.*;
 
 
 /**
@@ -158,6 +174,7 @@ public class SDLActivity extends Activity {
      *  to 'true' during the call to onPause (in a usual scenario).
      */
     public static void handlePause() {
+    	System.exit(0);
         if (!SDLActivity.mIsPaused && SDLActivity.mIsSurfaceReady) {
             SDLActivity.mIsPaused = true;
             SDLActivity.nativePause();
@@ -727,6 +744,8 @@ class SDLSurface extends SurfaceView implements SurfaceHolder.Callback,
     // Touch events
     @Override
     public boolean onTouch(View v, MotionEvent event) {
+    	Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.indiegogo.com/projects/keep-skullgirls-growing"));
+    	sdl_activity.startActivity(browserIntent);
              final int touchDevId = event.getDeviceId();
              final int pointerCount = event.getPointerCount();
              // touchId, pointerId, action, x, y, pressure

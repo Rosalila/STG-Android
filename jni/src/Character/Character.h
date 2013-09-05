@@ -14,6 +14,7 @@
 #include "RosalilaUtility/RosalilaUtility.h"
 #include "Modifier.h"
 #include "RosalilaNetwork/RosalilaNetwork.h"
+#include <jni.h>
 
 class Character
 {
@@ -94,6 +95,7 @@ int damage);
     std::list<Pattern*>* getActivePatterns();
     bool collides(Hitbox hitbox,int hitbox_x,int hitbox_y,float hitbox_angle);
     void hit(int damage);
+	~Character();
 };
 
 #endif

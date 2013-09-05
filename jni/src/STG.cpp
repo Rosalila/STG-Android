@@ -301,3 +301,10 @@ void STG::checkCharacterOutOfBounds()
     if(player->getY()>stage->getBoundY2())
         player->setY(stage->getBoundY2());
 }
+
+STG::~STG()
+{
+	delete player;
+	delete enemy;
+	delete stage;
+}

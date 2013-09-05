@@ -25,6 +25,12 @@ Player::Player(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::s
 
     life_bar=painter->getTexture(directory+"life_bar.png");
 
+    hitbox_sprites.push_back(painter->getTexture(directory+"sprites/hitbox/1.png"));
+    hitbox_sprites.push_back(painter->getTexture(directory+"sprites/hitbox/2.png"));
+    hitbox_sprites.push_back(painter->getTexture(directory+"sprites/hitbox/3.png"));
+    hitbox_sprites.push_back(painter->getTexture(directory+"sprites/hitbox/4.png"));
+	current_hitbox_sprite=0;
+
     loadPlayerFromXML();
 
 	shadow_x.push_back(this->x);
@@ -359,6 +365,22 @@ for(int i=1;i<shadow_x.size();i++)
 }
 
     parrentRender();
+
+        painter->draw2DImage
+        (   hitbox_sprites[current_hitbox_sprite],
+        		hitbox_sprites[current_hitbox_sprite]->getWidth(),hitbox_sprites[current_hitbox_sprite]->getHeight(),
+        		this->x-hitbox_sprites[current_hitbox_sprite]->getWidth()/2,this->y-hitbox_sprites[current_hitbox_sprite]->getHeight()/2,
+            1.0,
+            0.0,
+            false,
+            0,0,
+            Color(255,255,255,255),
+            true);
+
+        if(this->iteration%2==0)
+        	current_hitbox_sprite++;
+        if(current_hitbox_sprite>=hitbox_sprites.size())
+        	current_hitbox_sprite=0;
 /*
     if(isSlowActive())
     {
