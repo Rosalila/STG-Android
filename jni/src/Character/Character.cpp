@@ -750,8 +750,40 @@ void Character::parrentRender()
 
 void Character::renderPatterns()
 {
-    for (std::list<Pattern*>::iterator pattern = active_patterns->begin(); pattern != active_patterns->end(); pattern++)
-        ((Pattern*)*pattern)->render();
+	//    for (std::list<Pattern*>::iterator pattern = active_patterns->begin(); pattern != active_patterns->end(); pattern++)
+	//        ((Pattern*)*pattern)->render();
+	for(std::map<std::string,Bullet* >::iterator bullet_iterator = bullets.begin(); bullet_iterator != bullets.end(); ++bullet_iterator)
+    {
+    	Bullet* bullet=(*bullet_iterator).second;
+    	vector<int> position_x;
+    	vector<int> position_y;
+    	vector<float> rotation;
+    	Image* image=bullet->getImage(0);
+
+        for (std::list<Pattern*>::iterator pattern_iterator = active_patterns->begin(); pattern_iterator != active_patterns->end(); pattern_iterator++)
+        {
+        	Pattern* pattern=(Pattern*)*pattern_iterator;
+            if(bullet->getName()==pattern->getBullet()->getName())
+            {
+            	//pattern->render();
+            	position_x.push_back(pattern->getX()-image->getWidth()/2);
+            	position_y.push_back(pattern->getY()-image->getHeight()/2);
+            	rotation.push_back(pattern->getAngle());
+            }
+        }
+
+        painter->draw2DImageBatch
+        (   image,
+            image->getWidth(),image->getHeight(),
+            position_x,position_y,
+            1.0,
+            rotation,//getBulletAngle(),
+            false,
+            0,0,
+            Color(255,255,255,255),
+            true);
+
+    }
 }
 
 void Character::render()

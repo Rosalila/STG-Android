@@ -55,6 +55,11 @@ int Bullet::getDamage()
     return damage;
 }
 
+string Bullet::getName()
+{
+    return name;
+}
+
 void Bullet::playSound()
 {
     if(sonido->soundExists("bullet."+name))

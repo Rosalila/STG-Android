@@ -24,6 +24,7 @@ public:
     void render();
     vector<Hitbox*> getHitboxes();
     int getDamage();
+    string getName();
     void playSound();
     void playHitSound();
     Image*getImage(int position);
