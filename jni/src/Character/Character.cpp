@@ -252,9 +252,9 @@ void Character::loadBulletsXML()
 		addBullet(sonido,painter,receiver,
 						/*name*/"Eye Lazor",
 						/*sprites_amount*/3,
-						/*hitbox_x*/-70,
+						/*hitbox_x*/-40,
 						/*hitbox_y*/0,
-						/*hitbox_w*/140,
+						/*hitbox_w*/80,
 						/*hitbox_h*/6,
 						/*hitbox_angle*/0,
 						/*damage*/20);
@@ -293,10 +293,10 @@ void Character::loadBulletsXML()
 		addBullet(sonido,painter,receiver,
 						/*name*/"Rocket",
 						/*sprites_amount*/2,
-						/*hitbox_x*/-10,
-						/*hitbox_y*/-10,
-						/*hitbox_w*/20,
-						/*hitbox_h*/20,
+						/*hitbox_x*/-8,
+						/*hitbox_y*/-8,
+						/*hitbox_w*/16,
+						/*hitbox_h*/16,
 						/*hitbox_angle*/0,
 						/*damage*/20);
 		sonido->addSound("bullet.Rocket",directory+string("sounds/Rocket.ogg"));
@@ -457,7 +457,8 @@ void Character::loadPatternsXML()
 					/*independent_br*/false);
 
 ////////////////////////////////////U////////////////////////////////////
-
+if(false)
+{
 		addPattern(sonido,painter,receiver,
 					/*name*/"u",
 					/*velocity*/0,
@@ -472,22 +473,22 @@ void Character::loadPatternsXML()
 					/*bullet*/"lazor",
 					/*offset_x*/65,
 					/*offset_y*/-44,
-					/*startup*/4,
-					/*cooldown*/22,
+					/*startup*/2,
+					/*cooldown*/11,
 					/*duration*/99999,
 					/*random_angle*/0,
 					/*aim_player*/false,
 					/*bullet_rotation*/0,
 					/*br_change*/0,
 					/*independent_br*/false);
-
+}
 		addPattern(sonido,painter,receiver,
 					/*name*/"u",
 					/*velocity*/20,
 					/*max_velocity*/120,
 					/*acceleration*/1,
 					/*a_frequency*/1,
-					/*angle*/0,
+					/*angle*/-30,
 					/*angle_change*/0,
 					/*stop_ac_at*/99999,
 					/*ac_frequency*/0,
@@ -495,10 +496,10 @@ void Character::loadPatternsXML()
 					/*bullet*/"machinegun",
 					/*offset_x*/85,
 					/*offset_y*/4,
-					/*startup*/25,
-					/*cooldown*/4,
+					/*startup*/10,
+					/*cooldown*/2,
 					/*duration*/99999,
-					/*random_angle*/0,
+					/*random_angle*/60,
 					/*aim_player*/false,
 					/*bullet_rotation*/0,
 					/*br_change*/0,
@@ -510,7 +511,7 @@ void Character::loadPatternsXML()
 					/*max_velocity*/90,
 					/*acceleration*/2,
 					/*a_frequency*/1,
-					/*angle*/0,
+					/*angle*/-30,
 					/*angle_change*/0,
 					/*stop_ac_at*/99999,
 					/*ac_frequency*/0,
@@ -518,22 +519,23 @@ void Character::loadPatternsXML()
 					/*bullet*/"machinegun",
 					/*offset_x*/75,
 					/*offset_y*/-4,
-					/*startup*/25,
-					/*cooldown*/4,
+					/*startup*/10,
+					/*cooldown*/2,
 					/*duration*/99999,
-					/*random_angle*/0,
+					/*random_angle*/60,
 					/*aim_player*/false,
 					/*bullet_rotation*/0,
 					/*br_change*/0,
 					/*independent_br*/false);
+		//addModifier("u",2,20, "aim_player", "yes");
 
 ////////////////////////////////////Y////////////////////////////////////
 
 		addPattern(sonido,painter,receiver,
 					/*name*/"y",
-					/*velocity*/0,
+					/*velocity*/70,
 					/*max_velocity*/99999,
-					/*acceleration*/10,
+					/*acceleration*/0,
 					/*a_frequency*/0,
 					/*angle*/0,
 					/*angle_change*/0,
@@ -544,52 +546,6 @@ void Character::loadPatternsXML()
 					/*offset_x*/65,
 					/*offset_y*/-44,
 					/*startup*/4,
-					/*cooldown*/22,
-					/*duration*/99999,
-					/*random_angle*/0,
-					/*aim_player*/false,
-					/*bullet_rotation*/0,
-					/*br_change*/0,
-					/*independent_br*/false);
-
-		addPattern(sonido,painter,receiver,
-					/*name*/"y",
-					/*velocity*/20,
-					/*max_velocity*/120,
-					/*acceleration*/1,
-					/*a_frequency*/1,
-					/*angle*/0,
-					/*angle_change*/0,
-					/*stop_ac_at*/99999,
-					/*ac_frequency*/0,
-					/*animation_velocity*/2,
-					/*bullet*/"machinegun",
-					/*offset_x*/85,
-					/*offset_y*/4,
-					/*startup*/25,
-					/*cooldown*/4,
-					/*duration*/99999,
-					/*random_angle*/0,
-					/*aim_player*/false,
-					/*bullet_rotation*/0,
-					/*br_change*/0,
-					/*independent_br*/false);
-
-		addPattern(sonido,painter,receiver,
-					/*name*/"y",
-					/*velocity*/20,
-					/*max_velocity*/90,
-					/*acceleration*/2,
-					/*a_frequency*/1,
-					/*angle*/0,
-					/*angle_change*/0,
-					/*stop_ac_at*/99999,
-					/*ac_frequency*/0,
-					/*animation_velocity*/2,
-					/*bullet*/"machinegun",
-					/*offset_x*/75,
-					/*offset_y*/-4,
-					/*startup*/25,
 					/*cooldown*/4,
 					/*duration*/99999,
 					/*random_angle*/0,
@@ -610,7 +566,7 @@ void Character::loadPatternsXML()
 					/*angle_change*/0,
 					/*stop_ac_at*/99999,
 					/*ac_frequency*/0,
-					/*animation_velocity*/2,
+					/*animation_velocity*/4,
 					/*bullet*/"lazor",
 					/*offset_x*/65,
 					/*offset_y*/-44,
@@ -629,11 +585,11 @@ void Character::loadPatternsXML()
 					/*max_velocity*/120,
 					/*acceleration*/1,
 					/*a_frequency*/1,
-					/*angle*/0,
-					/*angle_change*/0,
+					/*angle*/-45,
+					/*angle_change*/2,
 					/*stop_ac_at*/99999,
 					/*ac_frequency*/0,
-					/*animation_velocity*/2,
+					/*animation_velocity*/4,
 					/*bullet*/"machinegun",
 					/*offset_x*/85,
 					/*offset_y*/4,
@@ -652,11 +608,11 @@ void Character::loadPatternsXML()
 					/*max_velocity*/90,
 					/*acceleration*/2,
 					/*a_frequency*/1,
-					/*angle*/0,
-					/*angle_change*/0,
+					/*angle*/45,
+					/*angle_change*/-2,
 					/*stop_ac_at*/99999,
 					/*ac_frequency*/0,
-					/*animation_velocity*/2,
+					/*animation_velocity*/3,
 					/*bullet*/"machinegun",
 					/*offset_x*/75,
 					/*offset_y*/-4,
@@ -737,8 +693,8 @@ void Character::parrentRender()
         Color(255,255,255,255),
         true);
 
-
-    if(/*receiver->IsKeyDownn(SDLK_h) || */
+/*
+    if(receiver->IsKeyDownn(SDLK_h) ||
 		receiver->isOuyaDown('a'))
     {
         painter->drawRectangle(this->getHitbox().getX(),
@@ -746,44 +702,86 @@ void Character::parrentRender()
                                hitbox.getWidth(),hitbox.getHeight(),
                                hitbox.getAngle(),100,0,0,100,true);
     }
+*/
 }
 
 void Character::renderPatterns()
 {
-	//    for (std::list<Pattern*>::iterator pattern = active_patterns->begin(); pattern != active_patterns->end(); pattern++)
-	//        ((Pattern*)*pattern)->render();
+	    for (std::list<Pattern*>::iterator pattern = active_patterns->begin(); pattern != active_patterns->end(); pattern++)
+	        ((Pattern*)*pattern)->render();
+/*
 	for(std::map<std::string,Bullet* >::iterator bullet_iterator = bullets.begin(); bullet_iterator != bullets.end(); ++bullet_iterator)
     {
     	Bullet* bullet=(*bullet_iterator).second;
-    	vector<int> position_x;
-    	vector<int> position_y;
-    	vector<float> rotation;
-    	Image* image=bullet->getImage(0);
 
-        for (std::list<Pattern*>::iterator pattern_iterator = active_patterns->begin(); pattern_iterator != active_patterns->end(); pattern_iterator++)
-        {
-        	Pattern* pattern=(Pattern*)*pattern_iterator;
-            if(bullet->getName()==pattern->getBullet()->getName())
-            {
-            	//pattern->render();
-            	position_x.push_back(pattern->getX()-image->getWidth()/2);
-            	position_y.push_back(pattern->getY()-image->getHeight()/2);
-            	rotation.push_back(pattern->getAngle());
-            }
-        }
+    	for(int current_image=0;current_image<bullet->spritesSize();current_image++)
+    	{
+			vector<int> position_x;
+			vector<int> position_y;
+			vector<float> rotation;
+			Image* image=bullet->getImage(current_image);
 
-        painter->draw2DImageBatch
-        (   image,
-            image->getWidth(),image->getHeight(),
-            position_x,position_y,
-            1.0,
-            rotation,//getBulletAngle(),
-            false,
-            0,0,
-            Color(255,255,255,255),
-            true);
+			for (std::list<Pattern*>::iterator pattern_iterator = active_patterns->begin(); pattern_iterator != active_patterns->end(); pattern_iterator++)
+			{
+				Pattern* pattern=(Pattern*)*pattern_iterator;
+				if(bullet->getName()==pattern->getBullet()->getName()
+				   && pattern->getCurrentSprite()==current_image
+				   && !pattern->isHit())
+				{
+					//pattern->render();
+					position_x.push_back(pattern->getX()-image->getWidth()/2);
+					position_y.push_back(pattern->getY()-image->getHeight()/2);
+					rotation.push_back(pattern->getAngle());
+				}
+			}
 
+			painter->draw2DImageBatch
+			(   image,
+				image->getWidth(),image->getHeight(),
+				position_x,position_y,
+				1.0,
+				rotation,//getBulletAngle(),
+				false,
+				0,0,
+				Color(255,255,255,255),
+				true);
+    	}
+
+    	//On hit draw
+    	for(int current_image=0;current_image<bullet->spritesOnHitSize();current_image++)
+    	{
+			vector<int> position_x;
+			vector<int> position_y;
+			vector<float> rotation;
+			Image* image=bullet->getOnHitImage(current_image);
+
+			for (std::list<Pattern*>::iterator pattern_iterator = active_patterns->begin(); pattern_iterator != active_patterns->end(); pattern_iterator++)
+			{
+				Pattern* pattern=(Pattern*)*pattern_iterator;
+				if(bullet->getName()==pattern->getBullet()->getName()
+				   && pattern->getCurrentSprite()==current_image
+				   && pattern->isHit())
+				{
+					//pattern->render();
+					position_x.push_back(pattern->getX()-image->getWidth()/2);
+					position_y.push_back(pattern->getY()-image->getHeight()/2);
+					rotation.push_back(pattern->getAngle());
+				}
+			}
+
+			painter->draw2DImageBatch
+			(   image,
+				image->getWidth(),image->getHeight(),
+				position_x,position_y,
+				1.0,
+				rotation,//getBulletAngle(),
+				false,
+				0,0,
+				Color(255,255,255,255),
+				true);
+    	}
     }
+	/**/
 }
 
 void Character::render()

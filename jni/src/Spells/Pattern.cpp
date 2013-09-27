@@ -227,7 +227,7 @@ void Pattern::render()
             Color(255,255,255,255),
             true);
     }
-
+/*
     if(receiver->IsKeyDownn(SDLK_h) || receiver->isOuyaDown('a'))
     {
         for(int i=0;i<(int)bullet->getHitboxes().size();i++)
@@ -239,6 +239,7 @@ void Pattern::render()
                                    h.getAngle(),100,0,0,100,true);
         }
     }
+*/
 }
 
 int Pattern::getX()
@@ -248,6 +249,11 @@ int Pattern::getX()
 int Pattern::getY()
 {
     return this->y;
+}
+
+int Pattern::getCurrentSprite()
+{
+    return this->current_sprite;
 }
 
 bool Pattern::destroyFlag()

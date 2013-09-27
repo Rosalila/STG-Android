@@ -71,6 +71,7 @@ int offset_x,offset_y;
 
     int getX();
     int getY();
+    int getCurrentSprite();
     float getAngle();
     float getBulletAngle();
     float getRandomAngle();

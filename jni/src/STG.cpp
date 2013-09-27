@@ -75,6 +75,7 @@ void STG::mainLoop()
 {
     bool end_key_up_keyboard=false;
     bool end_key_up_joystick=false;
+    painter->resetFpsCount();
     for (;;)
     {
 //__android_log_print(ANDROID_LOG_DEBUG, APPNAME, "1111111111111111");
@@ -91,6 +92,9 @@ void STG::mainLoop()
 		{
 			painter->frameCap();
 		}
+
+		if(iteration_2%60==0)
+			painter->resetFpsCount();
 
 		iteration_2++;
 

@@ -43,7 +43,7 @@ public:
 	void addLayer(string layer_name,int sprite_amount,int frame_duration,int depth_effect_x,int depth_effect_y,int alignment_x,int alignment_y,int separation_x,int width,int height);
     void dibujarBack();
     void dibujarFront();
-    void drawLayer(Layer*layer);
+    void drawLayer(Layer*layer,bool alpha_enabled);
     void loadFromXML(std::string name);
     void loadDialogues(std::string file);
     int getBoundX1();

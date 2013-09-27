@@ -16,7 +16,7 @@ Stage::Stage(RosalilaGraphics* painter,Sound* sonido,Receiver*receiver)
 	this->transparency_effect=255;
 }
 
-void Stage::drawLayer(Layer* layer)
+void Stage::drawLayer(Layer* layer,bool alpha_enabled)
 {
     //Animation speed
     if(layer->time_elapsed>layer->frame_duration)
@@ -79,7 +79,8 @@ void Stage::drawLayer(Layer* layer)
             layer->depth_effect_x,
             layer->depth_effect_y,
             Color(255,255,255,transparency_effect),
-            false);
+            false,
+            alpha_enabled);
     }
 
     if(layer->depth_effect_x>0)
@@ -103,7 +104,9 @@ void Stage::dibujarBack()
     for(int i=0;i<(int)back.size();i++)
     {
         Layer* layer=back[i];
-        drawLayer(layer);
+        //if(i%2!=0)
+        //	continue;
+        drawLayer(layer,i!=0);
     }
 }
 
@@ -112,7 +115,7 @@ void Stage::dibujarFront()
     for(int i=0;i<(int)front.size();i++)
     {
         Layer* layer=front[i];
-        drawLayer(layer);
+        drawLayer(layer,true);
     }
 
     for (std::list<Dialogue*>::iterator dialogue = active_dialogues.begin(); dialogue != active_dialogues.end(); dialogue++)
@@ -250,7 +253,7 @@ void Stage::loadFromXML(std::string name)
 	addLayer("city",3,21,80,0,900,350,1300);
 	addLayer("restosnegros",1,2,10,0,100,575,0);
 	addLayer("restosnegros",1,2,25,0,300,450,0);
-	addLayer("restosnegros",1,2,30,0,600,300,0);
+	//addLayer("restosnegros",1,2,30,0,600,300,0);
 	//addLayer("plataforma",1,100,1,0,0,0,0);
 
 
