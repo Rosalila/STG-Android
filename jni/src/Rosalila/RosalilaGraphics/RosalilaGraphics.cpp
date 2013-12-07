@@ -9,11 +9,11 @@ __android_log_print(ANDROID_LOG_DEBUG, "CHUUUY", "after %s() glError (0x%x)\n", 
 
 RosalilaGraphics::RosalilaGraphics()
 {
-//	this->screen_width=1920;
-//	this->screen_height=1080;
+	this->screen_width=1920;
+	this->screen_height=1080;
 
-	this->screen_width=1280;
-	this->screen_height=720;
+//	this->screen_width=1280;
+//	this->screen_height=720;
 
 	int ortho_width = 1920;
 	int ortho_height = 1080;
@@ -262,7 +262,7 @@ RosalilaGraphics::~RosalilaGraphics()
 
 Image* RosalilaGraphics::getTexture(std::string filename)
 {
-__android_log_print(ANDROID_LOG_DEBUG, "YYYY", "gettan %s",filename.c_str());	
+__android_log_print(ANDROID_LOG_DEBUG, "YYYY", "gettan %s",filename.c_str());
 
 	GLuint texture;
 
@@ -274,7 +274,7 @@ __android_log_print(ANDROID_LOG_DEBUG, "YYYY", "gettan %s",filename.c_str());
         SDL_Surface* surface = IMG_Load(filename.c_str());
         if(!surface)
         return 0;
- 
+
     // Make sure the image length and width are powers of 2
 //    if (!ISPWR2(surface->w) || !ISPWR2(surface->h))
 //        return 0;
@@ -290,10 +290,10 @@ __android_log_print(ANDROID_LOG_DEBUG, "YYYY", "gettan %s",filename.c_str());
 
     // Request an OpenGL texture handle
     glGenTextures(1, &texture);
- 
+
     // Bind the texture object to the current block
     glBindTexture(GL_TEXTURE_2D, texture);
- 
+
     // Set the texture’s properties
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -308,7 +308,7 @@ __android_log_print(ANDROID_LOG_DEBUG, "YYYY", "gettan %s",filename.c_str());
     // The original bitmap is no longer needed
         SDL_FreeSurface(surface);
 
-__android_log_print(ANDROID_LOG_DEBUG, "UUUUU", "success gettan %s",filename.c_str());	
+__android_log_print(ANDROID_LOG_DEBUG, "UUUUU", "success gettan %s",filename.c_str());
 	return image;
 
 }
@@ -355,12 +355,12 @@ void RosalilaGraphics::draw2DImage	(
 	//glTranslatef(position_x+size_x/2, position_y+size_y/2, 0.0);
 	//glTranslatef(0, 0, 0.0);
     glRotatef(-rotation, 0.0, 0.0, 1.0);
- 
+
     // Bind the texture to which subsequent calls refer to
     glBindTexture(GL_TEXTURE_2D, image->texture);
 
 glColor4f(color_effects.getRed()/255.0f, color_effects.getGreen()/255.0f, color_effects.getBlue()/255.0f,color_effects.getAlpha()/255.0f);
- 
+
     // Start drawing texture
         glEnableClientState(GL_VERTEX_ARRAY);
         glEnableClientState(GL_TEXTURE_COORD_ARRAY);
@@ -414,11 +414,11 @@ glColor4f(color_effects.getRed()/255.0f, color_effects.getGreen()/255.0f, color_
 		coords[11]=1;
 
         glDrawArrays(GL_TRIANGLES, 0, 6);
- 
+
     // Stop drawing texture
         glDisableClientState(GL_VERTEX_ARRAY);
         glDisableClientState(GL_TEXTURE_COORD_ARRAY);
- 
+
     // Reset back to the origin
     glLoadIdentity();
 }
@@ -702,7 +702,7 @@ void RosalilaGraphics::drawRectangle(int x,int y,int width,int height,float rota
 
     GLfloat rect[] = {
         0, height,
-        width, height, 
+        width, height,
         width, 0,
         0, 0
     };

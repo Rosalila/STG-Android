@@ -68,6 +68,8 @@ STG::STG(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,Player*playe
 
     stage->playMusic();
 
+    receiver->updateInputs();
+
     mainLoop();
 }
 

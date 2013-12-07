@@ -43,7 +43,7 @@ class Pattern
     int animation_iteration;
     int current_sprite;
     int startup,cooldown;
-    int current_startup, current_cooldown;
+    int current_startup;
     std::string state;
     bool is_hit;
     bool delete_flag;
@@ -62,6 +62,7 @@ class Pattern
 
 public:
     std::map<int, vector<Modifier*>* >*modifiers;
+    int current_cooldown;
 int offset_x,offset_y;
     Pattern(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,int velocity,int max_velocity,int acceleration,int a_frequency,float angle,int angle_change,int stop_ac_at,int ac_frequency,int animation_velocity,Bullet* bullet,int offset_x,int offset_y,int startup,int cooldown,int duration,int random_angle,bool aim_player,float bullet_rotation, float br_change, bool independent_br, std::map<int, vector<Modifier*>* >*modifiers,std::map<std::string,Bullet*> *bullets);
     ~Pattern();
@@ -84,6 +85,7 @@ int offset_x,offset_y;
     void setState(std::string state);
     void updateStateShouting();
     void updateStateNotShouting();
+    void updateCooldownNotShouting();
     bool destroyFlag();
     void hit();
     bool isHit();

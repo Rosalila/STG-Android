@@ -140,11 +140,26 @@ void Pattern::updateStateShouting()
     }
 }
 
+void Pattern::updateCooldownNotShouting()
+{
+	if(state=="cooldown")
+	{
+		if(current_cooldown<cooldown)
+		{
+			current_cooldown++;
+		}else
+		{
+			current_cooldown=0;
+			state="ready";
+		}
+	}
+}
+
 void Pattern::updateStateNotShouting()
 {
     current_startup=0;
     current_cooldown=0;
-    state="startup";
+    state="cooldown";
 }
 
 

@@ -101,6 +101,10 @@ void Stage::drawLayer(Layer* layer,bool alpha_enabled)
 
 void Stage::dibujarBack()
 {
+    if(receiver->isOuyaDown('r')
+        || receiver->isOuyaDown('s'))
+        return;
+
     for(int i=0;i<(int)back.size();i++)
     {
         Layer* layer=back[i];

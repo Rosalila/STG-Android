@@ -87,7 +87,7 @@ include $(BUILD_SHARED_LIBRARY)
 $(call import-module,android/native_app_glue)
 
 
-$(call import-add-path, ~/NVPACK/TDK_Samples/tegra_android_native_samples_v10p10/libs/jni)
+$(call import-add-path, ~/NVPACK/TDK_Samples/tegra_android_native_samples_v10p12/tegra_android_native_samples_v10p12/libs/jni)
 
 $(call import-module,nv_and_util)
 $(call import-module,nv_egl_util)

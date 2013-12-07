@@ -744,7 +744,7 @@ class SDLSurface extends SurfaceView implements SurfaceHolder.Callback,
     // Touch events
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-    	Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.indiegogo.com/projects/keep-skullgirls-growing"));
+    	Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.igg.me/at/maximum-overkill"));
     	sdl_activity.startActivity(browserIntent);
              final int touchDevId = event.getDeviceId();
              final int pointerCount = event.getPointerCount();

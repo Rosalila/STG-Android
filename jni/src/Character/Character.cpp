@@ -16,7 +16,7 @@ Character::Character(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,
     this->active_patterns=new std::list<Pattern*>;
     this->x=500;
     this->y=500;
-    this->shooting=true;
+    this->shooting=false;
     this->orientation="idle";
     this->current_type="o";
     this->visible=true;
@@ -74,6 +74,8 @@ void Character::loadMainXML()
 	if(directory=="chars/Iguro/")
 	{
 	    this->velocity=10;
+
+	    this->shooting=false;
 
 	    /*
 		TiXmlDocument docTemp;
@@ -401,7 +403,7 @@ void Character::loadPatternsXML()
 					/*bullet*/"lazor",
 					/*offset_x*/65,
 					/*offset_y*/-44,
-					/*startup*/2,
+					/*startup*/0,
 					/*cooldown*/11,
 					/*duration*/99999,
 					/*random_angle*/0,
@@ -424,7 +426,7 @@ void Character::loadPatternsXML()
 					/*bullet*/"machinegun",
 					/*offset_x*/85,
 					/*offset_y*/4,
-					/*startup*/12,
+					/*startup*/0,
 					/*cooldown*/2,
 					/*duration*/99999,
 					/*random_angle*/0,
@@ -447,7 +449,7 @@ void Character::loadPatternsXML()
 					/*bullet*/"machinegun",
 					/*offset_x*/75,
 					/*offset_y*/-4,
-					/*startup*/12,
+					/*startup*/0,
 					/*cooldown*/2,
 					/*duration*/99999,
 					/*random_angle*/0,
@@ -473,7 +475,7 @@ if(false)
 					/*bullet*/"lazor",
 					/*offset_x*/65,
 					/*offset_y*/-44,
-					/*startup*/2,
+					/*startup*/0,
 					/*cooldown*/11,
 					/*duration*/99999,
 					/*random_angle*/0,
@@ -496,7 +498,7 @@ if(false)
 					/*bullet*/"machinegun",
 					/*offset_x*/85,
 					/*offset_y*/4,
-					/*startup*/10,
+					/*startup*/0,
 					/*cooldown*/2,
 					/*duration*/99999,
 					/*random_angle*/60,
@@ -519,7 +521,7 @@ if(false)
 					/*bullet*/"machinegun",
 					/*offset_x*/75,
 					/*offset_y*/-4,
-					/*startup*/10,
+					/*startup*/0,
 					/*cooldown*/2,
 					/*duration*/99999,
 					/*random_angle*/60,
@@ -545,7 +547,7 @@ if(false)
 					/*bullet*/"lazor",
 					/*offset_x*/65,
 					/*offset_y*/-44,
-					/*startup*/4,
+					/*startup*/0,
 					/*cooldown*/4,
 					/*duration*/99999,
 					/*random_angle*/0,
@@ -570,7 +572,7 @@ if(false)
 					/*bullet*/"lazor",
 					/*offset_x*/65,
 					/*offset_y*/-44,
-					/*startup*/4,
+					/*startup*/0,
 					/*cooldown*/22,
 					/*duration*/99999,
 					/*random_angle*/0,
@@ -593,7 +595,7 @@ if(false)
 					/*bullet*/"machinegun",
 					/*offset_x*/85,
 					/*offset_y*/4,
-					/*startup*/25,
+					/*startup*/0,
 					/*cooldown*/4,
 					/*duration*/99999,
 					/*random_angle*/0,
@@ -616,7 +618,7 @@ if(false)
 					/*bullet*/"machinegun",
 					/*offset_x*/75,
 					/*offset_y*/-4,
-					/*startup*/25,
+					/*startup*/0,
 					/*cooldown*/4,
 					/*duration*/99999,
 					/*random_angle*/0,
@@ -669,6 +671,42 @@ void Character::spellControl(int stage_velocity)
         }else
         {
             patterns[i]->updateStateNotShouting();
+        }
+    }
+
+    if((current_type!="o" || !shooting ) && type.find("o") != type.end())
+    {
+        std::vector<Pattern*> patterns_o=type["o"];
+        for(int i=0;i<(int)patterns_o.size();i++)
+        {
+            patterns_o[i]->updateCooldownNotShouting();
+        }
+    }
+
+    if((current_type!="u" || !shooting ) && type.find("u") != type.end())
+    {
+        std::vector<Pattern*> patterns_o=type["u"];
+        for(int i=0;i<(int)patterns_o.size();i++)
+        {
+        	patterns_o[i]->updateCooldownNotShouting();
+        }
+    }
+
+    if((current_type!="y" || !shooting ) && type.find("y") != type.end())
+    {
+        std::vector<Pattern*> patterns_o=type["y"];
+        for(int i=0;i<(int)patterns_o.size();i++)
+        {
+        	patterns_o[i]->updateCooldownNotShouting();
+        }
+    }
+
+    if((current_type!="a" || !shooting ) && type.find("a") != type.end())
+    {
+        std::vector<Pattern*> patterns_o=type["a"];
+        for(int i=0;i<(int)patterns_o.size();i++)
+        {
+        	patterns_o[i]->updateCooldownNotShouting();
         }
     }
 
